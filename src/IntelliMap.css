@@ -1,0 +1,15 @@
+.map
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 730px;
+  border: 0.05rem outset black;
+}
+
+.pop-up
+{
+  font-size: 12px;
+  font-weight: bold;
+}
