@@ -15,7 +15,7 @@ class PinPoint extends Component
                   mapType: US_MAP,
                   spawnCnt: 20,
                   cityCnt: 1000,
-                  maxScore: 7,
+                  maxScore: 3,
                   playerOne: 'Player 1',
                   playerTwo: 'Player 2',
                   activePlayer: 'Player 1',
@@ -38,6 +38,7 @@ class PinPoint extends Component
     this.raiseScore = this.raiseScore.bind(this);
     this.setEndTurn = this.setEndTurn.bind(this);
     this.setEndRound = this.setEndRound.bind(this);
+    this.restart = this.restart.bind(this);
   }
 
   stopTimer()
@@ -149,38 +150,51 @@ class PinPoint extends Component
     }
   }
 
+  restart()
+  {
+    this.setState({playerOneScore: 0,
+                   playerTwoScore: 0});
+  }
+
   render()
   {
     let leadPlayer = this.calcLeadPlayer();
     let score = this.createScoreText(leadPlayer);
-
+    let gameOver = (this.state.playerOneScore === this.state.maxScore)
+                   || (this.state.playerTwoScore === this.state.maxScore);
+                  
     return(<div> 
-             <IntelliBase activePlayer = {this.state.activePlayer}
-                          activePlayerImg = {this.state.activePlayerImg}
-                          leadPlayer = {leadPlayer}
-                          score = {score}
-                          runTimer = {this.state.runTimer}
-                          resetTimer = {this.state.resetTimer} 
-                          confirmTimerReset= {this.confirmTimerReset} 
-                          stopTimer = {this.stopTimer} 
-                          nextTurn = {this.nextTurn} 
-                          disableMap = {this.disableMap} 
-                          targetCity = {this.state.targetCity}
-                          targetPopulation = {this.state.targetPopulation} 
-                          turnText = {this.state.turnText} />
-             <IntelliMap mode = {this.state.mode}
-                         mapType = {this.state.mapType}
-                         spawnCnt={this.state.spawnCnt}
-                         cityCnt={this.state.cityCnt}
-                         maxScore = {this.state.maxScore} 
-                         stopTimer = {this.stopTimer} 
-                         nextTurn = {this.nextTurn} 
-                         disableMap = {this.state.disableMap}
-                         endTurn={this.state.endTurn}
-                         updateTargetCity = {this.updateTargetCity} 
-                         raiseScore = {this.raiseScore} 
-                         setEndTurn = {this.setEndTurn} 
-                         setEndRound = {this.setEndRound} />
+             {!gameOver ? 
+              <div>
+                <IntelliBase activePlayer = {this.state.activePlayer}
+                             activePlayerImg = {this.state.activePlayerImg}
+                             leadPlayer = {leadPlayer}
+                             score = {score}
+                             runTimer = {this.state.runTimer}
+                             resetTimer = {this.state.resetTimer} 
+                             confirmTimerReset= {this.confirmTimerReset} 
+                             stopTimer = {this.stopTimer} 
+                             nextTurn = {this.nextTurn} 
+                             disableMap = {this.disableMap} 
+                             targetCity = {this.state.targetCity}
+                             targetPopulation = {this.state.targetPopulation} 
+                             turnText = {this.state.turnText} />
+                <IntelliMap mode = {this.state.mode}
+                            mapType = {this.state.mapType}
+                            spawnCnt = {this.state.spawnCnt}
+                            cityCnt = {this.state.cityCnt}
+                            maxScore = {this.state.maxScore} 
+                            stopTimer = {this.stopTimer} 
+                            nextTurn = {this.nextTurn} 
+                            disableMap = {this.state.disableMap}
+                            endTurn = {this.state.endTurn}
+                            updateTargetCity = {this.updateTargetCity} 
+                            raiseScore = {this.raiseScore} 
+                            setEndTurn = {this.setEndTurn} 
+                            setEndRound = {this.setEndRound} /> 
+                </div> : 
+             <WinAlert winner = {leadPlayer} 
+                       restart = {this.restart} />}
            </div>);
   }
 }

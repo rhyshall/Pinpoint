@@ -1,11 +1,10 @@
 :root 
 {
-  --blue: #4488cc;
-  --grey: #f1f3f5f5; 
-  --grey2: #f6f7f8f8; 
-  --orange: #e2a64bef;
-  --orange2: #eca50cea;
-  --black: #000000; 
+  --ib-grey: #f1f3f5f5; 
+  --ib-grey2: #f6f7f8f8; 
+  --ib-orange: #e2a64bef;
+  --ib-orange2: #eca50cea;
+  --ib-black: #000000; 
 }
 
 .header-container
@@ -24,10 +23,10 @@
 
 .header-section
 {
-  background-color: var(--grey);
-  background-image :linear-gradient(315deg, var(--grey) 0%, var(--grey2) 74%);
+  background-color: var(--ib-grey);
+  background-image :linear-gradient(315deg, var(--ib-grey) 0%, var(--ib-grey2) 74%);
   box-shadow: 1.5em 0.5em -1em rgba(0, 0, 0, 0.25);
-  border-left: 0.5px outset var(--black);
+  border-left: 0.5px outset var(--ib-black);
 }
 
 .turn 
@@ -48,8 +47,8 @@
 .header-section-header
 {
   color: white;
-  background-color: var(--orange);
-  background-image :linear-gradient(315deg, var(--orange) 0%, var(--orange2) 74%);
+  background-color: var(--ib-orange);
+  background-image :linear-gradient(315deg, var(--ib-orange) 0%, var(--ib-orange2) 74%);
   text-align: center;
   padding: 6px 16px;
   height: 0.7rem;

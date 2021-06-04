@@ -15,8 +15,8 @@ export const START_SECS = 1;
 export const START_SECS_LEFT = 59;
 export const PLAYER_ONE_IMG = 'green_circle.png';
 export const PLAYER_TWO_IMG = 'red_circle.png';
-export const TURN_WAIT_TIME = 2000; //milliseconds
-export const ROUND_WAIT_TIME = 3000;
+export const TURN_WAIT_TIME = 1200; //milliseconds
+export const ROUND_WAIT_TIME = 2500;
 export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Excellent! 🙂`,
                                          `Exceptional 🙂`,
