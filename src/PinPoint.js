@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import IntelliBase from './IntelliBase';
 import IntelliMap from './IntelliMap';
 import WinAlert from './WinAlert';
+import Options from './Options';
 import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from './Const';
 import {CANADA_MAP, US_MAP} from './Const';
 import {PLAYER_ONE_IMG, PLAYER_TWO_IMG} from './Const';
@@ -15,7 +16,7 @@ class PinPoint extends Component
                   mapType: US_MAP,
                   spawnCnt: 20,
                   cityCnt: 1000,
-                  maxScore: 3,
+                  maxScore: 7,
                   playerOne: 'Player 1',
                   playerTwo: 'Player 2',
                   activePlayer: 'Player 1',
@@ -163,7 +164,8 @@ class PinPoint extends Component
     let gameOver = (this.state.playerOneScore === this.state.maxScore)
                    || (this.state.playerTwoScore === this.state.maxScore);
                   
-    return(<div> 
+    return(<div><Options />
+           {/*
              {!gameOver ? 
               <div>
                 <IntelliBase activePlayer = {this.state.activePlayer}
@@ -194,7 +196,8 @@ class PinPoint extends Component
                             setEndRound = {this.setEndRound} /> 
                 </div> : 
              <WinAlert winner = {leadPlayer} 
-                       restart = {this.restart} />}
+                       score = {score}
+             restart = {this.restart} />} */}
            </div>);
   }
 }

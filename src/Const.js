@@ -9,6 +9,11 @@ export const US_CITY_FILE = 'most_populous_us_cities.json';
 export const BOT_MODE = 1;
 export const LOCAL_MODE = 2;
 export const NETWORK_MODE = 3;
+export const EASY_MODE = 1;
+export const MEDIUM_MODE = 2;
+export const HARD_MODE = 3;
+export const CREATE_GAME = 1;
+export const FIND_GAME = 2;
 export const CANADA_MAP = 1;
 export const US_MAP = 2;
 export const START_SECS = 1;
@@ -17,6 +22,76 @@ export const PLAYER_ONE_IMG = 'green_circle.png';
 export const PLAYER_TWO_IMG = 'red_circle.png';
 export const TURN_WAIT_TIME = 1200; //milliseconds
 export const ROUND_WAIT_TIME = 2500;
+export const DFLT_MODE = LOCAL_MODE;
+export const DFLT_NAME_ONE = 'Player 1';
+export const DFLT_NAME_TWO = 'Player 2';
+export const DFLT_CITY_RANGE = 200;
+export const DFLT_SPAWN_CNT = 10;
+export const DFLT_MAX_SCORE = 7;
+export const MAP_OPT = ['United States'];
+export const CITY_RANGE_OPT = ['Top 100',
+                               'Top 200',
+                               'Top 400',
+                               'Top 700',
+                               'Top 1000'];
+export const SPAWN_CNT_OPT = ['5',
+                              '7',
+                              '10',
+                              '15',
+                              '20',
+                              '30'];
+export const MAX_SCORE_OPT = ['5',
+                              '7',
+                              '10',
+                              '12',
+                              '15',
+                              '20'];
+export const BOT_NAMES = ['Carrot',
+                          'Hermione',
+                          'Hammer',
+                          'Peppermint',
+                          'Boo',
+                          'Manatee',
+                          'Einstein',
+                          'Dimples',
+                          'Pookie',
+                          'Piglet',
+                          'Joker',
+                          'Cindy Lou Who',
+                          'Peep',
+                          'Popeye',
+                          'Fattykins',
+                          'Silly Sally',
+                          'Cruella',
+                          'Lefty',
+                          'Lobster',
+                          'Giggles',
+                          'Toodles',
+                          'Buck',
+                          'Double Bubble',
+                          'Pixie',
+                          'Oompa Loompa',
+                          'Amigo',
+                          'Bandit',
+                          'Romeo',
+                          'Muhammad',
+                          'Moose',
+                          'Smoochie',
+                          'Tazz',
+                          'Luna',
+                          'Simba',
+                          'Ariel',
+                          'Angel',
+                          'Twig',
+                          'Brainiac',
+                          'Kirby',
+                          'Ash',
+                          'Hawk',
+                          'Thumper',
+                          'Rabbit',
+                          'Goose',
+                          'Dreamey',
+                          'Sunshine'];
 export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Excellent! 🙂`,
                                          `Exceptional 🙂`,
@@ -82,7 +157,7 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `You've got it made! 😎`,
                                          `Good job! 👏👏👏`,
                                          `Correct! 🙂`,
-                                         `You are the bees' knees! 🐝🐝🐝`,
+                                         `You're the bees' knees! 🐝🐝🐝`,
                                          `Fabulous! 🙂`,
                                          `You're the city king! 👑👑👑`,
                                          `You know your cities! 🏙️🏙️🏙️`,
@@ -100,6 +175,11 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Correct 😃`,
                                          `Purrr-fect! 😺`,
                                          `Awesome! 😎`,
-                                         `Correct! 🙂`];
+                                         `Correct! 🙂`,
+                                         `Very Good 😃`,
+                                         `Good 🙂`,
+                                         `Good 🙂`,
+                                         `Great 🙂`,
+                                         `Great 🙂`];
 
 

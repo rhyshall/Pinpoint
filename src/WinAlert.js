@@ -9,16 +9,19 @@ class WinAlert extends Component
   		        <div className="modal">
   		        	<h2 className="winner">{this.props.winner} Wins!</h2>
 								<img className="trophy"
-								     src="trophy.svg"></img>
-								<h3 className="final-score">7 - 3</h3>
+								     src="trophy.svg"
+										 alt="Trophy"></img>
+								<h3 className="final-score">{this.props.score}</h3>
   		        	<button className="restart"
 								        onClick={this.props.restart}>Play Again?</button>
   		        	<p className="share-text">Share it?</p>
   		        	<div className="social">
   		        		<a className="share-facebook"
-									   href="#"><img src="facebook_icon.svg"/></a>
+									   href="#"><img src="facebook_icon.svg"
+										               alt="Facebook Icon"/></a>
 									<a className="share-twitter"
-									   href="#"><img src="twitter_icon.svg"/></a>
+									   href="#"><img src="twitter_icon.svg"
+										           alt="Facebook Icon"/></a>
 								</div>
   		        </div>
   	        </div>);
