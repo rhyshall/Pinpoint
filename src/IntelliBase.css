@@ -52,6 +52,7 @@
   text-align: center;
   padding: 6px 16px;
   height: 0.7rem;
+  text-shadow: 1px 1px var(--opt-black);
 }
 
 h3 
@@ -74,6 +75,8 @@ h3
   height: 2.8rem;
   line-height: 1rem;
   white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 0px 0px var(--opt-black);
 }
 
 .current-player
@@ -85,14 +88,15 @@ h3
 
 .arrow-img
 {
-  height: 16px;
-  width: 16px;
+  height: 17px;
+  width: 17px;
 }
 
 .player-text 
 {
   font-size: 15px;
-  padding-left: 6px;
+  padding-left: 7px;
+  letter-spacing: 0.5px;
 }
 
 .target-city 
@@ -151,7 +155,8 @@ h3
 .winning-player
 {
   font-size: 15px;
-  padding-left: 6px;
+  padding-left: 7px;
+  letter-spacing: 0.5px;
 }
 
 .scoreboard
@@ -170,5 +175,5 @@ h3
 .score-text
 {
   font-size: 17px;
-  padding-left: 6px;
+  padding-left: 7px;
 }

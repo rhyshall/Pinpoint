@@ -28,6 +28,8 @@ class Options extends Component
     this.slideCityRange = this.slideCityRange.bind(this);
     this.slideSpawnCnt = this.slideSpawnCnt.bind(this);
     this.slideMaxScore = this.slideMaxScore.bind(this);
+    this.setPlayerName = this.setPlayerName.bind(this);
+    this.startGame = this.startGame.bind(this);
   }
 
   selectImg(e)
@@ -86,6 +88,20 @@ class Options extends Component
     }
   }
 
+  setPlayerName(e)
+  {
+    let className = e.target.className;
+
+    if (className.includes('player-two'))
+    {
+      this.setState({playerTwoName: e.target.value});
+    }
+    else 
+    {
+      this.setState({playerOneName: e.target.value});
+    }
+  }
+
   slideCityRange(e)
   {
     this.setState({cityRange: e.target.value});
@@ -99,6 +115,36 @@ class Options extends Component
   slideMaxScore(e)
   {
     this.setState({maxScore: e.target.value});
+  }
+
+  startGame(e)
+  {
+    e.preventDefault();
+
+    if (this.state.mode === BOT_MODE)
+    {
+      this.props.startBotGame(this.state.mode,
+                              this.state.map,
+                              this.state.playerOneName,
+                              this.state.botDifficulty,
+                              this.state.cityRange,
+                              this.state.spawnCnt,
+                              this.state.maxScore);
+    }
+    else if (this.state.mode === LOCAL_MODE)
+    {
+      this.props.startLocalGame(this.state.mode,
+                                this.state.map,
+                                this.state.playerOneName,
+                                this.state.playerTwoName,
+                                this.state.cityRange,
+                                this.state.spawnCnt,
+                                this.state.maxScore);
+    }
+    else 
+    {
+      alert('Network mode will be available at a later date');
+    }
   }
 
   render()
@@ -139,8 +185,10 @@ class Options extends Component
       option3 = <div className="content player-two-content">
                    <h4>Player Two</h4>
                    <label className="player-label">
-                     <input className="player-textfield"
-                            placeholder="Player 2"></input>
+                     <input className="player-textfield player-two"
+                            placeholder="Player 2"
+                            maxLength="20"
+                            onChange={this.setPlayerName}></input>
                    </label>
                  </div>;
     }
@@ -192,9 +240,9 @@ class Options extends Component
                     <input className="slider"
                            type="range" 
                            value={this.state.spawnCnt}
-                           min="5" 
+                           min="6" 
                            max="30"
-                           step="5"
+                           step="2"
                            onChange={this.slideSpawnCnt}></input>
                     <span className="slider-value">{this.state.spawnCnt}</span> 
                   </label>
@@ -206,7 +254,7 @@ class Options extends Component
                     <input className="slider"
                            type="range" 
                            value={this.state.maxScore}
-                           min="5"
+                           min="3"
                            max="20"
                            step="1"
                            onChange={this.slideMaxScore}></input>
@@ -248,8 +296,10 @@ class Options extends Component
                <div className="content player-one-content">
                  <h4>Player One</h4>
                  <label className="player-label">
-                   <input className="player-textfield"
-                          placeholder="Player 1"></input>
+                   <input className="player-textfield player-one"
+                          placeholder="Player 1"
+                          maxLength="20"
+                          onChange={this.setPlayerName}></input>
                  </label>
                </div>
                 
@@ -258,7 +308,8 @@ class Options extends Component
                {option5}
                {option6}     
 
-               <button className="submit-btn">Start</button>
+               <button className="submit-btn"
+                       onClick={this.startGame}>Start</button>
              </form>
            </div>);
   }

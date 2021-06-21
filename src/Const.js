@@ -16,6 +16,9 @@ export const CREATE_GAME = 1;
 export const FIND_GAME = 2;
 export const CANADA_MAP = 1;
 export const US_MAP = 2;
+export const OPTIONS_SCREEN = 1;
+export const MAP_SCREEN = 2;
+export const WIN_SCREEN = 2;
 export const START_SECS = 1;
 export const START_SECS_LEFT = 59;
 export const PLAYER_ONE_IMG = 'green_circle.png';
@@ -98,7 +101,7 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Fabulous! 😃`,
                                          `Fantastic! 🌞`,
                                          `Sensational! 😃`,
-                                         `Wonderful!`,
+                                         `Wonderful! 🤩`,
                                          `Outstanding! 😛`,
                                          `That’s it! 🤪`,
                                          `Just right! 🤓`,
@@ -179,7 +182,8 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Very Good 😃`,
                                          `Good 🙂`,
                                          `Good 🙂`,
+                                         `Great 😄`,
                                          `Great 🙂`,
-                                         `Great 🙂`];
+                                         `Good 😄`];
 
 

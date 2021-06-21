@@ -260,6 +260,7 @@
   height: 40px;
   width: 300px;
   border: 1px solid var(--opt-black);
+  text-shadow: 1px 1px var(--opt-black);
 }
 
 .submit-btn:hover 

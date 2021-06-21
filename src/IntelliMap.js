@@ -27,7 +27,8 @@ class IntelliMap extends Component
     this.state = {cities: Array.from({length: this.props.cityCnt}),
                   spawnCities: Array.from({length: this.props.spawnCnt}),
                   targetCity: null,
-                  spawnCoords: Array.from({length: this.props.spawnCnt})};
+                  spawnCoords: Array.from({length: this.props.spawnCnt}),
+                  mounted: false};
     this.handleMarkerClick = this.handleMarkerClick.bind(this);
     this.hidePopUp = this.hidePopUp.bind(this);
   }
@@ -152,12 +153,12 @@ class IntelliMap extends Component
   endRound()
   {
     this.props.setEndRound();
-
     setTimeout(() => 
     {
       this.props.nextTurn();
       this.chooseCities();
       this.setState({endTurn: false});
+      this.props.raiseScore();
     },
     this.props.roundWaitTime);
   }
@@ -179,7 +180,6 @@ class IntelliMap extends Component
       && Number(longitudeChoice) === this.state.targetCity.Longitude) 
     {
       this.clearDecoys();
-      this.props.raiseScore();
       this.endRound();
     }
     else 

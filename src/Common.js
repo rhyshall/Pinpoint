@@ -1,6 +1,15 @@
+import {BOT_NAMES} from './Const';
+
 function random(max) 
 {
   return Math.floor(Math.random()*max);
+}
+
+function genBotName()
+{
+  let randNbr = random(BOT_NAMES.length-1);
+
+  return BOT_NAMES[randNbr];
 }
 
 function polarToCartesian(centerX, 
@@ -56,4 +65,8 @@ function mapNumber(number,
   return (number - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-export {random, polarToCartesian, describeArc, mapNumber};
+export {random, 
+        genBotName, 
+        polarToCartesian, 
+        describeArc, 
+        mapNumber};

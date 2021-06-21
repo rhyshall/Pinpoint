@@ -5,7 +5,11 @@ import WinAlert from './WinAlert';
 import Options from './Options';
 import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from './Const';
 import {CANADA_MAP, US_MAP} from './Const';
+import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './Const';
+import {CREATE_GAME, FIND_GAME} from './Const';
+import {OPTIONS_SCREEN, MAP_SCREEN} from './Const';
 import {PLAYER_ONE_IMG, PLAYER_TWO_IMG} from './Const';
+import { genBotName } from './Common';
 
 class PinPoint extends Component
 {
@@ -17,6 +21,8 @@ class PinPoint extends Component
                   spawnCnt: 20,
                   cityCnt: 1000,
                   maxScore: 7,
+                  difficulty: EASY_MODE,
+                  hosting: FIND_GAME,
                   playerOne: 'Player 1',
                   playerTwo: 'Player 2',
                   activePlayer: 'Player 1',
@@ -29,7 +35,8 @@ class PinPoint extends Component
                   playerOneScore: 0,
                   playerTwoScore: 0,
                   endTurn: false,
-                  turnText: ''};
+                  turnText: '',
+                  screen: OPTIONS_SCREEN};
 
     this.stopTimer = this.stopTimer.bind(this);
     this.nextTurn = this.nextTurn.bind(this);
@@ -40,6 +47,49 @@ class PinPoint extends Component
     this.setEndTurn = this.setEndTurn.bind(this);
     this.setEndRound = this.setEndRound.bind(this);
     this.restart = this.restart.bind(this);
+    this.startBotGame = this.startBotGame.bind(this);
+    this.startLocalGame = this.startLocalGame.bind(this);
+  }
+
+  startBotGame(modeOpt,
+               mapTypeOpt,
+               playerOneOpt,
+               difficultyOpt,
+               cityCntOpt,
+               spawnCntOpt,
+               maxScoreOpt)
+  {
+    this.setState({screen: MAP_SCREEN,
+                   mode: modeOpt,
+                   mapType: mapTypeOpt,
+                   playerOne: playerOneOpt,
+                   playerTwo: genBotName(),
+                   difficulty: difficultyOpt,
+                   cityCnt: cityCntOpt,
+                   spawnCnt: spawnCntOpt,
+                   maxScore: maxScoreOpt,
+                   activePlayer: playerOneOpt,
+                   activeImg: PLAYER_ONE_IMG});
+  }
+
+  startLocalGame(modeOpt,
+                 mapTypeOpt,
+                 playerOneOpt,
+                 playerTwoOpt,
+                 cityCntOpt,
+                 spawnCntOpt,
+                 maxScoreOpt)
+  {
+    this.setState({screen: MAP_SCREEN,
+                   mode: modeOpt,
+                   mapType: mapTypeOpt,
+                   playerOne: playerOneOpt,
+                   playerTwo: playerTwoOpt,
+                   cityCnt: cityCntOpt,
+                   spawnCnt: spawnCntOpt,
+                   maxScore: maxScoreOpt,
+                   activePlayer: playerOneOpt,
+                   activeImg: PLAYER_ONE_IMG});
   }
 
   stopTimer()
@@ -139,7 +189,7 @@ class PinPoint extends Component
 
   raiseScore()
   {
-    if (this.state.activePlayer === this.state.playerOne)
+    if (this.state.activePlayer === this.state.playerTwo)
     {
       let newScore = this.state.playerOneScore+1;
       this.setState({playerOneScore: newScore});
@@ -154,50 +204,72 @@ class PinPoint extends Component
   restart()
   {
     this.setState({playerOneScore: 0,
-                   playerTwoScore: 0});
+                   playerTwoScore: 0,
+                   screen: OPTIONS_SCREEN});
   }
 
   render()
   {
-    let leadPlayer = this.calcLeadPlayer();
-    let score = this.createScoreText(leadPlayer);
-    let gameOver = (this.state.playerOneScore === this.state.maxScore)
-                   || (this.state.playerTwoScore === this.state.maxScore);
-                  
-    return(<div><Options />
-           {/*
-             {!gameOver ? 
-              <div>
-                <IntelliBase activePlayer = {this.state.activePlayer}
-                             activePlayerImg = {this.state.activePlayerImg}
-                             leadPlayer = {leadPlayer}
-                             score = {score}
-                             runTimer = {this.state.runTimer}
-                             resetTimer = {this.state.resetTimer} 
-                             confirmTimerReset= {this.confirmTimerReset} 
-                             stopTimer = {this.stopTimer} 
-                             nextTurn = {this.nextTurn} 
-                             disableMap = {this.disableMap} 
-                             targetCity = {this.state.targetCity}
-                             targetPopulation = {this.state.targetPopulation} 
-                             turnText = {this.state.turnText} />
-                <IntelliMap mode = {this.state.mode}
-                            mapType = {this.state.mapType}
-                            spawnCnt = {this.state.spawnCnt}
-                            cityCnt = {this.state.cityCnt}
-                            maxScore = {this.state.maxScore} 
-                            stopTimer = {this.stopTimer} 
-                            nextTurn = {this.nextTurn} 
-                            disableMap = {this.state.disableMap}
-                            endTurn = {this.state.endTurn}
-                            updateTargetCity = {this.updateTargetCity} 
-                            raiseScore = {this.raiseScore} 
-                            setEndTurn = {this.setEndTurn} 
-                            setEndRound = {this.setEndRound} /> 
-                </div> : 
-             <WinAlert winner = {leadPlayer} 
-                       score = {score}
-             restart = {this.restart} />} */}
+    let content = null;
+
+    if (this.state.screen === OPTIONS_SCREEN)
+    {
+      content = <Options startBotGame={this.startBotGame}
+                         startLocalGame={this.startLocalGame}/>;
+    }
+
+    else 
+    {
+      let leadPlayer = this.calcLeadPlayer();
+      let score = this.createScoreText(leadPlayer);
+    
+      if (this.state.screen === MAP_SCREEN)
+      {
+        let gameOver = (this.state.playerOneScore == this.state.maxScore)
+                        || (this.state.playerTwoScore == this.state.maxScore);
+        
+        if (gameOver)
+        {
+          content = <WinAlert winner = {leadPlayer} 
+                              score = {score}
+                              restart = {this.restart} />
+        }
+        else 
+        {
+          content = <div>
+                      <IntelliBase activePlayer = {this.state.activePlayer}
+                                   activePlayerImg = {this.state.activePlayerImg}
+                                   leadPlayer = {leadPlayer}
+                                   score = {score}
+                                   runTimer = {this.state.runTimer}
+                                   resetTimer = {this.state.resetTimer} 
+                                   confirmTimerReset= {this.confirmTimerReset} 
+                                   stopTimer = {this.stopTimer} 
+                                   nextTurn = {this.nextTurn} 
+                                   disableMap = {this.disableMap} 
+                                   targetCity = {this.state.targetCity}
+                                   targetPopulation = {this.state.targetPopulation} 
+                                   turnText = {this.state.turnText} />
+                      <IntelliMap mode = {this.state.mode}
+                                  mapType = {this.state.mapType}
+                                  spawnCnt = {this.state.spawnCnt}
+                                  cityCnt = {this.state.cityCnt}
+                                  maxScore = {this.state.maxScore} 
+                                  stopTimer = {this.stopTimer} 
+                                  nextTurn = {this.nextTurn} 
+                                  disableMap = {this.state.disableMap}
+                                  endTurn = {this.state.endTurn}
+                                  updateTargetCity = {this.updateTargetCity} 
+                                  raiseScore = {this.raiseScore} 
+                                  setEndTurn = {this.setEndTurn} 
+                                  setEndRound = {this.setEndRound} /> 
+                    </div>;
+        }
+      }
+    }
+           
+    return(<div>
+             {content}
            </div>);
   }
 }
