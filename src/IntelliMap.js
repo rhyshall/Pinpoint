@@ -5,22 +5,19 @@ import {DFLT_LAT, DFLT_LNG, DFLT_BOUNDS} from './Const';
 import {DFLT_ZOOM, DFLT_MAX_ZOOM, DFLT_MIN_ZOOM} from './Const';
 import {CANADA_MAP, US_MAP} from './Const';
 import {CANADA_CITY_FILE, US_CITY_FILE} from './Const';
+import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from './Const';
 import {TURN_WAIT_TIME, ROUND_WAIT_TIME, CORRECT_ANSWER_RESPONSES} from './Const';
+import {EASY_BOT_WAIT_MAX, MEDIUM_BOT_WAIT_MAX, HARD_BOT_WAIT_MAX} from './Const';
+import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './Const';
+import {EASY_CORRECT_RATIO, MEDIUM_CORRECT_RATIO, HARD_CORRECT_RATIO} from './Const';
+import {MIN_SPAWN_CNT, SPAWN_COEFFICIENT, BASELINE_CITY_CNT} from './Const';
+import {BOT_CORRECT_PRECISION, BOT_ZOOM_RANGE} from './Const';
 import {random} from './Common';
+import BotOutcomeText from './BotOutcomeText';
 import axios from 'axios';
 
 class IntelliMap extends Component
 {
-  static defaultProps = {lat: DFLT_LAT,
-                         lng: DFLT_LNG,
-                         zoom: DFLT_ZOOM,
-                         minZoom: DFLT_MIN_ZOOM,
-                         maxZoom: DFLT_MAX_ZOOM,
-                         maxBounds: DFLT_BOUNDS,
-                         correctResponses: CORRECT_ANSWER_RESPONSES,
-                         turnWaitTime: TURN_WAIT_TIME,
-                         roundWaitTime: ROUND_WAIT_TIME};
-
   constructor(props)
   {
     super(props);
@@ -28,7 +25,16 @@ class IntelliMap extends Component
                   spawnCities: Array.from({length: this.props.spawnCnt}),
                   targetCity: null,
                   spawnCoords: Array.from({length: this.props.spawnCnt}),
-                  mounted: false};
+                  botMaxWait: 0,
+                  botCorrectRatio: 0,
+                  zoom: DFLT_ZOOM,
+                  latitude: DFLT_LAT,
+                  longitude: DFLT_LNG,
+                  markers: Array.from({length: this.props.spawnCnt}),
+                  botSelected: false,
+                  miss: false,
+                  popUpVisible: false,
+                  hideCursor: false};
     this.handleMarkerClick = this.handleMarkerClick.bind(this);
     this.hidePopUp = this.hidePopUp.bind(this);
   }
@@ -112,17 +118,73 @@ class IntelliMap extends Component
     chosenCity = spawnList[randIndex];
    
     this.setState({spawnCities: spawnList,
-                   targetCity: chosenCity});
-
+                   targetCity: chosenCity}, 
+                  () => 
+                  {
+                    this.setMarkers();
+                  });
+    
     this.props.updateTargetCity(chosenCity.City,
                                 chosenCity.Population);
   }
 
-  componentDidMount()
+  checkBotTurn()
   {
-    if (this.state.cities.some(c => !c))
+    if (this.props.mode === BOT_MODE)
     {
-      this.loadCities();
+      if (this.props.activePlayer === this.props.playerTwo
+        && !this.state.botSelected)
+      {
+        this.setState({botSelected: true},
+                      this.botSelect());
+      }
+    }
+  }
+
+  setMarkers()
+  {
+    let enabled = !this.props.endTurn && !this.props.disableMap;
+    let markerList = Array.from({length: this.props.spawnCnt});
+    
+    markerList = this.state.spawnCities.every(c => c) ? 
+                 this.state.spawnCities.map((c, i) => 
+                 {    
+                   return <Marker id={`${c.City}_${c.Population}_${c.Latitude}_${c.Longitude}`}
+                           key={`marker-${c.City}-${c.Population}-${c.Latitude}-${c.Longitude}`} 
+                           className="marker"
+                           position={[c.Latitude, 
+                                      c.Longitude]}
+                           riseOnHover={true}
+                           riseOffset={250}
+                           onClick={enabled ? 
+                                    this.handleMarkerClick : null}>
+                           <Popup className="pop-up"
+                                  closeButton={false}>
+                             {CORRECT_ANSWER_RESPONSES[random(CORRECT_ANSWER_RESPONSES.length-1)]}
+                           </Popup>                          
+                   </Marker>;
+                 }) : null;
+    
+    this.setState({markers: markerList},
+                  this.checkBotTurn()); 
+  }
+
+  setBotConfig()
+  {
+    if (this.props.difficulty === EASY_MODE)
+    {
+      this.setState({botMaxWait: EASY_BOT_WAIT_MAX,
+                     botCorrectRatio: EASY_CORRECT_RATIO});
+    }
+    else if (this.props.difficulty === MEDIUM_MODE) 
+    {
+      this.setState({botMaxWait: MEDIUM_BOT_WAIT_MAX,
+                     botCorrectRatio: MEDIUM_CORRECT_RATIO});
+    }
+    else 
+    {
+      this.setState({botMaxWait: HARD_BOT_WAIT_MAX,
+                     botCorrectRatio: HARD_CORRECT_RATIO});
     }
   }
 
@@ -136,18 +198,18 @@ class IntelliMap extends Component
     spawnCityList.splice(0, 
                          targetIndex);
 
-    this.setState({spawnCities: spawnCityList});
+    this.setState({spawnCities: spawnCityList},
+                   () => 
+                   {
+                    this.setMarkers();
+                   });
   }
 
-  endTurn()
+  returnFocus()
   {
-    this.props.setEndTurn();
-    
-    setTimeout(() => 
-    {
-      this.props.nextTurn();
-    },
-    this.props.turnWaitTime);
+    this.setState({zoom: DFLT_ZOOM,
+                   latitude: DFLT_LAT,
+                   longitude: DFLT_LNG});
   }
 
   endRound()
@@ -157,10 +219,244 @@ class IntelliMap extends Component
     {
       this.props.nextTurn();
       this.chooseCities();
-      this.setState({endTurn: false});
+
+      this.setState({endTurn: false,
+                     popUpVisible: false});
+      this.returnFocus();
       this.props.raiseScore();
     },
-    this.props.roundWaitTime);
+    ROUND_WAIT_TIME);
+  }
+
+  endTurn()
+  {
+    this.props.setEndTurn();
+
+    setTimeout(() => 
+    {
+      this.props.nextTurn();
+      this.returnFocus();
+      this.setMarkers();
+    },
+    TURN_WAIT_TIME);
+  }
+
+  focusBot(lat,
+           lng)
+  {
+    this.setState({zoom: 6,
+                   latitude: lat,
+                   longitude: lng});
+  }
+
+  handleGuess(cityChoice,
+              populationChoice,
+              latitudeChoice,
+              longitudeChoice)
+  {
+    let spawnCityList = Array.from(this.state.spawnCities);
+    let isBotTurn = this.props.mode === BOT_MODE
+                    && this.props.activePlayer === this.props.playerTwo;
+    let botZoomTime = random(BOT_ZOOM_RANGE * 1000)+2000;
+    
+    if (isBotTurn) 
+    {
+      this.focusBot(latitudeChoice,
+                    longitudeChoice);
+    }
+    else 
+    {
+      //stop turn timer
+      this.props.stopTimer();
+    }
+    
+    if (cityChoice === this.state.targetCity.City
+        && populationChoice === this.state.targetCity.Population
+        && Number(latitudeChoice) === this.state.targetCity.Latitude 
+        && Number(longitudeChoice) === this.state.targetCity.Longitude) 
+    {
+      if (isBotTurn)
+      {
+        setTimeout(() => 
+                   {
+                     //stop turn timer
+                     this.props.stopTimer();
+
+                     this.clearDecoys();
+                     this.setState({popUpVisible: true},
+                                   this.endRound());
+                   }, 
+                   botZoomTime);
+      }
+      else 
+      {
+        this.clearDecoys();
+        this.endRound();
+      }
+    }
+    else 
+    {
+      if (isBotTurn)
+      {
+        setTimeout(() => 
+                   {
+                     //stop turn timer
+                     this.props.stopTimer();
+
+                     spawnCityList.splice(spawnCityList.map(c => c.City).indexOf(cityChoice), 
+                                         1);
+                  
+                                         this.setState({spawnCities: spawnCityList,
+                                                        popUpVisible: true},
+                                                       this.endTurn());            
+                   },
+                   botZoomTime);
+      }
+      else 
+      {
+        spawnCityList.splice(spawnCityList.map(c => c.City).indexOf(cityChoice), 
+                             1);
+        this.setState({spawnCities: spawnCityList},
+                      this.endTurn());
+      }
+
+      this.setMarkers();
+    }
+  }
+
+  clickCorrectMarker()
+  {
+    this.setState({miss: false},
+                  this.handleGuess(this.state.targetCity.City,
+                                   this.state.targetCity.Population,
+                                   this.state.targetCity.Latitude,
+                                   this.state.targetCity.Longitude));
+    
+  }
+
+  clickDecoyMarker()
+  {
+    let cityChoice = this.state.targetCity.City;
+    let populationChoice = this.state.targetCity.Population;
+    let longitudeChoice = this.state.targetCity.Latitude;
+    let latitudeChoice = this.state.targetCity.Longitude;
+    let spawnCityList = Array.from(this.state.spawnCities);
+    let cityCnt = spawnCityList.length;
+    let rand = 0;
+    
+    while (cityChoice === this.state.targetCity.City
+           && populationChoice === this.state.targetCity.Population
+           && longitudeChoice === this.state.targetCity.Latitude
+           && latitudeChoice === this.state.targetCity.Longitude)
+    {
+      rand = random(cityCnt);
+    
+      cityChoice = spawnCityList[rand].City;
+      populationChoice = spawnCityList[rand].Population;
+      latitudeChoice = spawnCityList[rand].Latitude;
+      longitudeChoice = spawnCityList[rand].Longitude;
+    }
+    
+    this.setState({miss: true},
+                  this.handleGuess(cityChoice,
+                                   populationChoice,
+                                   latitudeChoice,
+                                   longitudeChoice));
+  }
+
+  calcCorrectRatio()
+  {
+    let correctRatio = this.state.botCorrectRatio;
+    let spawnCnt = this.state.spawnCities.length;
+    let cityCnt = this.props.cityCnt;
+
+    if (spawnCnt === 1)
+    {
+      correctRatio = 1;
+    }
+    else 
+    {
+      if (spawnCnt < MIN_SPAWN_CNT)
+      {
+        correctRatio = correctRatio + (1 - correctRatio) / spawnCnt;
+      }
+      else if (spawnCnt === MIN_SPAWN_CNT)
+      {
+        correctRatio = correctRatio;
+      }
+      else 
+      {
+        let spawnAboveBaseline = spawnCnt - MIN_SPAWN_CNT;
+        let spawnCntDivisor = spawnAboveBaseline * SPAWN_COEFFICIENT;
+
+        correctRatio = correctRatio / spawnCntDivisor;
+      }
+
+      if (cityCnt <= 100)
+      {
+        correctRatio = correctRatio / 0.85;
+      }
+      else if (cityCnt > 100
+               && cityCnt <= BASELINE_CITY_CNT)
+      {
+        correctRatio = correctRatio;
+      }
+      else 
+      {
+        let rangeAboveBaseline = this.props.cityCnt - BASELINE_CITY_CNT;
+        let cityRangeDivisor = 1 + (0.02 * (rangeAboveBaseline / 100));
+        
+        correctRatio = correctRatio / cityRangeDivisor;
+      }
+    }
+
+    return correctRatio;
+  }
+
+  calcBotCorrect(correctRatio)
+  {
+    let botCorrect = false;
+    let rand = random(BOT_CORRECT_PRECISION);
+    let correctThreshold = correctRatio * BOT_CORRECT_PRECISION;
+
+    if (rand < correctThreshold)
+    {
+      botCorrect = true;
+    }
+    else 
+    {
+      botCorrect = false;
+    }
+
+    return botCorrect;
+  }
+
+  botSelect()
+  {
+    let waitTime = 1;
+
+    while (waitTime <= 1)
+    {
+      waitTime = random(this.state.botMaxWait * 1000)+500;
+    }
+
+    let correctRatio = this.calcCorrectRatio();
+    let isCorrect = this.calcBotCorrect(correctRatio);
+
+    setTimeout(() => 
+    {
+      if (isCorrect) 
+      {
+        this.clickCorrectMarker();
+      }
+      else 
+      {
+        this.clickDecoyMarker();
+      }
+    }, 
+    waitTime);
+
+    this.setState({botSelected: true});
   }
 
   handleMarkerClick(e)
@@ -169,25 +465,29 @@ class IntelliMap extends Component
          populationChoice, 
          latitudeChoice, 
          longitudeChoice] = e.target.options.id.split('_');
-    let spawnCityList = Array.from(this.state.spawnCities);
 
-    //stop turn timer
-    this.props.stopTimer();
-     
-    if (cityChoice === this.state.targetCity.City
-      && populationChoice === this.state.targetCity.Population
-      && Number(latitudeChoice) === this.state.targetCity.Latitude 
-      && Number(longitudeChoice) === this.state.targetCity.Longitude) 
+    this.setState({botSelected: false});
+    
+    this.handleGuess(cityChoice,
+                     populationChoice,
+                     latitudeChoice,
+                     longitudeChoice);          
+  }
+
+  componentDidMount()
+  {
+    if (this.state.cities.some(c => !c))
     {
-      this.clearDecoys();
-      this.endRound();
+      this.loadCities();
+
+      if (this.props.mode === BOT_MODE) 
+      {
+        this.setBotConfig();
+      }
     }
     else 
     {
-      spawnCityList.splice(spawnCityList.map(c => c.City).indexOf(cityChoice), 
-                           1);
-      this.setState({spawnCities: spawnCityList},
-                     this.endTurn());
+      this.setMarkers();     
     }
   }
 
@@ -204,37 +504,23 @@ class IntelliMap extends Component
 
   render()
   {
-    let enabled = !this.props.endTurn && !this.props.disableMap;
+    return(<div><Map className="map"
+                center={[this.state.latitude, 
+                         this.state.longitude]}
+                zoom={this.state.zoom}
+                minZoom={DFLT_MIN_ZOOM}
+                maxZoom={DFLT_MAX_ZOOM}
+                maxBounds={DFLT_BOUNDS}
+                onPopUpOpen={this.hidePopUp}
+                style= {this.state.hideCursor ? {"cursor": "none"} : {"cursor": "default"}}>
+             <TileLayer attribution='&copy; <a href="https://www.openstreetmap. orgcopyright">OpenStreetMap</ a> contributors'  
+                        url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/> 
+             {this.state.markers}
+           </Map>
+           <BotOutcomeText miss={this.state.miss}
+                           name={this.props.activePlayer}
+                           visible={this.state.popUpVisible}></BotOutcomeText></div>);
 
-    return(<Map className="map"
-                center={[this.props.lat, 
-                         this.props.lng]}
-                zoom={this.props.zoom}
-                minZoom={this.props.minZoom}
-                maxZoom={this.props.maxZoom}
-                maxBounds={this.props.maxBounds}
-                onPopUpOpen={this.hidePopUp}>
-              <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'  
-                         url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/> 
-              {this.state.spawnCities.every(c => c) ? 
-               this.state.spawnCities.map((c, i) => 
-                {    
-                  return (<Marker id={`${c.City}_${c.Population}_${c.Latitude}_${c.Longitude}`}
-                                 key={`marker-${c.City}-${c.Population}-${c.Latitude}-${c.Longitude}`} 
-                                 className="marker"
-                                 position={[c.Latitude, 
-                                            c.Longitude]}
-                                 riseOnHover={true}
-                                 riseOffset={250}
-                                 onClick={enabled ? 
-                                          this.handleMarkerClick : null}>
-                            <Popup className="pop-up"
-                                   closeButton={false}>
-                            {this.props.correctResponses[random(this.props.correctResponses.length-1)]}
-                            </Popup>                          
-                         </Marker>);
-                }) : null}
-           </Map>);
   }
 }
 

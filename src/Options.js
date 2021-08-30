@@ -6,6 +6,9 @@ import {CREATE_GAME, FIND_GAME} from './Const';
 import {CANADA_MAP, US_MAP} from './Const';
 import {DFLT_MODE, DFLT_NAME_ONE, DFLT_NAME_TWO} from './Const';
 import {DFLT_CITY_RANGE, DFLT_SPAWN_CNT, DFLT_MAX_SCORE} from './Const';
+import {MIN_SPAWN_CNT, MAX_SPAWN_CNT} from './Const';
+import {MIN_CITY_CNT, MAX_CITY_CNT} from './Const';
+import {MIN_SCORE, MAX_SCORE} from './Const';
 
 class Options extends Component
 {
@@ -59,7 +62,7 @@ class Options extends Component
   difficultyChange(e)
   {
     let className = e.target.className;
-
+    
     if (className === 'easy-radio')
     {
       this.setState({botDifficulty: EASY_MODE});
@@ -226,8 +229,8 @@ class Options extends Component
                     <input className="slider"
                            type="range" 
                            value={this.state.cityRange} 
-                           min="100" 
-                           max="1000"
+                           min={MIN_CITY_CNT}
+                           max={MAX_CITY_CNT}
                            step="100"
                            onChange={this.slideCityRange}></input>
                     <span className="slider-value">{this.state.cityRange}</span> 
@@ -240,8 +243,8 @@ class Options extends Component
                     <input className="slider"
                            type="range" 
                            value={this.state.spawnCnt}
-                           min="6" 
-                           max="30"
+                           min={MIN_SPAWN_CNT} 
+                           max={MAX_SPAWN_CNT}
                            step="2"
                            onChange={this.slideSpawnCnt}></input>
                     <span className="slider-value">{this.state.spawnCnt}</span> 
@@ -254,8 +257,8 @@ class Options extends Component
                     <input className="slider"
                            type="range" 
                            value={this.state.maxScore}
-                           min="3"
-                           max="20"
+                           min={MIN_SCORE}
+                           max={MAX_SCORE}
                            step="1"
                            onChange={this.slideMaxScore}></input>
                     <span className="slider-value">{this.state.maxScore}</span> 

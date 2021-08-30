@@ -12,15 +12,17 @@ function genBotName()
   return BOT_NAMES[randNbr];
 }
 
-function polarToCartesian(centerX, 
-                          centerY, 
-                          radius, 
-                          angleInDegrees) 
-{
-  let angleInRadians = (angleInDegrees-90) * Math.PI / 180.0;
 
-  return {x: centerX + (radius * Math.cos(angleInRadians)),
-          y: centerY + (radius * Math.sin(angleInRadians))};
+
+function polarToCartesian(xPoint, 
+                          yPoint, 
+                          radius, 
+                          degAngle) 
+{
+  let radianAngle = (Math.PI / 180.0) * (degAngle-90);
+
+  return {x: xPoint + (radius * Math.cos(radianAngle)),
+          y: yPoint + (radius * Math.sin(radianAngle))};
 }
 
 function describeArc(x, 
@@ -39,30 +41,30 @@ function describeArc(x,
                              radius, 
                              startAngle);
 
-  let largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
+  let largeArcFlag = endAngle - startAngle <= 180 ? '0' : '1';
 
-  let d = ["M", 
-           start.x, 
-           start.y, 
-           "A", 
-           radius, 
-           radius, 
-           0, 
-           largeArcFlag,
-           0, 
-           end.x, 
-           end.y].join(" ");
+  let describeArc = ['M', 
+                     start.x, 
+                     start.y, 
+                     'A', 
+                     radius, 
+                     radius, 
+                     0, 
+                     largeArcFlag,
+                     0, 
+                     end.x, 
+                     end.y].join(' ');
 
-    return d;       
+    return describeArc;       
 }
 
-function mapNumber(number, 
+function mapNumber(nbr, 
                    in_min, 
                    in_max, 
                    out_min, 
                    out_max) 
 {
-  return (number - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+  return (nbr - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
 export {random, 

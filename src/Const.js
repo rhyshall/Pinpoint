@@ -23,14 +23,30 @@ export const START_SECS = 1;
 export const START_SECS_LEFT = 59;
 export const PLAYER_ONE_IMG = 'green_circle.png';
 export const PLAYER_TWO_IMG = 'red_circle.png';
-export const TURN_WAIT_TIME = 1200; //milliseconds
-export const ROUND_WAIT_TIME = 2500;
+export const TURN_WAIT_TIME = 1100; //milliseconds
+export const ROUND_WAIT_TIME = 2400;
 export const DFLT_MODE = LOCAL_MODE;
 export const DFLT_NAME_ONE = 'Player 1';
 export const DFLT_NAME_TWO = 'Player 2';
 export const DFLT_CITY_RANGE = 200;
 export const DFLT_SPAWN_CNT = 10;
 export const DFLT_MAX_SCORE = 7;
+export const EASY_BOT_WAIT_MAX = 5; //max bot wait-time in easy mode (secs)
+export const MEDIUM_BOT_WAIT_MAX = 4.25; //max bot wait-time in medium mode (secs)
+export const HARD_BOT_WAIT_MAX = 3.5; //max bot wait-time in hard mode (secs)
+export const EASY_CORRECT_RATIO = 0.300;
+export const MEDIUM_CORRECT_RATIO = 0.450;
+export const HARD_CORRECT_RATIO = 0.600;
+export const BOT_CORRECT_PRECISION = 10000;
+export const BOT_ZOOM_RANGE = 2;
+export const MIN_SPAWN_CNT = 4;
+export const MAX_SPAWN_CNT = 30;
+export const MIN_CITY_CNT = 100;
+export const BASELINE_CITY_CNT = 200;
+export const MAX_CITY_CNT = 1000;
+export const MIN_SCORE = 3;
+export const MAX_SCORE = 20;
+export const SPAWN_COEFFICIENT = 0.125;
 export const MAP_OPT = ['United States'];
 export const CITY_RANGE_OPT = ['Top 100',
                                'Top 200',
@@ -113,27 +129,36 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Marvelous! 🤩`,
                                          `First class job 🙂`,
                                          `First class work 🙂`,
+                                         `Correct 🤓`,
                                          `Good for you! 😁`,
                                          `That’s great 👍`,
                                          `Good going 🙂`,
                                          `Good thinking 🤓`,
                                          `Right on! 🤠`,
                                          `Better than ever! 🥳`,
+                                         `Correct 🤩`,
                                          `Impressive! 🤩`,
                                          `You’re one of a kind 🍀🐞`,
+                                         `Yes 👍`,
                                          `Way to go! 😃`,
                                          `You’ve mastered it 😉`,
                                          `Amazing! 😄`,
                                          `Fantastic! 👩`,
                                          `You're learning a lot 🤓`,
+                                         `Yes! 🙂`,
                                          `You're so good 🤠`,
                                          `You did it that time! 👵🏾`,
                                          `You don't miss a thing 🧐`,
                                          `You got it right! 🥳`,
                                          `You hit the target 🎯`,
                                          `You're the best! 😊`,
+                                         `That's right! 😃`,
+                                         `That's right! 😊`,
                                          `Keep up the great work! 💪`,
                                          `Nothing can stop you 😃`,
+                                         `Right 🙂`,
+                                         `Right 🙂`,
+                                         `Correct 🙂`,
                                          `You make it look easy 😎`,
                                          `That’s really nice work! 😃`,
                                          `You’re doing beautifully ✨`,

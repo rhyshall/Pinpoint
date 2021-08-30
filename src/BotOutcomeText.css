@@ -1,0 +1,55 @@
+:root 
+{
+  --bo-orangegrey: #f1e6c8; 
+}
+
+html,
+body 
+{
+  height: 100%;
+}
+
+.popup 
+{
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 260px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.popup-content 
+{
+  background-color: var(--bo-orangegrey);
+  padding: 9px;
+  box-sizing: border-box;
+  border: 1px solid rgb(158, 129, 129);
+  border-radius: 10px 1px 10px 1px;
+}
+
+.popup-text 
+{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14.5px;
+  line-height: 30px;
+  font-weight: 100;
+  text-align: center;
+  word-spacing: 1px;
+}
+
+.wrong b
+{
+  color: crimson;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.right b
+{
+  color: seagreen;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}

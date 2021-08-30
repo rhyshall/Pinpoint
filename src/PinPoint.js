@@ -255,6 +255,7 @@ class PinPoint extends Component
                                   spawnCnt = {this.state.spawnCnt}
                                   cityCnt = {this.state.cityCnt}
                                   maxScore = {this.state.maxScore} 
+                                  difficulty = {this.state.difficulty}
                                   stopTimer = {this.stopTimer} 
                                   nextTurn = {this.nextTurn} 
                                   disableMap = {this.state.disableMap}
@@ -262,7 +263,10 @@ class PinPoint extends Component
                                   updateTargetCity = {this.updateTargetCity} 
                                   raiseScore = {this.raiseScore} 
                                   setEndTurn = {this.setEndTurn} 
-                                  setEndRound = {this.setEndRound} /> 
+                                  setEndRound = {this.setEndRound} 
+                                  activePlayer = {this.state.activePlayer}
+                                  playerOne = {this.state.playerOne} 
+                                  playerTwo = {this.state.playerTwo} /> 
                     </div>;
         }
       }
