@@ -225,8 +225,8 @@ class PinPoint extends Component
     
       if (this.state.screen === MAP_SCREEN)
       {
-        let gameOver = (this.state.playerOneScore == this.state.maxScore)
-                        || (this.state.playerTwoScore == this.state.maxScore);
+        let gameOver = (this.state.playerOneScore === this.state.maxScore)
+                        || (this.state.playerTwoScore === this.state.maxScore);
         
         if (gameOver)
         {
