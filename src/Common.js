@@ -7,7 +7,7 @@ function random(max)
 
 function genBotName()
 {
-  let randNbr = random(BOT_NAMES.length-1);
+  let randNbr = random(BOT_NAMES.length);
 
   return BOT_NAMES[randNbr];
 }

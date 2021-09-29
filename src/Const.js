@@ -6,6 +6,8 @@ export const DFLT_MAX_ZOOM = 6;
 export const DFLT_BOUNDS = [[14, -64], [65, -164]];
 export const CANADA_CITY_FILE = 'most_populous_canada_cities.json';
 export const US_CITY_FILE = 'most_populous_us_cities.json';
+export const BOT_CHOICE_RATIO_FILE = 'bot_correct_ratios.json';
+export const BOT_CHOICE_RATIO_CNT = 900;
 export const BOT_MODE = 1;
 export const LOCAL_MODE = 2;
 export const NETWORK_MODE = 3;
@@ -37,7 +39,7 @@ export const HARD_BOT_WAIT_MAX = 3.5; //max bot wait-time in hard mode (secs)
 export const EASY_CORRECT_RATIO = 0.300;
 export const MEDIUM_CORRECT_RATIO = 0.450;
 export const HARD_CORRECT_RATIO = 0.600;
-export const BOT_CORRECT_PRECISION = 10000;
+export const BOT_CORRECT_PRECISION = 1000000;
 export const BOT_ZOOM_RANGE = 2;
 export const MIN_SPAWN_CNT = 4;
 export const MAX_SPAWN_CNT = 30;
@@ -110,9 +112,11 @@ export const BOT_NAMES = ['Carrot',
                           'Rabbit',
                           'Goose',
                           'Dreamey',
-                          'Sunshine'];
+                          'Sunshine',
+                          'Savage'];
 export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Excellent! 🙂`,
+                                         `Excellent! 😛`,
                                          `Exceptional 🙂`,
                                          `Fabulous! 😃`,
                                          `Fantastic! 🌞`,
@@ -130,21 +134,28 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `First class job 🙂`,
                                          `First class work 🙂`,
                                          `Correct 🤓`,
+                                         `Correct 🤓`,
                                          `Good for you! 😁`,
                                          `That’s great 👍`,
                                          `Good going 🙂`,
                                          `Good thinking 🤓`,
                                          `Right on! 🤠`,
+                                         `Right on! 🤠`,
                                          `Better than ever! 🥳`,
+                                         `Correct 🤩`,
                                          `Correct 🤩`,
                                          `Impressive! 🤩`,
                                          `You’re one of a kind 🍀🐞`,
                                          `Yes 👍`,
+                                         `Yes 😃`,
+                                         `Yes 👍`,
                                          `Way to go! 😃`,
                                          `You’ve mastered it 😉`,
                                          `Amazing! 😄`,
+                                         `Amazing! 😄`,
                                          `Fantastic! 👩`,
                                          `You're learning a lot 🤓`,
+                                         `Yes! 🙂`,
                                          `Yes! 🙂`,
                                          `You're so good 🤠`,
                                          `You did it that time! 👵🏾`,
@@ -184,6 +195,7 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Phenominal! 🤟🤟🤟`,
                                          `You've got it made! 😎`,
                                          `Good job! 👏👏👏`,
+                                         `Good job! 👏👏👏`,
                                          `Correct! 🙂`,
                                          `You're the bees' knees! 🐝🐝🐝`,
                                          `Fabulous! 🙂`,
@@ -195,9 +207,12 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Mind Blown!! 🤯🤯🤯`,
                                          `You're a star ⭐`,
                                          `Right on target 🎯`,
+                                         `Right on target 🎯`,
                                          `Beautiful! ✨`,
                                          `You're getting the hang of this! 🙃`,
                                          `Groovy! 🤟`,
+                                         `Groovy! 🤟`,
+                                         `Nice job 🥂`,
                                          `Nice job 🥂`,
                                          `Right! 🥳`,
                                          `Correct 😃`,
@@ -205,6 +220,7 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Awesome! 😎`,
                                          `Correct! 🙂`,
                                          `Very Good 😃`,
+                                         `Good 😎`,
                                          `Good 🙂`,
                                          `Good 🙂`,
                                          `Great 😄`,

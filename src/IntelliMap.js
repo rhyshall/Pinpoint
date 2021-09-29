@@ -262,62 +262,13 @@ class IntelliMap extends Component
                                    longitudeChoice));
   }
 
-  calcCorrectRatio()
-  {
-    let correctRatio = this.state.botCorrectRatio;
-    let spawnCnt = this.state.spawnCities.length;
-    let cityCnt = this.props.cityCnt;
-
-    if (spawnCnt === 1)
-    {
-      correctRatio = 1;
-    }
-    else 
-    {
-      if (spawnCnt < MIN_SPAWN_CNT)
-      {
-        correctRatio = correctRatio + (1 - correctRatio) / spawnCnt;
-      }
-      else if (spawnCnt === MIN_SPAWN_CNT)
-      {
-        correctRatio = correctRatio;
-      }
-      else 
-      {
-        let spawnAboveBaseline = spawnCnt - MIN_SPAWN_CNT;
-        let spawnCntDivisor = spawnAboveBaseline * SPAWN_COEFFICIENT;
-
-        correctRatio = correctRatio / spawnCntDivisor;
-      }
-
-      if (cityCnt <= 100)
-      {
-        correctRatio = correctRatio / 0.85;
-      }
-      else if (cityCnt > 100
-               && cityCnt <= BASELINE_CITY_CNT)
-      {
-        correctRatio = correctRatio;
-      }
-      else 
-      {
-        let rangeAboveBaseline = this.props.cityCnt - BASELINE_CITY_CNT;
-        let cityRangeDivisor = 1 + (0.02 * (rangeAboveBaseline / 100));
-        
-        correctRatio = correctRatio / cityRangeDivisor;
-      }
-    }
-
-    return correctRatio;
-  }
-
   calcBotCorrect(correctRatio)
   {
     let botCorrect = false;
     let rand = random(BOT_CORRECT_PRECISION);
     let correctThreshold = correctRatio * BOT_CORRECT_PRECISION;
 
-    if (rand < correctThreshold)
+    if (rand <= correctThreshold)
     {
       botCorrect = true;
     }
@@ -338,7 +289,7 @@ class IntelliMap extends Component
       waitTime = random(this.state.botMaxWait * 1000)+500;
     }
 
-    let correctRatio = this.calcCorrectRatio();
+    let correctRatio = this.props.getBotChoiceRatio(this.state.spawnCities.length);
     let isCorrect = this.calcBotCorrect(correctRatio);
 
     setTimeout(() => 

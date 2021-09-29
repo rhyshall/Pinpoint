@@ -1,0 +1,5402 @@
+[
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 100,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 100,
+    "correctRatio": 0.590000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 100,
+    "correctRatio": 0.393333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 100,
+    "correctRatio": 0.295000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 100,
+    "correctRatio": 0.236000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 100,
+    "correctRatio": 0.196667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 100,
+    "correctRatio": 0.168571
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 100,
+    "correctRatio": 0.147500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 100,
+    "correctRatio": 0.131111
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 100,
+    "correctRatio": 0.118000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 100,
+    "correctRatio": 0.107273
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 100,
+    "correctRatio": 0.098333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 100,
+    "correctRatio": 0.090769
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 100,
+    "correctRatio": 0.084286
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 100,
+    "correctRatio": 0.078667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 100,
+    "correctRatio": 0.073750
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 100,
+    "correctRatio": 0.069412
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 100,
+    "correctRatio": 0.065556
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 100,
+    "correctRatio": 0.062105
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 100,
+    "correctRatio": 0.059000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 100,
+    "correctRatio": 0.056190
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 100,
+    "correctRatio": 0.053636
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 100,
+    "correctRatio": 0.051304
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 100,
+    "correctRatio": 0.049167
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 100,
+    "correctRatio": 0.047200
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 100,
+    "correctRatio": 0.045385
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 100,
+    "correctRatio": 0.043704
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 100,
+    "correctRatio": 0.042143
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 100,
+    "correctRatio": 0.040690
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 100,
+    "correctRatio": 0.039333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 200,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 200,
+    "correctRatio": 0.580000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 200,
+    "correctRatio": 0.386667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 200,
+    "correctRatio": 0.290000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 200,
+    "correctRatio": 0.232000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 200,
+    "correctRatio": 0.193333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 200,
+    "correctRatio": 0.165714
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 200,
+    "correctRatio": 0.145000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 200,
+    "correctRatio": 0.128889
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 200,
+    "correctRatio": 0.116000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 200,
+    "correctRatio": 0.105455
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 200,
+    "correctRatio": 0.096667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 200,
+    "correctRatio": 0.089231
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 200,
+    "correctRatio": 0.082857
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 200,
+    "correctRatio": 0.077333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 200,
+    "correctRatio": 0.072500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 200,
+    "correctRatio": 0.068235
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 200,
+    "correctRatio": 0.064444
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 200,
+    "correctRatio": 0.061053
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 200,
+    "correctRatio": 0.058000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 200,
+    "correctRatio": 0.055238
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 200,
+    "correctRatio": 0.052727
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 200,
+    "correctRatio": 0.050435
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 200,
+    "correctRatio": 0.048333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 200,
+    "correctRatio": 0.046400
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 200,
+    "correctRatio": 0.044615
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 200,
+    "correctRatio": 0.042963
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 200,
+    "correctRatio": 0.041429
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 200,
+    "correctRatio": 0.040000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 200,
+    "correctRatio": 0.386666
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 300,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 300,
+    "correctRatio": 0.575000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 300,
+    "correctRatio": 0.383333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 300,
+    "correctRatio": 0.287500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 300,
+    "correctRatio": 0.230000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 300,
+    "correctRatio": 0.191667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 300,
+    "correctRatio": 0.164286
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 300,
+    "correctRatio": 0.143750
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 300,
+    "correctRatio": 0.127778
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 300,
+    "correctRatio": 0.115000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 300,
+    "correctRatio": 0.104545
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 300,
+    "correctRatio": 0.095833
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 300,
+    "correctRatio": 0.088462
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 300,
+    "correctRatio": 0.082143
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 300,
+    "correctRatio": 0.076667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 300,
+    "correctRatio": 0.071875
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 300,
+    "correctRatio": 0.067647
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 300,
+    "correctRatio": 0.063889
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 300,
+    "correctRatio": 0.060526
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 300,
+    "correctRatio": 0.057500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 300,
+    "correctRatio": 0.054762
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 300,
+    "correctRatio": 0.052273
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 300,
+    "correctRatio": 0.050000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 300,
+    "correctRatio": 0.047917
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 300,
+    "correctRatio": 0.046000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 300,
+    "correctRatio": 0.044231
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 300,
+    "correctRatio": 0.042593
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 300,
+    "correctRatio": 0.041071
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 300,
+    "correctRatio": 0.039655
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 300,
+    "correctRatio": 0.038333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 400,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 400,
+    "correctRatio": 0.570000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 400,
+    "correctRatio": 0.380000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 400,
+    "correctRatio": 0.285000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 400,
+    "correctRatio": 0.228000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 400,
+    "correctRatio": 0.190000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 400,
+    "correctRatio": 0.162857
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 400,
+    "correctRatio": 0.142500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 400,
+    "correctRatio": 0.126667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 400,
+    "correctRatio": 0.114000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 400,
+    "correctRatio": 0.103636
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 400,
+    "correctRatio": 0.095000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 400,
+    "correctRatio": 0.087692
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 400,
+    "correctRatio": 0.081429
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 400,
+    "correctRatio": 0.076000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 400,
+    "correctRatio": 0.071250
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 400,
+    "correctRatio": 0.067059
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 400,
+    "correctRatio": 0.063333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 400,
+    "correctRatio": 0.060000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 400,
+    "correctRatio": 0.057000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 400,
+    "correctRatio": 0.054286
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 400,
+    "correctRatio": 0.051818
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 400,
+    "correctRatio": 0.049565
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 400,
+    "correctRatio": 0.047500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 400,
+    "correctRatio": 0.045600
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 400,
+    "correctRatio": 0.043846
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 400,
+    "correctRatio": 0.042222
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 400,
+    "correctRatio": 0.040714
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 400,
+    "correctRatio": 0.039310
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 400,
+    "correctRatio": 0.038000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 500,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 500,
+    "correctRatio": 0.565000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 500,
+    "correctRatio": 0.376667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 500,
+    "correctRatio": 0.282500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 500,
+    "correctRatio": 0.226000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 500,
+    "correctRatio": 0.188333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 500,
+    "correctRatio": 0.161429
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 500,
+    "correctRatio": 0.141250
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 500,
+    "correctRatio": 0.125556
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 500,
+    "correctRatio": 0.113000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 500,
+    "correctRatio": 0.102727
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 500,
+    "correctRatio": 0.094167
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 500,
+    "correctRatio": 0.086923
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 500,
+    "correctRatio": 0.080714
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 500,
+    "correctRatio": 0.075333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 500,
+    "correctRatio": 0.070625
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 500,
+    "correctRatio": 0.066470
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 500,
+    "correctRatio": 0.062778
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 500,
+    "correctRatio": 0.059474
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 500,
+    "correctRatio": 0.056500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 500,
+    "correctRatio": 0.053810
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 500,
+    "correctRatio": 0.051364
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 500,
+    "correctRatio": 0.049130
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 500,
+    "correctRatio": 0.047083
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 500,
+    "correctRatio": 0.045200
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 500,
+    "correctRatio": 0.043462
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 500,
+    "correctRatio": 0.041852
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 500,
+    "correctRatio": 0.040357
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 500,
+    "correctRatio": 0.038966
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 500,
+    "correctRatio": 0.037667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 600,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 600,
+    "correctRatio": 0.560000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 600,
+    "correctRatio": 0.373333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 600,
+    "correctRatio": 0.280000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 600,
+    "correctRatio": 0.224000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 600,
+    "correctRatio": 0.186667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 600,
+    "correctRatio": 0.160000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 600,
+    "correctRatio": 0.140000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 600,
+    "correctRatio": 0.124444
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 600,
+    "correctRatio": 0.112000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 600,
+    "correctRatio": 0.101818
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 600,
+    "correctRatio": 0.093333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 600,
+    "correctRatio": 0.086154
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 600,
+    "correctRatio": 0.080000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 600,
+    "correctRatio": 0.074667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 600,
+    "correctRatio": 0.070000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 600,
+    "correctRatio": 0.065882
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 600,
+    "correctRatio": 0.062222
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 600,
+    "correctRatio": 0.056000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 600,
+    "correctRatio": 0.053333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 600,
+    "correctRatio": 0.046667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 600,
+    "correctRatio": 0.050910
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 600,
+    "correctRatio": 0.048696
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 600,
+    "correctRatio": 0.046667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 600,
+    "correctRatio": 0.044800
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 600,
+    "correctRatio": 0.037333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 700,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 700,
+    "correctRatio": 0.555000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 700,
+    "correctRatio": 0.370000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 700,
+    "correctRatio": 0.277500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 700,
+    "correctRatio": 0.222000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 700,
+    "correctRatio": 0.185000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 700,
+    "correctRatio": 0.157143
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 700,
+    "correctRatio": 0.138750
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 700,
+    "correctRatio": 0.122222
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 700,
+    "correctRatio": 0.110000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 700,
+    "correctRatio": 0.100000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 700,
+    "correctRatio": 0.091667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 700,
+    "correctRatio": 0.084615
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 700,
+    "correctRatio": 0.078571
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 700,
+    "correctRatio": 0.073333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 700,
+    "correctRatio": 0.068750
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 700,
+    "correctRatio": 0.064706
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 700,
+    "correctRatio": 0.061111
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 700,
+    "correctRatio": 0.057895
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 700,
+    "correctRatio": 0.055000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 700,
+    "correctRatio": 0.052381
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 700,
+    "correctRatio": 0.050000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 700,
+    "correctRatio": 0.047826
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 700,
+    "correctRatio": 0.045833
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 700,
+    "correctRatio": 0.044000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 700,
+    "correctRatio": 0.042308
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 700,
+    "correctRatio": 0.040741
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 700,
+    "correctRatio": 0.039286
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 700,
+    "correctRatio": 0.037931
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 700,
+    "correctRatio": 0.036666
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 800,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 800,
+    "correctRatio": 0.550
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 800,
+    "correctRatio": 0.366667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 800,
+    "correctRatio": 0.275000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 800,
+    "correctRatio": 0.220000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 800,
+    "correctRatio": 0.183333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 800,
+    "correctRatio": 0.157143
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 800,
+    "correctRatio": 0.137500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 800,
+    "correctRatio": 0.122222
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 800,
+    "correctRatio": 0.110000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 800,
+    "correctRatio": 0.100000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 800,
+    "correctRatio": 0.091667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 800,
+    "correctRatio": 0.084615
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 800,
+    "correctRatio": 0.078571
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 800,
+    "correctRatio": 0.073333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 800,
+    "correctRatio": 0.068750
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 800,
+    "correctRatio": 0.064706
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 800,
+    "correctRatio": 0.061111
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 800,
+    "correctRatio": 0.057895
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 800,
+    "correctRatio": 0.055000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 800,
+    "correctRatio": 0.052381
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 800,
+    "correctRatio": 0.050000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 800,
+    "correctRatio": 0.047826
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 800,
+    "correctRatio": 0.045833
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 800,
+    "correctRatio": 0.044000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 800,
+    "correctRatio": 0.042308
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 800,
+    "correctRatio": 0.040741
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 800,
+    "correctRatio": 0.039286
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 800,
+    "correctRatio": 0.037931
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 800,
+    "correctRatio": 0.036667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 900,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 900,
+    "correctRatio": 0.545000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 900,
+    "correctRatio": 0.363333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 900,
+    "correctRatio": 0.272500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 900,
+    "correctRatio": 0.218000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 900,
+    "correctRatio": 0.181667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 900,
+    "correctRatio": 0.155714
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 900,
+    "correctRatio": 0.136250
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 900,
+    "correctRatio": 0.121111
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 900,
+    "correctRatio": 0.109000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 900,
+    "correctRatio": 0.099091
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 900,
+    "correctRatio": 0.090833
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 900,
+    "correctRatio": 0.083846
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 900,
+    "correctRatio": 0.077857
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 900,
+    "correctRatio": 0.072667
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 900,
+    "correctRatio": 0.068125
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 900,
+    "correctRatio": 0.064118
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 900,
+    "correctRatio": 0.060556
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 900,
+    "correctRatio": 0.057368
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 900,
+    "correctRatio": 0.054500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 900,
+    "correctRatio": 0.051905
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 900,
+    "correctRatio": 0.049545
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 900,
+    "correctRatio": 0.047391
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 900,
+    "correctRatio": 0.045417
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 900,
+    "correctRatio": 0.043600
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 900,
+    "correctRatio": 0.041923
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 900,
+    "correctRatio": 0.040370
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 900,
+    "correctRatio": 0.038929
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 900,
+    "correctRatio": 0.037586
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 900,
+    "correctRatio": 0.036333
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 1,
+    "cityRange": 1000,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 2,
+    "cityRange": 1000,
+    "correctRatio": 0.540000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 3,
+    "cityRange": 1000,
+    "correctRatio": 0.360000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 4,
+    "cityRange": 1000,
+    "correctRatio": 0.270000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 5,
+    "cityRange": 1000,
+    "correctRatio": 0.216000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 6,
+    "cityRange": 1000,
+    "correctRatio": 0.180000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 7,
+    "cityRange": 1000,
+    "correctRatio": 0.154286
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 8,
+    "cityRange": 1000,
+    "correctRatio": 0.135000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 9,
+    "cityRange": 1000,
+    "correctRatio": 0.120000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 10,
+    "cityRange": 1000,
+    "correctRatio": 0.108000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 11,
+    "cityRange": 1000,
+    "correctRatio": 0.098182
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 12,
+    "cityRange": 1000,
+    "correctRatio": 0.090000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 13,
+    "cityRange": 1000,
+    "correctRatio": 0.083077
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 14,
+    "cityRange": 1000,
+    "correctRatio": 0.077143
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 15,
+    "cityRange": 1000,
+    "correctRatio": 0.072000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 16,
+    "cityRange": 1000,
+    "correctRatio": 0.067500
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 17,
+    "cityRange": 1000,
+    "correctRatio": 0.063529
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 18,
+    "cityRange": 1000,
+    "correctRatio": 0.060000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 19,
+    "cityRange": 1000,
+    "correctRatio": 0.056842
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 20,
+    "cityRange": 1000,
+    "correctRatio": 0.054000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 21,
+    "cityRange": 1000,
+    "correctRatio": 0.051429
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 22,
+    "cityRange": 1000,
+    "correctRatio": 0.049091
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 23,
+    "cityRange": 1000,
+    "correctRatio": 0.046957
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 24,
+    "cityRange": 1000,
+    "correctRatio": 0.045000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 25,
+    "cityRange": 1000,
+    "correctRatio": 0.043200
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 26,
+    "cityRange": 1000,
+    "correctRatio": 0.041538
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 27,
+    "cityRange": 1000,
+    "correctRatio": 0.040000
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 28,
+    "cityRange": 1000,
+    "correctRatio": 0.038571
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 29,
+    "cityRange": 1000,
+    "correctRatio": 0.037241
+  },
+  {
+    "difficulty": 1,
+    "spawnCnt": 30,
+    "cityRange": 1000,
+    "correctRatio": 0.036000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 100,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 100,
+    "correctRatio": 0.740000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 100,
+    "correctRatio": 0.569231
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 100,
+    "correctRatio": 0.462500
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 100,
+    "correctRatio": 0.402174
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 100,
+    "correctRatio": 0.3355769
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 100,
+    "correctRatio": 0.318966
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 100,
+    "correctRatio": 0.289063
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 100,
+    "correctRatio": 0.268895
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 100,
+    "correctRatio": 0.251359
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 100,
+    "correctRatio": 0.235969
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 100,
+    "correctRatio": 0.222356
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 100,
+    "correctRatio": 0.210227
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 100,
+    "correctRatio": 0.199353
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 100,
+    "correctRatio": 0.189549
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 100,
+    "correctRatio": 0.180664
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 100,
+    "correctRatio": 0.174134
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 100,
+    "correctRatio": 0.168060
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 100,
+    "correctRatio": 0.162395
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 100,
+    "correctRatio": 0.157099
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 100,
+    "correctRatio": 0.152331
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 100,
+    "correctRatio": 0.147481
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 100,
+    "correctRatio": 0.142705
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 100,
+    "correctRatio": 0.138972
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 100,
+    "correctRatio": 0.135076
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 100,
+    "correctRatio": 0.131392
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 100,
+    "correctRatio": 0.127588
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 100,
+    "correctRatio": 0.124596
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 100,
+    "correctRatio": 0.121528
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 100,
+    "correctRatio": 0.118468
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 200,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 200,
+    "correctRatio": 0.730000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 200,
+    "correctRatio": 0.561538
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 200,
+    "correctRatio": 0.456250
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 200,
+    "correctRatio": 0.396739
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 200,
+    "correctRatio": 0.350962
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 200,
+    "correctRatio": 0.314655
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 200,
+    "correctRatio": 0.285156
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 200,
+    "correctRatio": 0.265262
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 200,
+    "correctRatio": 0.247962
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 200,
+    "correctRatio": 0.232781
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 200,
+    "correctRatio": 0.219351
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 200,
+    "correctRatio": 0.207386
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 200,
+    "correctRatio": 0.196659
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 200,
+    "correctRatio": 0.186988
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 200,
+    "correctRatio": 0.178223
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 200,
+    "correctRatio": 0.171781
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 200,
+    "correctRatio": 0.165789
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 200,
+    "correctRatio": 0.160200
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 200,
+    "correctRatio": 0.154976
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 200,
+    "correctRatio": 0.150082
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 200,
+    "correctRatio": 0.145488
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 200,
+    "correctRatio": 0.141166
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 200,
+    "correctRatio": 0.137094
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 200,
+    "correctRatio": 0.132139
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 200,
+    "correctRatio": 0.127530
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 200,
+    "correctRatio": 0.123231
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 200,
+    "correctRatio": 0.119212
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 200,
+    "correctRatio": 0.115448
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 200,
+    "correctRatio": 0.111914
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 300,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 300,
+    "correctRatio": 0.725000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 300,
+    "correctRatio": 0.557692
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 300,
+    "correctRatio": 0.453125
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 300,
+    "correctRatio": 0.394022
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 300,
+    "correctRatio": 0.348558
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 300,
+    "correctRatio": 0.312500
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 300,
+    "correctRatio": 0.283203
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 300,
+    "correctRatio": 0.263445
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 300,
+    "correctRatio": 0.246264
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 300,
+    "correctRatio": 0.231186
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 300,
+    "correctRatio": 0.217849
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 300,
+    "correctRatio": 0.205966
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 300,
+    "correctRatio": 0.195313
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 300,
+    "correctRatio": 0.185707
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 300,
+    "correctRatio": 0.177002
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 300,
+    "correctRatio": 0.170604
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 300,
+    "correctRatio": 0.164653
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 300,
+    "correctRatio": 0.159103
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 300,
+    "correctRatio": 0.153914
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 300,
+    "correctRatio": 0.149054
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 300,
+    "correctRatio": 0.144491
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 300,
+    "correctRatio": 0.140200
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 300,
+    "correctRatio": 0.108924
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 300,
+    "correctRatio": 0.100210
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 400,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 400,
+    "correctRatio": 0.720
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 400,
+    "correctRatio": 0.450000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 400,
+    "correctRatio": 0.281250
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 400,
+    "correctRatio": 0.175781
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 400,
+    "correctRatio": 0.135216
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 400,
+    "correctRatio": 0.124399
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 500,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 500,
+    "correctRatio": 0.715000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 500,
+    "correctRatio": 0.446875
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 500,
+    "correctRatio": 0.279297
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 500,
+    "correctRatio": 0.174561
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 500,
+    "correctRatio": 0.134278
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 500,
+    "correctRatio": 0.123535
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 600,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 600,
+    "correctRatio": 0.710000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 600,
+    "correctRatio": 0.443750
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 600,
+    "correctRatio": 0.277344
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 600,
+    "correctRatio": 0.173340
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 600,
+    "correctRatio": 0.133339
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 600,
+    "correctRatio": 0.122671
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 700,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 700,
+    "correctRatio": 0.705000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 700,
+    "correctRatio": 0.440625
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 700,
+    "correctRatio": 0.275391
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 700,
+    "correctRatio": 0.172119
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 700,
+    "correctRatio": 0.132400
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 700,
+    "correctRatio": 0.121807
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 800,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 800,
+    "correctRatio": 0.700000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 800,
+    "correctRatio": 0.437500
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 800,
+    "correctRatio": 0.273438
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 800,
+    "correctRatio": 0.170899
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 800,
+    "correctRatio": 0.131460
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 800,
+    "correctRatio": 0.120944
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 900,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 900,
+    "correctRatio": 0.695000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 900,
+    "correctRatio": 0.434375
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 900,
+    "correctRatio": 0.271484
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 900,
+    "correctRatio": 0.169678
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 900,
+    "correctRatio": 0.130521
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 900,
+    "correctRatio": 0.120080
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 1,
+    "cityRange": 1000,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 2,
+    "cityRange": 1000,
+    "correctRatio": 0.690000
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 3,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 4,
+    "cityRange": 1000,
+    "correctRatio": 0.431250
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 5,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 6,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 7,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 8,
+    "cityRange": 1000,
+    "correctRatio": 0.269531
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 9,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 10,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 11,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 12,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 13,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 14,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 15,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 16,
+    "cityRange": 1000,
+    "correctRatio": 0.168457
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 17,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 18,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 19,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 20,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 21,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 22,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 23,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 24,
+    "cityRange": 1000,
+    "correctRatio": 0.129582
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 25,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 26,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 27,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 28,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 29,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 2,
+    "spawnCnt": 30,
+    "cityRange": 1000,
+    "correctRatio": 0.119216
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 100,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 100,
+    "correctRatio": 0.860000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 100,
+    "correctRatio": 0.688000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 100,
+    "correctRatio": 0.550400
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 100,
+    "correctRatio": 0.440320
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 100,
+    "correctRatio": 0.391396
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 100,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 100,
+    "correctRatio": 0.371826
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 200,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 200,
+    "correctRatio": 0.850000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 200,
+    "correctRatio": 0.680000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 200,
+    "correctRatio": 0.544000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 200,
+    "correctRatio": 0.435200
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 200,
+    "correctRatio": 0.386844
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 200,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 200,
+    "correctRatio": 0.367502
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 300,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 300,
+    "correctRatio": 0.845000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 300,
+    "correctRatio": 0.676000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 300,
+    "correctRatio": 0.540800
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 300,
+    "correctRatio": 0.432640
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 300,
+    "correctRatio": 0.384569
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 300,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 300,
+    "correctRatio": 0.365340
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 400,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 400,
+    "correctRatio": 0.840000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 400,
+    "correctRatio": 0.672000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 400,
+    "correctRatio": 0.537600
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 400,
+    "correctRatio": 0.430080
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 400,
+    "correctRatio": 0.382293
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 400,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 400,
+    "correctRatio": 0.363179
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 500,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 500,
+    "correctRatio": 0.835000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 500,
+    "correctRatio": 0.668000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 500,
+    "correctRatio": 0.534400
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 500,
+    "correctRatio": 0.427520
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 500,
+    "correctRatio": 0.380018
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 500,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 500,
+    "correctRatio": 0.361017
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 600,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 600,
+    "correctRatio": 0.830000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 600,
+    "correctRatio": 0.664000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 600,
+    "correctRatio": 0.531200
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 600,
+    "correctRatio": 0.424960
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 600,
+    "correctRatio": 0.377742
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 600,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 600,
+    "correctRatio": 0.358856
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 700,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 700,
+    "correctRatio": 0.825000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 700,
+    "correctRatio": 0.660000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 700,
+    "correctRatio": 0.528000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 700,
+    "correctRatio": 0.422400
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 700,
+    "correctRatio": 0.375467
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 700,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 700,
+    "correctRatio": 0.356693
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 800,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 800,
+    "correctRatio": 0.820000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 800,
+    "correctRatio": 0.656000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 800,
+    "correctRatio": 0.524800
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 800,
+    "correctRatio": 0.419840
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 800,
+    "correctRatio": 0.373191
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 800,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 800,
+    "correctRatio": 0.354532
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 900,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 900,
+    "correctRatio": 0.815000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 900,
+    "correctRatio": 0.652000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 900,
+    "correctRatio": 0.521600
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 900,
+    "correctRatio": 0.417280
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 900,
+    "correctRatio": 0.370916
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 900,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 900,
+    "correctRatio": 0.352370
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 1,
+    "cityRange": 1000,
+    "correctRatio": 1
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 2,
+    "cityRange": 1000,
+    "correctRatio": 0.810000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 3,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 4,
+    "cityRange": 1000,
+    "correctRatio": 0.648000
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 5,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 6,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 7,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 8,
+    "cityRange": 1000,
+    "correctRatio": 0.518400
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 9,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 10,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 11,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 12,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 13,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 14,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 15,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 16,
+    "cityRange": 1000,
+    "correctRatio": 0.414720
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 17,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 18,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 19,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 20,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 21,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 22,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 23,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 24,
+    "cityRange": 1000,
+    "correctRatio": 0.368640
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 25,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 26,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 27,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 28,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 29,
+    "cityRange": 1000,
+    "correctRatio": 0
+  },
+  {
+    "difficulty": 3,
+    "spawnCnt": 30,
+    "cityRange": 1000,
+    "correctRatio": 0.350208
+  }  
+]

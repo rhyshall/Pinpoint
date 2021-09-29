@@ -3,20 +3,23 @@ import IntelliBase from './IntelliBase';
 import IntelliMap from './IntelliMap';
 import WinAlert from './WinAlert';
 import Options from './Options';
+import axios from 'axios';
+import {BOT_CHOICE_RATIO_FILE, BOT_CHOICE_RATIO_CNT} from './Const';
 import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from './Const';
 import {CANADA_MAP, US_MAP} from './Const';
 import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './Const';
 import {CREATE_GAME, FIND_GAME} from './Const';
 import {OPTIONS_SCREEN, MAP_SCREEN} from './Const';
 import {PLAYER_ONE_IMG, PLAYER_TWO_IMG} from './Const';
-import { genBotName } from './Common';
+import {genBotName} from './Common';
 
 class PinPoint extends Component
 {
   constructor(props)
   {
     super(props);
-    this.state = {mode: LOCAL_MODE,
+    this.state = {botChoiceRatios: Array.from({length: BOT_CHOICE_RATIO_CNT}),
+                  mode: LOCAL_MODE,
                   mapType: US_MAP,
                   spawnCnt: 20,
                   cityCnt: 1000,
@@ -49,6 +52,35 @@ class PinPoint extends Component
     this.restart = this.restart.bind(this);
     this.startBotGame = this.startBotGame.bind(this);
     this.startLocalGame = this.startLocalGame.bind(this);
+    this.getBotChoiceRatio = this.getBotChoiceRatio.bind(this);
+  }
+
+  async loadBotChoiceRatios()
+  {
+    let botRatioFile = BOT_CHOICE_RATIO_FILE;
+    let res = null;
+    let i = 0;
+    let ratioObj = {}; /* obj: difficulty lvl, spawn cnt, city range, bot-correct ratio */
+    let ratioObjList = [];
+    let ratioCnt = BOT_CHOICE_RATIO_CNT;
+   
+    try 
+    {
+      res = await axios.get(botRatioFile);
+    }
+    catch(err)
+    {
+      alert(`We are currently experiencing an issue 😭😭😭 ${'\n\n'}` + 
+            'Please try again later');
+    }
+    
+    for(i = 0; i < ratioCnt; i++)
+    {
+      ratioObj = res.data[i];
+      ratioObjList.push(ratioObj);
+    }
+
+    this.setState({botChoiceRatios: ratioObjList});
   }
 
   startBotGame(modeOpt,
@@ -59,17 +91,32 @@ class PinPoint extends Component
                spawnCntOpt,
                maxScoreOpt)
   {
-    this.setState({screen: MAP_SCREEN,
-                   mode: modeOpt,
-                   mapType: mapTypeOpt,
-                   playerOne: playerOneOpt,
-                   playerTwo: genBotName(),
-                   difficulty: difficultyOpt,
-                   cityCnt: cityCntOpt,
-                   spawnCnt: spawnCntOpt,
-                   maxScore: maxScoreOpt,
-                   activePlayer: playerOneOpt,
-                   activeImg: PLAYER_ONE_IMG});
+    if (!difficultyOpt)
+    {
+      alert('You must select a difficulty level');
+    }
+    else 
+    {
+      let botName = genBotName();
+      
+      //choose random bot name until not same as player name
+      while (playerOneOpt.toLowerCase() === botName.toLowerCase())
+      {
+        botName = genBotName();
+      }
+  
+      this.setState({screen: MAP_SCREEN,
+                     mode: modeOpt,
+                     mapType: mapTypeOpt,
+                     playerOne: playerOneOpt,
+                     playerTwo: botName,
+                     difficulty: difficultyOpt,
+                     cityCnt: cityCntOpt,
+                     spawnCnt: spawnCntOpt,
+                     maxScore: Number(maxScoreOpt),
+                     activePlayer: playerOneOpt,
+                     activeImg: PLAYER_ONE_IMG});
+    }
   }
 
   startLocalGame(modeOpt,
@@ -80,16 +127,31 @@ class PinPoint extends Component
                  spawnCntOpt,
                  maxScoreOpt)
   {
-    this.setState({screen: MAP_SCREEN,
-                   mode: modeOpt,
-                   mapType: mapTypeOpt,
-                   playerOne: playerOneOpt,
-                   playerTwo: playerTwoOpt,
-                   cityCnt: cityCntOpt,
-                   spawnCnt: spawnCntOpt,
-                   maxScore: maxScoreOpt,
-                   activePlayer: playerOneOpt,
-                   activeImg: PLAYER_ONE_IMG});
+    if (playerOneOpt.toLowerCase() === playerTwoOpt.toLowerCase())
+    {
+      alert('Players cannot have the same name');
+    }
+    else 
+    {
+      this.setState({screen: MAP_SCREEN,
+                     mode: modeOpt,
+                     mapType: mapTypeOpt,
+                     playerOne: playerOneOpt,
+                     playerTwo: playerTwoOpt,
+                     cityCnt: cityCntOpt,
+                     spawnCnt: spawnCntOpt,
+                     maxScore: Number(maxScoreOpt),
+                     activePlayer: playerOneOpt,
+                     activeImg: PLAYER_ONE_IMG});
+    }
+  }
+
+  getBotChoiceRatio(currSpawnCnt)
+  {
+    return this.state.botChoiceRatios.filter(b => b.difficulty === this.state.difficulty 
+                                                  && b.spawnCnt === currSpawnCnt
+                                                  && b.cityRange === this.state.cityCnt)
+                                     .map(b => b.correctRatio);  
   }
 
   stopTimer()
@@ -208,6 +270,14 @@ class PinPoint extends Component
                    screen: OPTIONS_SCREEN});
   }
 
+  componentDidMount()
+  {
+    if (this.state.botChoiceRatios.some(r => !r))
+    {
+      this.loadBotChoiceRatios();
+    }
+  }
+
   render()
   {
     let content = null;
@@ -227,7 +297,7 @@ class PinPoint extends Component
       {
         let gameOver = (this.state.playerOneScore === this.state.maxScore)
                         || (this.state.playerTwoScore === this.state.maxScore);
-        
+
         if (gameOver)
         {
           content = <WinAlert winner = {leadPlayer} 
@@ -266,7 +336,8 @@ class PinPoint extends Component
                                   setEndRound = {this.setEndRound} 
                                   activePlayer = {this.state.activePlayer}
                                   playerOne = {this.state.playerOne} 
-                                  playerTwo = {this.state.playerTwo} /> 
+                                  playerTwo = {this.state.playerTwo} 
+                                  getBotChoiceRatio = {this.getBotChoiceRatio}/> 
                     </div>;
         }
       }
