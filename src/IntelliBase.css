@@ -7,11 +7,18 @@
   --ib-black: #000000; 
 }
 
+body,
+html
+{
+  margin: 0;
+  padding: 0;
+}
+
 .header-container
 {
   display: flex;
   height: 60px;
-  margin-top: 60px;
+  padding-top: 60px;
   flex-direction: row;
   justify-content: left;
   align-items: flex-end;

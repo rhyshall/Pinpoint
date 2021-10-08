@@ -12,7 +12,7 @@ class BotOutcomeText extends Component
     let hitText = <div className="popup-text right">
                     {this.props.name} chose <b>right</b>
                   </div>;
-
+    
     return(<div className="popup"
                 style={this.props.visible ? 
                        {"visibility": "visible"} :

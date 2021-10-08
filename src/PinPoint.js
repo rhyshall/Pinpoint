@@ -150,7 +150,7 @@ class PinPoint extends Component
   {
     return this.state.botChoiceRatios.filter(b => b.difficulty === this.state.difficulty 
                                                   && b.spawnCnt === currSpawnCnt
-                                                  && b.cityRange === this.state.cityCnt)
+                                                  && b.cityRange === Number(this.state.cityCnt))
                                      .map(b => b.correctRatio);  
   }
 

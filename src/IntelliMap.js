@@ -10,7 +10,6 @@ import {TURN_WAIT_TIME, ROUND_WAIT_TIME, CORRECT_ANSWER_RESPONSES} from './Const
 import {EASY_BOT_WAIT_MAX, MEDIUM_BOT_WAIT_MAX, HARD_BOT_WAIT_MAX} from './Const';
 import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './Const';
 import {EASY_CORRECT_RATIO, MEDIUM_CORRECT_RATIO, HARD_CORRECT_RATIO} from './Const';
-import {MIN_SPAWN_CNT, SPAWN_COEFFICIENT, BASELINE_CITY_CNT} from './Const';
 import {BOT_CORRECT_PRECISION, BOT_ZOOM_RANGE} from './Const';
 import {random} from './Common';
 import BotOutcomeText from './BotOutcomeText';
@@ -26,7 +25,6 @@ class IntelliMap extends Component
                   targetCity: null,
                   spawnCoords: Array.from({length: this.props.spawnCnt}),
                   botMaxWait: 0,
-                  botCorrectRatio: 0,
                   zoom: DFLT_ZOOM,
                   latitude: DFLT_LAT,
                   longitude: DFLT_LNG,
@@ -291,7 +289,7 @@ class IntelliMap extends Component
 
     let correctRatio = this.props.getBotChoiceRatio(this.state.spawnCities.length);
     let isCorrect = this.calcBotCorrect(correctRatio);
-
+    
     setTimeout(() => 
     {
       if (isCorrect) 
@@ -357,18 +355,15 @@ class IntelliMap extends Component
   {
     if (this.props.difficulty === EASY_MODE)
     {
-      this.setState({botMaxWait: EASY_BOT_WAIT_MAX,
-                     botCorrectRatio: EASY_CORRECT_RATIO});
+      this.setState({botMaxWait: EASY_BOT_WAIT_MAX});
     }
     else if (this.props.difficulty === MEDIUM_MODE) 
     {
-      this.setState({botMaxWait: MEDIUM_BOT_WAIT_MAX,
-                     botCorrectRatio: MEDIUM_CORRECT_RATIO});
+      this.setState({botMaxWait: MEDIUM_BOT_WAIT_MAX});
     }
     else 
     {
-      this.setState({botMaxWait: HARD_BOT_WAIT_MAX,
-                     botCorrectRatio: HARD_CORRECT_RATIO});
+      this.setState({botMaxWait: HARD_BOT_WAIT_MAX});
     }
   }
 
