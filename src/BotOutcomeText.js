@@ -5,11 +5,11 @@ class BotOutcomeText extends Component
 {
   render()
   {
-    let missText = <div className="--bo-popup-text wrong">
+    let missText = <div className="--bo-popup-text --bo-wrong">
                      {this.props.name} chose <b>wrong</b>
                    </div>;
 
-    let hitText = <div className="--bo-popup-text right">
+    let hitText = <div className="--bo-popup-text --bo-right">
                     {this.props.name} chose <b>right</b>
                   </div>;
     
