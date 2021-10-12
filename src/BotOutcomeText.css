@@ -9,7 +9,7 @@ body
   height: 100%;
 }
 
-.popup 
+.--bo-popup 
 {
   position: absolute;
   top: 38%;
@@ -20,7 +20,7 @@ body
   z-index: 999;
 }
 
-.popup-content 
+.--bo-popup-content 
 {
   background-color: var(--bo-orangegrey);
   padding: 9px;
@@ -29,7 +29,7 @@ body
   border-radius: 10px 1px 10px 1px;
 }
 
-.popup-text 
+.--bo-popup-text 
 {
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -40,14 +40,14 @@ body
   word-spacing: 1px;
 }
 
-.wrong b
+.--bo-wrong b
 {
   color: crimson;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
 
-.right b
+.--bo-right b
 {
   color: seagreen;
   font-weight: bold;

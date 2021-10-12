@@ -306,7 +306,7 @@ class PinPoint extends Component
         }
         else 
         {
-          content = <div>
+          content = <div className="--pin-game-container">
                       <IntelliBase activePlayer = {this.state.activePlayer}
                                    activePlayerImg = {this.state.activePlayerImg}
                                    leadPlayer = {leadPlayer}

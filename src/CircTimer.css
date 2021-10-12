@@ -1,4 +1,4 @@
-.countdown-item 
+.--circ-countdown-item 
 {
 	font-size: 17px;
 	display: flex;
@@ -13,13 +13,13 @@
 	height: 46px;
 }
 
-.countdown-item span 
+.--circ-countdown-item span 
 {
 	font-size: 9px;
 	text-transform: uppercase;
 }
 
-.countdown-svg 
+.--circ-countdown-svg 
 {
 	position: absolute;
 	top: 0;

@@ -11,100 +11,99 @@ import MIAMI_BEACH from './img/miami_beach.jpg';
 import MUSIC_ROW from './img/music_row.jpg';
 import SPACE_NEEDLE from './img/space_needle.jpg';
 import STATUE_OF_LIBERTY from './img/statue_of_liberty.jpg';
-import VIRGINIA_BEACH from './img/virginia_beach.jpg';
 import WILLIS_TOWER from './img/willis_tower.jpg';
 
 class Backdrop extends Component
 {
   render()
   {
-    return(<div class="container">
-             <ul class="city-showcase">
+    return(<div className="--back-container">
+             <ul className="--back-city-showcase">
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={STATUE_OF_LIBERTY} 
-                        alt=""/>
+                        alt="Statue of Liberty (New York)"/>
                  </figure>
                </li>
 
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={BOSTON_SKYLINE}
-                        alt=""/>
+                        alt="Boston Skyline"/>
                  </figure>
                </li>
          
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={LINCOLN_MEMORIAL}
-                        alt=""/>
+                        alt="Lincoln Memorial (Washington)"/>
                  </figure>
                </li>
          
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={WILLIS_TOWER}
-                        alt=""/>
+                        alt="Willis Tower (Chicago)"/>
                  </figure>
                </li>
              </ul>
             
-             <ul class="city-showcase">
+             <ul className="--back-city-showcase">
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={MIAMI_BEACH}
-                        alt=""/>
+                        alt="Miami Beach"/>
                  </figure>
                </li>
        
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={BELLAGIO}
-                        alt=""/>
+                        alt="Bellagio (Las Vegas)"/>
                  </figure>
                </li>
        
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={BIG_TEX}
-                        alt=""/>
+                        alt="Big Tex (Dallas)"/>
                  </figure>
                </li>
        
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={MUSIC_ROW}
-                        alt=""/>
+                        alt="Music Row (Nashville)"/>
                  </figure>
                </li>
              </ul>
 
-             <ul class="city-showcase">
+             <ul className="--back-city-showcase">
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={HOLLYWOOD_HILLS}
-                        alt=""/>
+                        alt="Hollywood Hills (Los Angeles)"/>
                  </figure>
                </li>
        
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={GOLDEN_GATE_BRIDGE}
-                        alt=""/>
+                        alt="Golden Gate Bridge (San Francisco)"/>
                  </figure>
                </li>
        
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={GRAND_CANYON}
-                        alt=""/>
+                        alt="Grand Canyon (Flagstaff)"/>
                  </figure>
                </li>
        
                <li>
-                 <figure class="city-photo">
+                 <figure className="--back-city-photo">
                    <img src={SPACE_NEEDLE}
-                        alt=""/>
+                        alt="Space Needle (Seattle)"/>
                  </figure>
                </li>
              </ul>

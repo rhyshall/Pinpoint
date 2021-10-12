@@ -340,7 +340,7 @@ class IntelliMap extends Component
                            riseOffset={250}
                            onClick={enabled ? 
                                     this.handleMarkerClick : null}>
-                           <Popup className="pop-up"
+                           <Popup className="--im-pop-up"
                                   closeButton={false}>
                              {CORRECT_ANSWER_RESPONSES[random(CORRECT_ANSWER_RESPONSES.length-1)]}
                            </Popup>                          
@@ -457,22 +457,24 @@ class IntelliMap extends Component
 
   render()
   {
-    return(<div><Map className="map"
-                center={[this.state.latitude, 
-                         this.state.longitude]}
-                zoom={this.state.zoom}
-                minZoom={DFLT_MIN_ZOOM}
-                maxZoom={DFLT_MAX_ZOOM}
-                maxBounds={DFLT_BOUNDS}
-                onPopUpOpen={this.hidePopUp}
-                style= {this.state.isBotSelect ? {"cursor": "none"} : {"cursor": "default"}}>
-             <TileLayer attribution='&copy; <a href="https://www.openstreetmap. orgcopyright">OpenStreetMap</ a> contributors'  
+    return(<div>
+             <Map className="--im-map"
+                  center={[this.state.latitude, 
+                           this.state.longitude]}
+                  zoom={this.state.zoom}
+                  minZoom={DFLT_MIN_ZOOM}
+                  maxZoom={DFLT_MAX_ZOOM}
+                  maxBounds={DFLT_BOUNDS}
+                  onPopUpOpen={this.hidePopUp}
+                  style= {this.state.isBotSelect ? {"cursor": "none"} : {"cursor": "default"}}>
+               <TileLayer attribution='&copy; <a href="https://www.openstreetmap. orgcopyright">OpenStreetMap</ a> contributors'  
                         url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/> 
-             {this.state.markers}
-           </Map>
-           <BotOutcomeText miss={this.state.miss}
-                           name={this.props.activePlayer}
-                           visible={this.state.popUpVisible}></BotOutcomeText></div>);
+               {this.state.markers}
+             </Map>
+             <BotOutcomeText miss={this.state.miss}
+                             name={this.props.activePlayer}
+                             visible={this.state.popUpVisible}></BotOutcomeText>
+           </div>);
 
   }
 }

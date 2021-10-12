@@ -60,7 +60,7 @@ class CircTimer extends Component
     let secs = this.state.secs;
 		let secondsRadius = mapNumber(secs, 60, 0, 0, 360);
     
-    return (<div className='countdown-item'>
+    return (<div className='--circ-countdown-item'>
 						  <SVGCircle radius={secondsRadius} />
 							{this.state.secsLeft} 
 							<span>sec</span>
@@ -68,7 +68,7 @@ class CircTimer extends Component
   }     
 }
 
-let SVGCircle = ({ radius }) => (<svg className='countdown-svg'>
+let SVGCircle = ({ radius }) => (<svg className='--circ-countdown-svg'>
 <path fill="none" 
       stroke="black" 
       strokeWidth="1" 

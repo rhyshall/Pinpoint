@@ -5,17 +5,17 @@ html
   padding: 0;
 }
 
-.map
+.--im-map
 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  height: 730px;
+  width: 78%;
+  height: 74vh;
   border: 0.05rem outset black;
 }
 
-.pop-up
+.--im-pop-up
 {
   font-size: 15px;
 }

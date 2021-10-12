@@ -39,13 +39,13 @@ class Options extends Component
   {
     let className = e.target.className;
     
-    if (className === 'robot-img')
+    if (className === '--opt-robot-img')
     {
       this.setState({mode: BOT_MODE,
                      hosting: FIND_GAME,
                      botDifficulty: null});
     }
-    else if (className === 'player-img')
+    else if (className === '--opt-player-img')
     {
       this.setState({mode: LOCAL_MODE,
                      hosting: FIND_GAME,
@@ -63,11 +63,11 @@ class Options extends Component
   {
     let className = e.target.className;
     
-    if (className === 'easy-radio')
+    if (className === '--opt-easy-radio')
     {
       this.setState({botDifficulty: EASY_MODE});
     }
-    else if (className === 'medium-radio')
+    else if (className === '--opt-medium-radio')
     {
       this.setState({botDifficulty: MEDIUM_MODE});
     }
@@ -81,7 +81,7 @@ class Options extends Component
   {
     let className = e.target.className;
 
-    if (className === 'create-game-radio')
+    if (className === '--opt-create-game-radio')
     {
       this.setState({hosting: CREATE_GAME});
     }
@@ -95,7 +95,7 @@ class Options extends Component
   {
     let className = e.target.className;
 
-    if (className.includes('player-two'))
+    if (className.includes('--opt-player-two'))
     {
       this.setState({playerTwoName: e.target.value});
     }
@@ -159,36 +159,36 @@ class Options extends Component
 
     if (this.state.mode === BOT_MODE)
     {
-      option3 = <div className="content difficulty-content">
+      option3 = <div className="--opt-content --opt-difficulty-content">
                    <h4>Difficulty</h4> 
-                   <div className="difficulty-radio-group">
-                     <input className="easy-radio"
+                   <div className="--opt-difficulty-radio-group">
+                     <input className="--opt-easy-radio"
                             type="radio"
                             value="easy"
                             name="difficulty"
                             onChange={this.difficultyChange}/>
-                     <span className="diff-radio-label">Easy</span>
-                     <input className="medium-radio"
+                     <span className="--opt-diff-radio-label">Easy</span>
+                     <input className="--opt-medium-radio"
                             type="radio"
                             value="medium"
                             name="difficulty"
                             onChange={this.difficultyChange}/>
-                     <span className="diff-radio-label">Medium</span>
-                     <input className="hard-radio"
+                     <span className="--opt-diff-radio-label">Medium</span>
+                     <input className="--opt-hard-radio"
                             type="radio"
                             value="hard"
                             name="difficulty"
                             onChange={this.difficultyChange}/>
-                     <span className="diff-radio-label">Hard</span>
+                     <span className="--opt-diff-radio-label">Hard</span>
                    </div>
                  </div>;
     }
     else if (this.state.mode === LOCAL_MODE)
     {
-      option3 = <div className="content player-two-content">
+      option3 = <div className="--opt-content --opt-player-two-content">
                    <h4>Player Two</h4>
-                   <label className="player-label">
-                     <input className="player-textfield player-two"
+                   <label className="--opt-player-label">
+                     <input className="--opt-player-textfield --opt-player-two"
                             placeholder="Player 2"
                             maxLength="20"
                             onChange={this.setPlayerName}></input>
@@ -197,21 +197,21 @@ class Options extends Component
     }
     else 
     {
-      option3 = <div className="content hosting-content">
+      option3 = <div className="--opt-content --opt-hosting-content">
                    <h4>Hosting</h4>
-                   <div className="hosting-radio-group">
-                     <input className="create-game-radio"
+                   <div className="--opt-hosting-radio-group">
+                     <input className="--opt-create-game-radio"
                             type="radio"
                             value="create-game"
                             name="hosting"
                             onChange={this.hostChange}/>
-                     <span className="host-radio-label">Create Game</span>
-                     <input className="find-game-radio"
+                     <span className="--opt-host-radio-label">Create Game</span>
+                     <input className="--opt-find-game-radio"
                             type="radio"
                             value="find-game"
                             name="hosting"
                             onChange={this.hostChange}/>
-                     <span className="host-radio-label">Find Game</span>
+                     <span className="--opt-host-radio-label">Find Game</span>
                    </div>
                  </div>;
     }
@@ -219,79 +219,79 @@ class Options extends Component
     if (this.state.mode === NETWORK_MODE 
           && this.state.hosting === FIND_GAME)
     {
-      option4 = option5 = option6 = <div className="content empty-content"></div>;
+      option4 = option5 = option6 = <div className="--opt-content --opt-empty-content"></div>;
     }
     else 
     {
-      option4 = <div className="content city-range-content">
+      option4 = <div className="--opt-content --opt-city-range-content">
                   <h4>City Range</h4>
-                  <label className="slider-content">
-                    <input className="slider"
+                  <label className="--opt-slider-content">
+                    <input className="--opt-slider"
                            type="range" 
                            value={this.state.cityRange} 
                            min={MIN_CITY_CNT}
                            max={MAX_CITY_CNT}
                            step="100"
                            onChange={this.slideCityRange}></input>
-                    <span className="slider-value">{this.state.cityRange}</span> 
+                    <span className="--opt-slider-value">{this.state.cityRange}</span> 
                   </label>
                 </div>;
 
-      option5 = <div className="content spawn-count-content">
+      option5 = <div className="--opt-content --opt-spawn-count-content">
                   <h4>Spawn Count</h4>
-                  <label className="slider-content">
-                    <input className="slider"
+                  <label className="--opt-slider-content">
+                    <input className="--opt-slider"
                            type="range" 
                            value={this.state.spawnCnt}
                            min={MIN_SPAWN_CNT} 
                            max={MAX_SPAWN_CNT}
                            step="2"
                            onChange={this.slideSpawnCnt}></input>
-                    <span className="slider-value">{this.state.spawnCnt}</span> 
+                    <span className="--opt-slider-value">{this.state.spawnCnt}</span> 
                   </label>
                 </div>;
 
-      option6 = <div className="content max-score-content">
+      option6 = <div className="--opt-content --opt-max-score-content">
                   <h4>Max Score</h4>
-                  <label className="slider-content">
-                    <input className="slider"
+                  <label className="--opt-slider-content">
+                    <input className="--opt-slider"
                            type="range" 
                            value={this.state.maxScore}
                            min={MIN_SCORE}
                            max={MAX_SCORE}
                            step="1"
                            onChange={this.slideMaxScore}></input>
-                    <span className="slider-value">{this.state.maxScore}</span> 
+                    <span className="--opt-slider-value">{this.state.maxScore}</span> 
                   </label>
                 </div>;
     }
 
-    return(<div className="options-container">
-             <form className="options">
-               <div className="header-content">
-                 <h2>PinPoint</h2>
-                 <img src="target.png"
-                      alt="Target"></img>
+    return(<div className="--opt-options-container">
+             <form className="--opt-options">
+               <div className="--opt-header-content">
+                 <h2>Choose Your Settings</h2>
                </div>
                      
-               <div className="content mode-content">
+               <div className="--opt-content --opt-mode-content">
                  <h4>Opponent</h4>
-                 <div className="mode-icon-group">
-                   <img className={`robot-img${this.state.mode === BOT_MODE ?
-                                               ' select-img' : ''}`}
+                 <div className="--opt-mode-icon-group">
+                   <img className={`--opt-robot-img${this.state.mode === BOT_MODE ?
+                                                     ' --opt-select-img' : 
+                                                     ''}`}
                         src="robot.png"
                         alt="Bot Mode"
                         title="Bot Mode"
                         onClick={this.selectImg}></img>
-                   <img className={`player-img${this.state.mode === LOCAL_MODE ?
-                                               ' select-img' : ''}`}
+                   <img className={`--opt-player-img${this.state.mode === LOCAL_MODE ?
+                                                      ' --opt-select-img' : 
+                                                      ''}`}
                         src="player.png"
                         alt="Local PvP Mode"
                         title="Local PvP Mode"
                         onClick={this.selectImg}></img>
-                   <img className={`world-img${this.state.mode === 
-                                               NETWORK_MODE ?
-                                               ' select-img' : ''}`}
+                   <img className={`--opt-world-img${this.state.mode === NETWORK_MODE ?
+                                                     ' --opt-select-img' : 
+                                                     ''}`}
                         src="world.png"
                         alt="Network PvP Mode"
                         title="Network PvP Mode"
@@ -299,10 +299,10 @@ class Options extends Component
                  </div>
                </div>
              
-               <div className="content player-one-content">
+               <div className="--opt-content --opt-player-one-content">
                  <h4>Player One</h4>
-                 <label className="player-label">
-                   <input className="player-textfield player-one"
+                 <label className="--opt-player-label">
+                   <input className="--opt-player-textfield --opt-player-one"
                           placeholder="Player 1"
                           maxLength="20"
                           onChange={this.setPlayerName}></input>
@@ -312,10 +312,10 @@ class Options extends Component
                {option3}      
                {option4} 
                {option5}
-               {option6}     
+               {option6}  
 
-               <button className="submit-btn"
-                       onClick={this.startGame}>Start</button>
+                <button className="--opt-submit-btn"
+                        onClick={this.startGame}>Start</button>   
              </form>
            </div>);
   }
