@@ -44,6 +44,11 @@ export const MIN_CITY_CNT = 100;
 export const MAX_CITY_CNT = 1000;
 export const MIN_SCORE = 3;
 export const MAX_SCORE = 20;
+export const HOME_PAGE = 1;
+export const ABOUT_PAGE = 2;
+export const PLAY_PAGE = 3;
+export const GLOSSARY_PAGE = 4;
+export const CONTACT_PAGE = 5;
 export const BOT_NAMES = ['Carrot',
                           'Hermione',
                           'Hammer',

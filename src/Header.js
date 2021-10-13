@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Header.css'
+import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, GLOSSARY_PAGE, CONTACT_PAGE} from './Const';
 
 class Header extends Component
 {
@@ -27,6 +28,7 @@ class Header extends Component
   goHome()
   {
     this.deselectMenuOptions();
+    this.props.switchPage(HOME_PAGE);
   }
 
   selectMenuOption(e)
@@ -34,6 +36,27 @@ class Header extends Component
     this.deselectMenuOptions();
 
     e.target.className = e.target.className + ' --head-active-item';
+
+    if (e.target.className.includes('about'))
+    {
+      this.props.switchPage(ABOUT_PAGE);
+    }
+    else if (e.target.className.includes('play'))
+    {
+      this.props.switchPage(PLAY_PAGE);
+    }
+    else if (e.target.className.includes('glossary'))
+    {
+      this.props.switchPage(GLOSSARY_PAGE);
+    }
+    else if (e.target.className.includes('contact'))
+    {
+      this.props.switchPage(CONTACT_PAGE);
+    }
+    else 
+    {
+      //don't switch page
+    }
   }
 
   render()
