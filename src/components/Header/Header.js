@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Header.css'
-import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, GLOSSARY_PAGE, CONTACT_PAGE} from './Const';
+import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, GLOSSARY_PAGE, CONTACT_PAGE} from '../../shared/Const';
 
 class Header extends Component
 {

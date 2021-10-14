@@ -1,18 +1,18 @@
 import './IntelliMap.css';
 import React, {Component} from 'react';
 import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
-import {DFLT_LAT, DFLT_LNG, DFLT_BOUNDS} from './Const';
-import {DFLT_ZOOM, DFLT_MAX_ZOOM, DFLT_MIN_ZOOM} from './Const';
-import {CANADA_MAP, US_MAP} from './Const';
-import {CANADA_CITY_FILE, US_CITY_FILE} from './Const';
-import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from './Const';
-import {TURN_WAIT_TIME, ROUND_WAIT_TIME, CORRECT_ANSWER_RESPONSES} from './Const';
-import {EASY_BOT_WAIT_MAX, MEDIUM_BOT_WAIT_MAX, HARD_BOT_WAIT_MAX} from './Const';
-import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './Const';
-import {EASY_CORRECT_RATIO, MEDIUM_CORRECT_RATIO, HARD_CORRECT_RATIO} from './Const';
-import {BOT_CORRECT_PRECISION, BOT_ZOOM_RANGE} from './Const';
-import {random} from './Common';
-import BotOutcomeText from './BotOutcomeText';
+import {DFLT_LAT, DFLT_LNG, DFLT_BOUNDS} from '../../../shared/Const';
+import {DFLT_ZOOM, DFLT_MAX_ZOOM, DFLT_MIN_ZOOM} from '../../../shared/Const';
+import {CANADA_MAP, US_MAP} from '../../../shared/Const';
+import {CANADA_CITY_FILE, US_CITY_FILE} from '../../../shared/Const';
+import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from '../../../shared/Const';
+import {TURN_WAIT_TIME, ROUND_WAIT_TIME, CORRECT_ANSWER_RESPONSES} from '../../../shared/Const';
+import {EASY_BOT_WAIT_MAX, MEDIUM_BOT_WAIT_MAX, HARD_BOT_WAIT_MAX} from '../../../shared/Const';
+import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from '../../../shared/Const';
+import {EASY_CORRECT_RATIO, MEDIUM_CORRECT_RATIO, HARD_CORRECT_RATIO} from '../../../shared/Const';
+import {BOT_CORRECT_PRECISION, BOT_ZOOM_RANGE} from '../../../shared/Const';
+import {random} from '../../../shared/Common';
+import BotOutcomeText from '../../BotOutcome/BotOutcomeText';
 import axios from 'axios';
 
 class IntelliMap extends Component

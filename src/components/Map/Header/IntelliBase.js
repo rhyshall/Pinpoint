@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './IntelliBase.css';
-import CircTimer from './CircTimer';
+import CircTimer from '../../CircTimer/CircTimer';
 
 class IntelliBase extends Component
 {
