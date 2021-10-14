@@ -25,19 +25,20 @@ export const START_SECS = 1;
 export const START_SECS_LEFT = 59;
 export const PLAYER_ONE_IMG = 'green_circle.png';
 export const PLAYER_TWO_IMG = 'red_circle.png';
-export const TURN_WAIT_TIME = 1100; //milliseconds
-export const ROUND_WAIT_TIME = 2400;
+export const TURN_WAIT_TIME = 1000; //milliseconds
+export const ROUND_WAIT_TIME = 2100;
 export const DFLT_MODE = LOCAL_MODE;
 export const DFLT_NAME_ONE = 'Player 1';
 export const DFLT_NAME_TWO = 'Player 2';
 export const DFLT_CITY_RANGE = 200;
 export const DFLT_SPAWN_CNT = 10;
 export const DFLT_MAX_SCORE = 7;
-export const EASY_BOT_WAIT_MAX = 5; //max bot wait-time in easy mode (secs)
-export const MEDIUM_BOT_WAIT_MAX = 4.25; //max bot wait-time in medium mode (secs)
-export const HARD_BOT_WAIT_MAX = 3.5; //max bot wait-time in hard mode (secs)
+export const EASY_BOT_WAIT_MAX = 4.0; //max bot wait-time in easy mode (secs)
+export const MEDIUM_BOT_WAIT_MAX = 3.25; //max bot wait-time in medium mode (secs)
+export const HARD_BOT_WAIT_MAX = 2.75; //max bot wait-time in hard mode (secs)
 export const BOT_CORRECT_PRECISION = 1000000;
-export const BOT_ZOOM_RANGE = 2;
+export const BOT_FOCUS_ZOOM = 6;
+export const BOT_ZOOM_TIME_RANGE = 2;
 export const MIN_SPAWN_CNT = 4;
 export const MAX_SPAWN_CNT = 30;
 export const MIN_CITY_CNT = 100;
@@ -84,6 +85,8 @@ export const BOT_NAMES = ['Carrot',
                           'Luna',
                           'Simba',
                           'Ariel',
+                          'Luther',
+                          'Thud',
                           'Angel',
                           'Twig',
                           'Brainiac',
@@ -97,14 +100,19 @@ export const BOT_NAMES = ['Carrot',
                           'Sunshine',
                           'Savage'];
 export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
-                                         `Excellent! 🙂`,
+                                         `Excellent 🙂`,
+                                         `Excellent 😛`,
                                          `Excellent! 😛`,
+                                         `Excellent! 🌞`,
                                          `Exceptional 🙂`,
                                          `Fabulous! 😃`,
                                          `Fantastic! 🌞`,
+                                         `Fantastic! 😛`,
                                          `Sensational! 😃`,
                                          `Wonderful! 🤩`,
                                          `Outstanding! 😛`,
+                                         `Outstanding! 😛`,
+                                         `That’s it! 🤪`,
                                          `That’s it! 🤪`,
                                          `Just right! 🤓`,
                                          `Unbelievable! 🦄`,
@@ -117,6 +125,7 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `First class work 🙂`,
                                          `Correct 🤓`,
                                          `Correct 🤓`,
+                                         `Correct 😁`,
                                          `Good for you! 😁`,
                                          `That’s great 👍`,
                                          `Good going 🙂`,
@@ -135,10 +144,17 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `You’ve mastered it 😉`,
                                          `Amazing! 😄`,
                                          `Amazing! 😄`,
+                                         `Amazing! 😄`,
                                          `Fantastic! 👩`,
                                          `You're learning a lot 🤓`,
+                                         `Yes! 😄`,
+                                         `Yes! 😄`,
                                          `Yes! 🙂`,
                                          `Yes! 🙂`,
+                                         `Yes 🙂`,
+                                         `Yes 🙂`,
+                                         `Yes 👍`,
+                                         `Yes 👍`,
                                          `You're so good 🤠`,
                                          `You did it that time! 👵🏾`,
                                          `You don't miss a thing 🧐`,
@@ -203,8 +219,11 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Correct! 🙂`,
                                          `Very Good 😃`,
                                          `Good 😎`,
+                                         `Good 😎`,
                                          `Good 🙂`,
                                          `Good 🙂`,
+                                         `Good 🙂`,
+                                         `Great 😄`,
                                          `Great 😄`,
                                          `Great 🙂`,
                                          `Good 😄`];
