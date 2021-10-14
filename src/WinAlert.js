@@ -5,23 +5,23 @@ class WinAlert extends Component
 {
   render()
   {
-    return (<div className="modal-overlay">
-  		        <div className="modal">
-  		        	<h2 className="winner">{this.props.winner} Wins!</h2>
-								<img className="trophy"
+    return (<div className="--win-modal-overlay">
+  		        <div className="--win-modal">
+  		        	<h2 className="--win-winner">{this.props.winner} Wins!</h2>
+								<img className="--win-trophy"
 								     src="trophy.svg"
 										 alt="Trophy"></img>
-								<h3 className="final-score">{this.props.score}</h3>
-  		        	<button className="restart"
+								<h3 className="--win-final-score">{this.props.score}</h3>
+  		        	<button className="--win-restart"
 								        onClick={this.props.restart}>Play Again?</button>
-  		        	<p className="share-text">Share it?</p>
-  		        	<div className="social">
-  		        		<a className="share-facebook"
+  		        	<p className="--win-share-text">Share it?</p>
+  		        	<div className="--win-social">
+  		        		<a className="--win-share-facebook"
 									   href="#"><img src="facebook_icon.svg"
 										               alt="Facebook Icon"/></a>
-									<a className="share-twitter"
+									<a className="--win-share-twitter"
 									   href="#"><img src="twitter_icon.svg"
-										           alt="Facebook Icon"/></a>
+										               alt="Twitter Icon"/></a>
 								</div>
   		        </div>
   	        </div>);

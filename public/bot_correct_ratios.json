@@ -2127,37 +2127,37 @@
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 200,
-    "correctRatio": 0.132139
+    "correctRatio": 0.133251
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 200,
-    "correctRatio": 0.127530
+    "correctRatio": 0.129616
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 200,
-    "correctRatio": 0.123231
+    "correctRatio": 0.126175
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 200,
-    "correctRatio": 0.119212
+    "correctRatio": 0.122912
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 200,
-    "correctRatio": 0.115448
+    "correctRatio": 0.119814
   },
   {
     "difficulty": 2,
     "spawnCnt": 30,
     "cityRange": 200,
-    "correctRatio": 0.111914
+    "correctRatio": 0.116867
   },
   {
     "difficulty": 2,
@@ -2301,43 +2301,43 @@
     "difficulty": 2,
     "spawnCnt": 24,
     "cityRange": 300,
-    "correctRatio": 0.108924
+    "correctRatio": 0.136155
   },
   {
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.132338
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.128729
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.125311
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.122070
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.118993
   },
   {
     "difficulty": 2,
     "spawnCnt": 30,
     "cityRange": 300,
-    "correctRatio": 0.100210
+    "correctRatio": 0.116069
   },
   {
     "difficulty": 2,
@@ -2349,13 +2349,13 @@
     "difficulty": 2,
     "spawnCnt": 2,
     "cityRange": 400,
-    "correctRatio": 0.720
+    "correctRatio": 0.720000
   },
   {
     "difficulty": 2,
     "spawnCnt": 3,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.553846
   },
   {
     "difficulty": 2,
@@ -2367,19 +2367,19 @@
     "difficulty": 2,
     "spawnCnt": 5,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.391304
   },
   {
     "difficulty": 2,
     "spawnCnt": 6,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.346154
   },
   {
     "difficulty": 2,
     "spawnCnt": 7,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.310345
   },
   {
     "difficulty": 2,
@@ -2391,43 +2391,43 @@
     "difficulty": 2,
     "spawnCnt": 9,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.261628
   },
   {
     "difficulty": 2,
     "spawnCnt": 10,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.244565
   },
   {
     "difficulty": 2,
     "spawnCnt": 11,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.229592
   },
   {
     "difficulty": 2,
     "spawnCnt": 12,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.216346
   },
   {
     "difficulty": 2,
     "spawnCnt": 13,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.204545
   },
   {
     "difficulty": 2,
     "spawnCnt": 14,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.193966
   },
   {
     "difficulty": 2,
     "spawnCnt": 15,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.184426
   },
   {
     "difficulty": 2,
@@ -2439,43 +2439,43 @@
     "difficulty": 2,
     "spawnCnt": 17,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.169428
   },
   {
     "difficulty": 2,
     "spawnCnt": 18,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.163517
   },
   {
     "difficulty": 2,
     "spawnCnt": 19,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.158006
   },
   {
     "difficulty": 2,
     "spawnCnt": 20,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.152853
   },
   {
     "difficulty": 2,
     "spawnCnt": 21,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.148026
   },
   {
     "difficulty": 2,
     "spawnCnt": 22,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.143495
   },
   {
     "difficulty": 2,
     "spawnCnt": 23,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.139233
   },
   {
     "difficulty": 2,
@@ -2487,37 +2487,38 @@
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.131425
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.127841
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.124447
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.121228
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.118172
   },
   {
     "difficulty": 2,
     "spawnCnt": 30,
     "cityRange": 400,
-    "correctRatio": 0.124399
+    "correctRatio": 0.115266
+
   },
   {
     "difficulty": 2,
@@ -2535,7 +2536,7 @@
     "difficulty": 2,
     "spawnCnt": 3,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.550000
   },
   {
     "difficulty": 2,
@@ -2547,19 +2548,19 @@
     "difficulty": 2,
     "spawnCnt": 5,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.388587
   },
   {
     "difficulty": 2,
     "spawnCnt": 6,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.343750
   },
   {
     "difficulty": 2,
     "spawnCnt": 7,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.308190
   },
   {
     "difficulty": 2,
@@ -2571,43 +2572,43 @@
     "difficulty": 2,
     "spawnCnt": 9,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.259811
   },
   {
     "difficulty": 2,
     "spawnCnt": 10,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.242867
   },
   {
     "difficulty": 2,
     "spawnCnt": 11,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.227997
   },
   {
     "difficulty": 2,
     "spawnCnt": 12,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.214844
   },
   {
     "difficulty": 2,
     "spawnCnt": 13,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.203125
   },
   {
     "difficulty": 2,
     "spawnCnt": 14,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.192619
   },
   {
     "difficulty": 2,
     "spawnCnt": 15,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.183146
   },
   {
     "difficulty": 2,
@@ -2619,43 +2620,43 @@
     "difficulty": 2,
     "spawnCnt": 17,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.168251
   },
   {
     "difficulty": 2,
     "spawnCnt": 18,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.162382
   },
   {
     "difficulty": 2,
     "spawnCnt": 19,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.156908
   },
   {
     "difficulty": 2,
     "spawnCnt": 20,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.151792
   },
   {
     "difficulty": 2,
     "spawnCnt": 21,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.146998
   },
   {
     "difficulty": 2,
     "spawnCnt": 22,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.142498
   },
   {
     "difficulty": 2,
     "spawnCnt": 23,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.138266
   },
   {
     "difficulty": 2,
@@ -2667,37 +2668,37 @@
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.130513
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.126953
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.123583
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.120387
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.117352
   },
   {
     "difficulty": 2,
     "spawnCnt": 30,
     "cityRange": 500,
-    "correctRatio": 0.123535
+    "correctRatio": 0.114466
   },
   {
     "difficulty": 2,
@@ -2715,7 +2716,7 @@
     "difficulty": 2,
     "spawnCnt": 3,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.546154
   },
   {
     "difficulty": 2,
@@ -2727,19 +2728,19 @@
     "difficulty": 2,
     "spawnCnt": 5,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.385870
   },
   {
     "difficulty": 2,
     "spawnCnt": 6,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.341346
   },
   {
     "difficulty": 2,
     "spawnCnt": 7,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.306034
   },
   {
     "difficulty": 2,
@@ -2751,43 +2752,43 @@
     "difficulty": 2,
     "spawnCnt": 9,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.257994
   },
   {
     "difficulty": 2,
     "spawnCnt": 10,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.241168
   },
   {
     "difficulty": 2,
     "spawnCnt": 11,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.226403
   },
   {
     "difficulty": 2,
     "spawnCnt": 12,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.213341
   },
   {
     "difficulty": 2,
     "spawnCnt": 13,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.201705
   },
   {
     "difficulty": 2,
     "spawnCnt": 14,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.191272
   },
   {
     "difficulty": 2,
     "spawnCnt": 15,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.181865
   },
   {
     "difficulty": 2,
@@ -2799,85 +2800,85 @@
     "difficulty": 2,
     "spawnCnt": 17,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.167075
   },
   {
     "difficulty": 2,
     "spawnCnt": 18,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.161246
   },
   {
     "difficulty": 2,
     "spawnCnt": 19,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.155811
   },
   {
     "difficulty": 2,
     "spawnCnt": 20,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.150730
   },
   {
     "difficulty": 2,
     "spawnCnt": 21,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.145970
   },
   {
     "difficulty": 2,
     "spawnCnt": 22,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.141502
   },
   {
     "difficulty": 2,
     "spawnCnt": 23,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.137299
   },
   {
     "difficulty": 2,
     "spawnCnt": 24,
     "cityRange": 600,
-    "correctRatio": 0.133339
+    "correctRatio": 0.133338
   },
   {
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.129600
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.126065
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.122718
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.119545
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.116531
   },
   {
     "difficulty": 2,
     "spawnCnt": 30,
     "cityRange": 600,
-    "correctRatio": 0.122671
+    "correctRatio": 0.113665
   },
   {
     "difficulty": 2,
@@ -2895,7 +2896,7 @@
     "difficulty": 2,
     "spawnCnt": 3,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.542308
   },
   {
     "difficulty": 2,
@@ -2907,19 +2908,19 @@
     "difficulty": 2,
     "spawnCnt": 5,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.383152
   },
   {
     "difficulty": 2,
     "spawnCnt": 6,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.338942
   },
   {
     "difficulty": 2,
     "spawnCnt": 7,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.303879
   },
   {
     "difficulty": 2,
@@ -2931,43 +2932,43 @@
     "difficulty": 2,
     "spawnCnt": 9,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.256177
   },
   {
     "difficulty": 2,
     "spawnCnt": 10,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.239470
   },
   {
     "difficulty": 2,
     "spawnCnt": 11,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.224809
   },
   {
     "difficulty": 2,
     "spawnCnt": 12,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.211839
   },
   {
     "difficulty": 2,
     "spawnCnt": 13,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.200284
   },
   {
     "difficulty": 2,
     "spawnCnt": 14,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.189925
   },
   {
     "difficulty": 2,
     "spawnCnt": 15,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.180584
   },
   {
     "difficulty": 2,
@@ -2979,43 +2980,43 @@
     "difficulty": 2,
     "spawnCnt": 17,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.165898
   },
   {
     "difficulty": 2,
     "spawnCnt": 18,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.160111
   },
   {
     "difficulty": 2,
     "spawnCnt": 19,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.154714
   },
   {
     "difficulty": 2,
     "spawnCnt": 20,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.149669
   },
   {
     "difficulty": 2,
     "spawnCnt": 21,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.144942
   },
   {
     "difficulty": 2,
     "spawnCnt": 22,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.140505
   },
   {
     "difficulty": 2,
     "spawnCnt": 23,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.136332
   },
   {
     "difficulty": 2,
@@ -3027,31 +3028,31 @@
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.128687
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.125178
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.121854
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.118703
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.115710
   },
   {
     "difficulty": 2,
@@ -3075,7 +3076,7 @@
     "difficulty": 2,
     "spawnCnt": 3,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.538462
   },
   {
     "difficulty": 2,
@@ -3087,19 +3088,19 @@
     "difficulty": 2,
     "spawnCnt": 5,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.380435
   },
   {
     "difficulty": 2,
     "spawnCnt": 6,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.336538
   },
   {
     "difficulty": 2,
     "spawnCnt": 7,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.301724
   },
   {
     "difficulty": 2,
@@ -3111,43 +3112,43 @@
     "difficulty": 2,
     "spawnCnt": 9,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.254360
   },
   {
     "difficulty": 2,
     "spawnCnt": 10,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.237772
   },
   {
     "difficulty": 2,
     "spawnCnt": 11,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.223214
   },
   {
     "difficulty": 2,
     "spawnCnt": 12,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.210337
   },
   {
     "difficulty": 2,
     "spawnCnt": 13,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.198864
   },
   {
     "difficulty": 2,
     "spawnCnt": 14,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.188578
   },
   {
     "difficulty": 2,
     "spawnCnt": 15,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.179303
   },
   {
     "difficulty": 2,
@@ -3159,43 +3160,43 @@
     "difficulty": 2,
     "spawnCnt": 17,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.164721
   },
   {
     "difficulty": 2,
     "spawnCnt": 18,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.158975
   },
   {
     "difficulty": 2,
     "spawnCnt": 19,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.153617
   },
   {
     "difficulty": 2,
     "spawnCnt": 20,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.148607
   },
   {
     "difficulty": 2,
     "spawnCnt": 21,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.143914
   },
   {
     "difficulty": 2,
     "spawnCnt": 22,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.139509
   },
   {
     "difficulty": 2,
     "spawnCnt": 23,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.135365
   },
   {
     "difficulty": 2,
@@ -3207,37 +3208,37 @@
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.127775
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.124290
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.120990
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.117861
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.114890
   },
   {
     "difficulty": 2,
     "spawnCnt": 30,
     "cityRange": 800,
-    "correctRatio": 0.120944
+    "correctRatio": 0.112065
   },
   {
     "difficulty": 2,
@@ -3255,7 +3256,7 @@
     "difficulty": 2,
     "spawnCnt": 3,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.434375
   },
   {
     "difficulty": 2,
@@ -3267,19 +3268,19 @@
     "difficulty": 2,
     "spawnCnt": 5,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.377717
   },
   {
     "difficulty": 2,
     "spawnCnt": 6,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.334135
   },
   {
     "difficulty": 2,
     "spawnCnt": 7,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.299569
   },
   {
     "difficulty": 2,
@@ -3291,43 +3292,43 @@
     "difficulty": 2,
     "spawnCnt": 9,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.252544
   },
   {
     "difficulty": 2,
     "spawnCnt": 10,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.230730
   },
   {
     "difficulty": 2,
     "spawnCnt": 11,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.221620
   },
   {
     "difficulty": 2,
     "spawnCnt": 12,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.208834
   },
   {
     "difficulty": 2,
     "spawnCnt": 13,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.197443
   },
   {
     "difficulty": 2,
     "spawnCnt": 14,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.187231
   },
   {
     "difficulty": 2,
     "spawnCnt": 15,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.178023
   },
   {
     "difficulty": 2,
@@ -3339,43 +3340,43 @@
     "difficulty": 2,
     "spawnCnt": 17,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.163545
   },
   {
     "difficulty": 2,
     "spawnCnt": 18,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.157840
   },
   {
     "difficulty": 2,
     "spawnCnt": 19,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.152519
   },
   {
     "difficulty": 2,
     "spawnCnt": 20,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.147546
   },
   {
     "difficulty": 2,
     "spawnCnt": 21,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.142887
   },
   {
     "difficulty": 2,
     "spawnCnt": 22,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.138512
   },
   {
     "difficulty": 2,
     "spawnCnt": 23,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.134398
   },
   {
     "difficulty": 2,
@@ -3387,37 +3388,37 @@
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.126862
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.123402
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.120126
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.117019
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.114069
   },
   {
     "difficulty": 2,
     "spawnCnt": 30,
     "cityRange": 900,
-    "correctRatio": 0.120080
+    "correctRatio": 0.111264
   },
   {
     "difficulty": 2,
@@ -3435,7 +3436,7 @@
     "difficulty": 2,
     "spawnCnt": 3,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.530769
   },
   {
     "difficulty": 2,
@@ -3447,19 +3448,19 @@
     "difficulty": 2,
     "spawnCnt": 5,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.375000
   },
   {
     "difficulty": 2,
     "spawnCnt": 6,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.331731
   },
   {
     "difficulty": 2,
     "spawnCnt": 7,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.297414
   },
   {
     "difficulty": 2,
@@ -3471,43 +3472,43 @@
     "difficulty": 2,
     "spawnCnt": 9,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.250727
   },
   {
     "difficulty": 2,
     "spawnCnt": 10,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.234375
   },
   {
     "difficulty": 2,
     "spawnCnt": 11,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.220026
   },
   {
     "difficulty": 2,
     "spawnCnt": 12,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.207332
   },
   {
     "difficulty": 2,
     "spawnCnt": 13,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.196023
   },
   {
     "difficulty": 2,
     "spawnCnt": 14,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.185884
   },
   {
     "difficulty": 2,
     "spawnCnt": 15,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.176742
   },
   {
     "difficulty": 2,
@@ -3519,43 +3520,43 @@
     "difficulty": 2,
     "spawnCnt": 17,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.162368
   },
   {
     "difficulty": 2,
     "spawnCnt": 18,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.156704
   },
   {
     "difficulty": 2,
     "spawnCnt": 19,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.151422
   },
   {
     "difficulty": 2,
     "spawnCnt": 20,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.146484
   },
   {
     "difficulty": 2,
     "spawnCnt": 21,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.141859
   },
   {
     "difficulty": 2,
     "spawnCnt": 22,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.137516
   },
   {
     "difficulty": 2,
     "spawnCnt": 23,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.133431
   },
   {
     "difficulty": 2,
@@ -3567,37 +3568,37 @@
     "difficulty": 2,
     "spawnCnt": 25,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.125949
   },
   {
     "difficulty": 2,
     "spawnCnt": 26,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.122514
   },
   {
     "difficulty": 2,
     "spawnCnt": 27,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.119261
   },
   {
     "difficulty": 2,
     "spawnCnt": 28,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.116177
   },
   {
     "difficulty": 2,
     "spawnCnt": 29,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.113248
   },
   {
     "difficulty": 2,
     "spawnCnt": 30,
     "cityRange": 1000,
-    "correctRatio": 0.119216
+    "correctRatio": 0.110463
   },
   {
     "difficulty": 3,
@@ -3615,7 +3616,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.764444
   },
   {
     "difficulty": 3,
@@ -3627,19 +3628,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.6475294
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.611556
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.579368
   },
   {
     "difficulty": 3,
@@ -3651,43 +3652,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.533721
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.518024
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.503223
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.489244
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.476022
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.463495
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.451610
   },
   {
     "difficulty": 3,
@@ -3699,43 +3700,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.433546
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.426977
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.420604
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.414419
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.408413
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.402578
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.396908
   },
   {
     "difficulty": 3,
@@ -3747,37 +3748,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.386034
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.380817
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.375740
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.370796
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 100,
-    "correctRatio": 0
+    "correctRatio": 0.365980
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 100,
-    "correctRatio": 0.371826
+    "correctRatio": 0.361288
   },
   {
     "difficulty": 3,
@@ -3795,7 +3796,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.755556
   },
   {
     "difficulty": 3,
@@ -3807,19 +3808,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.640000
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.604444
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.572632
   },
   {
     "difficulty": 3,
@@ -3831,43 +3832,44 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.527515
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.512000
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.497371
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.483556
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.470486
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.458105
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.446359
+
   },
   {
     "difficulty": 3,
@@ -3879,43 +3881,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.428505
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.422012
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.415713
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.409600
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.403664
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.397897
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.392293
   },
   {
     "difficulty": 3,
@@ -3927,37 +3929,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.381545
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.376389
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.371371
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.366484
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 200,
-    "correctRatio": 0
+    "correctRatio": 0.361724
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 200,
-    "correctRatio": 0.367502
+    "correctRatio": 0.357087
   },
   {
     "difficulty": 3,
@@ -3975,7 +3977,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.751111
   },
   {
     "difficulty": 3,
@@ -3987,19 +3989,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.636235
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.600889
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.569263
   },
   {
     "difficulty": 3,
@@ -4011,43 +4013,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.524412
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.508988
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.494446
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.480711
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.467719
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.455411
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.443733
   },
   {
     "difficulty": 3,
@@ -4059,43 +4061,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.425984
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.419530
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.413268
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.407191
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.401289
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.395557
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.389985
   },
   {
     "difficulty": 3,
@@ -4107,37 +4109,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.379301
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.374175
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.369186
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.364328
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 300,
-    "correctRatio": 0
+    "correctRatio": 0.359597
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 300,
-    "correctRatio": 0.365340
+    "correctRatio": 0.354987
   },
   {
     "difficulty": 3,
@@ -4155,7 +4157,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.746667
   },
   {
     "difficulty": 3,
@@ -4167,19 +4169,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.632471
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.597333
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.565895
   },
   {
     "difficulty": 3,
@@ -4191,43 +4193,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.521309
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.505976
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.491520
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.477867
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.464951
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.452716
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.441108
   },
   {
     "difficulty": 3,
@@ -4239,43 +4241,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.423463
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.417047
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.410823
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.404781
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.398914
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.393216
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.387678
   },
   {
     "difficulty": 3,
@@ -4287,37 +4289,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.377056
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.371961
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.362173
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.357469
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 400,
-    "correctRatio": 0
+    "correctRatio": 0.352886
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 400,
-    "correctRatio": 0.363179
+    "correctRatio": 0.348419
   },
   {
     "difficulty": 3,
@@ -4335,7 +4337,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.742222
   },
   {
     "difficulty": 3,
@@ -4347,19 +4349,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.628706
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.593778
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.562526
   },
   {
     "difficulty": 3,
@@ -4371,43 +4373,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.518206
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.502965
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.488594
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.475022
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.462184
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.450021
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.438482
   },
   {
     "difficulty": 3,
@@ -4419,43 +4421,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.420943
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.414565
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.408377
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.402372
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.396540
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.390875
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.385370
   },
   {
     "difficulty": 3,
@@ -4467,37 +4469,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.374812
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.369747
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.364817
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.360017
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 500,
-    "correctRatio": 0
+    "correctRatio": 0.355341
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 500,
-    "correctRatio": 0.361017
+    "correctRatio": 0.350786
   },
   {
     "difficulty": 3,
@@ -4515,7 +4517,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.737778
   },
   {
     "difficulty": 3,
@@ -4527,19 +4529,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.624941
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.590222
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.559158
   },
   {
     "difficulty": 3,
@@ -4551,43 +4553,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.515103
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.499953
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.485669
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.472178
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.459416
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.447326
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.435856
   },
   {
     "difficulty": 3,
@@ -4599,43 +4601,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.418422
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.412082
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.405932
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.399962
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.394166
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.388535
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.383063
   },
   {
     "difficulty": 3,
@@ -4647,37 +4649,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.372568
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.367533
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.362633
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.357861
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 600,
-    "correctRatio": 0
+    "correctRatio": 0.353214
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 600,
-    "correctRatio": 0.358856
+    "correctRatio": 0.348685
   },
   {
     "difficulty": 3,
@@ -4695,7 +4697,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.733333
   },
   {
     "difficulty": 3,
@@ -4707,19 +4709,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.621176
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.586667
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.555789
   },
   {
     "difficulty": 3,
@@ -4731,43 +4733,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.512000
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.496941
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.482742
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.469333
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.456649
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.444632
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.433231
   },
   {
     "difficulty": 3,
@@ -4779,43 +4781,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.415902
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.409600
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.403487
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.397553
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.391791
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.386194
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.380755
   },
   {
     "difficulty": 3,
@@ -4827,37 +4829,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.370323
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.365319
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.360448
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.355705
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 700,
-    "correctRatio": 0
+    "correctRatio": 0.351086
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 700,
-    "correctRatio": 0.356693
+    "correctRatio": 0.346585
   },
   {
     "difficulty": 3,
@@ -4875,7 +4877,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.728889
   },
   {
     "difficulty": 3,
@@ -4887,19 +4889,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.617412
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.583111
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.552421
   },
   {
     "difficulty": 3,
@@ -4911,43 +4913,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.508897
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.493929
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.479817
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.466489
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.453881
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.441937
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.430605
   },
   {
     "difficulty": 3,
@@ -4959,43 +4961,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.413381
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.407118
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.401041
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.395144
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.389417
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.383854
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.378447
   },
   {
     "difficulty": 3,
@@ -5007,37 +5009,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.368079
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.363105
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.358263
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.353549
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 800,
-    "correctRatio": 0
+    "correctRatio": 0.348958
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 800,
-    "correctRatio": 0.354532
+    "correctRatio": 0.344484
   },
   {
     "difficulty": 3,
@@ -5055,7 +5057,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.724444
   },
   {
     "difficulty": 3,
@@ -5067,19 +5069,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.613647
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.579556
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.549053
   },
   {
     "difficulty": 3,
@@ -5091,43 +5093,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.505794
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.490918
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.476891
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.463644
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.451114
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.439242
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.427979
   },
   {
     "difficulty": 3,
@@ -5139,43 +5141,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.410860
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.404635
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.398596
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.392734
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.387042
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.381513
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.376140
   },
   {
     "difficulty": 3,
@@ -5187,37 +5189,37 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.365834
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.360891
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.356079
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.351394
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 900,
-    "correctRatio": 0
+    "correctRatio": 0.346830
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 900,
-    "correctRatio": 0.352370
+    "correctRatio": 0.342384
   },
   {
     "difficulty": 3,
@@ -5235,7 +5237,7 @@
     "difficulty": 3,
     "spawnCnt": 3,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.720000
   },
   {
     "difficulty": 3,
@@ -5247,19 +5249,19 @@
     "difficulty": 3,
     "spawnCnt": 5,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.609882
   },
   {
     "difficulty": 3,
     "spawnCnt": 6,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.576000
   },
   {
     "difficulty": 3,
     "spawnCnt": 7,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.545684
   },
   {
     "difficulty": 3,
@@ -5271,43 +5273,43 @@
     "difficulty": 3,
     "spawnCnt": 9,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.502691
   },
   {
     "difficulty": 3,
     "spawnCnt": 10,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.487906
   },
   {
     "difficulty": 3,
     "spawnCnt": 11,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.473966
   },
   {
     "difficulty": 3,
     "spawnCnt": 12,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.460800
   },
   {
     "difficulty": 3,
     "spawnCnt": 13,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.448346
   },
   {
     "difficulty": 3,
     "spawnCnt": 14,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.436547
   },
   {
     "difficulty": 3,
     "spawnCnt": 15,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.425354
   },
   {
     "difficulty": 3,
@@ -5319,43 +5321,43 @@
     "difficulty": 3,
     "spawnCnt": 17,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.408340
   },
   {
     "difficulty": 3,
     "spawnCnt": 18,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.402153
   },
   {
     "difficulty": 3,
     "spawnCnt": 19,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.396150
   },
   {
     "difficulty": 3,
     "spawnCnt": 20,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.390325
   },
   {
     "difficulty": 3,
     "spawnCnt": 21,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.384668
   },
   {
     "difficulty": 3,
     "spawnCnt": 22,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.379173
   },
   {
     "difficulty": 3,
     "spawnCnt": 23,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.373832
   },
   {
     "difficulty": 3,
@@ -5367,36 +5369,36 @@
     "difficulty": 3,
     "spawnCnt": 25,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.362969
   },
   {
     "difficulty": 3,
     "spawnCnt": 26,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.357469
   },
   {
     "difficulty": 3,
     "spawnCnt": 27,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.352134
   },
   {
     "difficulty": 3,
     "spawnCnt": 28,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.346955
   },
   {
     "difficulty": 3,
     "spawnCnt": 29,
     "cityRange": 1000,
-    "correctRatio": 0
+    "correctRatio": 0.341927
   },
   {
     "difficulty": 3,
     "spawnCnt": 30,
     "cityRange": 1000,
-    "correctRatio": 0.350208
+    "correctRatio": 0.337042
   }  
 ]

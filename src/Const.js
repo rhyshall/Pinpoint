@@ -36,37 +36,19 @@ export const DFLT_MAX_SCORE = 7;
 export const EASY_BOT_WAIT_MAX = 5; //max bot wait-time in easy mode (secs)
 export const MEDIUM_BOT_WAIT_MAX = 4.25; //max bot wait-time in medium mode (secs)
 export const HARD_BOT_WAIT_MAX = 3.5; //max bot wait-time in hard mode (secs)
-export const EASY_CORRECT_RATIO = 0.300;
-export const MEDIUM_CORRECT_RATIO = 0.450;
-export const HARD_CORRECT_RATIO = 0.600;
 export const BOT_CORRECT_PRECISION = 1000000;
 export const BOT_ZOOM_RANGE = 2;
 export const MIN_SPAWN_CNT = 4;
 export const MAX_SPAWN_CNT = 30;
 export const MIN_CITY_CNT = 100;
-export const BASELINE_CITY_CNT = 200;
 export const MAX_CITY_CNT = 1000;
 export const MIN_SCORE = 3;
 export const MAX_SCORE = 20;
-export const SPAWN_COEFFICIENT = 0.125;
-export const MAP_OPT = ['United States'];
-export const CITY_RANGE_OPT = ['Top 100',
-                               'Top 200',
-                               'Top 400',
-                               'Top 700',
-                               'Top 1000'];
-export const SPAWN_CNT_OPT = ['5',
-                              '7',
-                              '10',
-                              '15',
-                              '20',
-                              '30'];
-export const MAX_SCORE_OPT = ['5',
-                              '7',
-                              '10',
-                              '12',
-                              '15',
-                              '20'];
+export const HOME_PAGE = 1;
+export const ABOUT_PAGE = 2;
+export const PLAY_PAGE = 3;
+export const GLOSSARY_PAGE = 4;
+export const CONTACT_PAGE = 5;
 export const BOT_NAMES = ['Carrot',
                           'Hermione',
                           'Hammer',

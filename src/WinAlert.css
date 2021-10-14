@@ -1,17 +1,17 @@
 :root 
 {
-  --wa-blue: #5999d8;
-	--wa-blue2: #4488cc;
-	--wa-blue3: #3473b3; 
-	--wa-blue4: #4099FF;
-	--wa-blue5: #3b5998;
-  --wa-white: #f5f1eeef;
-  --wa-grey: #e2ded4ea;
-	--wa-black: #111111; 
-	--wa-orange: #e67e22;
+  --win-blue: #5999d8;
+	--win-blue2: #4488cc;
+	--win-blue3: #3473b3; 
+	--win-blue4: #4099FF;
+	--win-blue5: #3b5998;
+  --win-white: #f5f1eeef;
+  --win-grey: #e2ded4ea;
+	--win-black: #111111; 
+	--win-orange: #e67e22;
 }
 
-.modal-overlay 
+.--win-modal-overlay 
 {
 	display: block;
 	background: rgba(0,0,0,.3);
@@ -20,70 +20,70 @@
 	height: 100%;
 }
 
-.modal 
+.--win-modal 
 {
 	display: flex;
   flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	width: 380px;
-	height: 380px;
+	width: 400px;
+	height: 400px;
 	margin: 0 auto;
-	background-color: var(--wa-white);
-  background-image :linear-gradient(315deg, var(--wa-white) 0%, var(--wa-grey) 74%);
+	background-color: var(--win-white);
+  background-image :linear-gradient(315deg, var(--win-white) 0%, var(--win-grey) 74%);
 	top: 45%;
 	transform: translateY(-50%);
 	padding: 20px;
 	border-radius: 4px;
-	border: 1px solid var(--wa-orange);
-	box-shadow: 1px 1px 1px var(--wa-orange);
+	border: 1px solid var(--win-orange);
 }
 
-.winner 
+.--win-winner 
 {
 	font-family: serif;
 	display: block;
 	width: 100%;
 	text-align: center;
 	line-height: 0.1;
-	padding-top: 5px;
+	padding-top: 8px;
 }
 
-.winner:after
+.--win-winner:after
 {
   display: block;
   height: 2px;
-  background-color: var(--wa-orange);
+  background-color: var(--win-orange);
   content: " ";
   width: 100px;
   margin: 0 auto;
   margin-top: 30px;
 }
 
-.trophy
+.--win-trophy
 {
 	display: block;
-	height: 50px;
-	width: 50px;
+	padding-top: 6px;
+	height: 56px;
+	width: 56px;
 }
 
-.final-score
+.--win-final-score
 {
 	display: block;
-	font-size: 19px;
-	padding-top: 2px;
+	font-size: 20px;
+	padding-top: 5px;
 }
 
-.restart 
+.--win-restart 
 {
 	display: block;
-	margin-top: 20px;
+	margin-top: 34px;
 	padding: 15px 22.5px;
 	font-size: 18px;
 	border: none;
-	background: var(--wa-blue);
-	background: linear-gradient(var(--wa-blue), var(--wa-blue2));
+	background: var(--win-blue);
+	background: linear-gradient(var(--win-blue), var(--win-blue2));
 	border: 1px solid #222;
 	border-radius: 6px;
 	color: white;
@@ -91,19 +91,19 @@
 	cursor: pointer;
 }
 
-.restart:hover 
+.--win-restart:hover 
 {
-  background: linear-gradient(var(--wa-blue2), var(--wa-blue3));
+  background: linear-gradient(var(--win-blue2), var(--win-blue3));
 }
 
-.share-text 
+.--win-share-text 
 {
 	display: block;
 	line-height: 0.1;
-	padding-top: 20px;
+	padding-top: 15px;
 }
 
-.social 
+.--win-social 
 {
 	display: flex;
 	flex-direction: row;
@@ -114,23 +114,23 @@
 	width: 30%;
 }
 
-.share-facebook:hover 
+.--win-share-facebook:hover 
 {
-  background: lighten(var(--wa-blue5), 10%);
+  background: lighten(var(--win-blue5), 10%);
 }
 
-.share-facebook img
+.--win-share-facebook img
 {
 	height: 30px;
 	width: 30px;
 }
 
-.share-twitter:hover 
+.--win-share-twitter:hover 
 {
-  background: lighten(var(--wa-blue4), 10%);
+  background: lighten(var(--win-blue4), 10%);
 }
 
-.share-twitter img
+.--win-share-twitter img
 {
 	height: 30px;
 	width: 30px;

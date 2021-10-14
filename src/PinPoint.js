@@ -150,7 +150,7 @@ class PinPoint extends Component
   {
     return this.state.botChoiceRatios.filter(b => b.difficulty === this.state.difficulty 
                                                   && b.spawnCnt === currSpawnCnt
-                                                  && b.cityRange === this.state.cityCnt)
+                                                  && b.cityRange === Number(this.state.cityCnt))
                                      .map(b => b.correctRatio);  
   }
 
@@ -306,7 +306,7 @@ class PinPoint extends Component
         }
         else 
         {
-          content = <div>
+          content = <div className="--pin-game-container">
                       <IntelliBase activePlayer = {this.state.activePlayer}
                                    activePlayerImg = {this.state.activePlayerImg}
                                    leadPlayer = {leadPlayer}
