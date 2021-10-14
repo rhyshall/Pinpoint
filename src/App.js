@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './App.css';
-import Header from './Header';
-import Backdrop from './Backdrop';
-import Home from './Home';
-import About from './About';
-import Glossary from './Glossary';
-import Contact from './Contact';
+import Header from './components/Header/Header';
+import Backdrop from './components/Backdrop/Backdrop';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Glossary from './components/Glossary/Glossary';
+import Contact from './components/Contact/Contact';
 import PinPoint from './PinPoint';
-import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, GLOSSARY_PAGE, CONTACT_PAGE} from './Const';
+import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, GLOSSARY_PAGE, CONTACT_PAGE} from './shared/Const';
 
 class App extends Component
 {

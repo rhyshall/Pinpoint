@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './CircTimer.css';
-import {describeArc, mapNumber} from './Common';
-import {START_SECS, START_SECS_LEFT, TURN_WAIT_TIME} from './Const';
+import {describeArc, mapNumber} from '../../shared/Common';
+import {START_SECS, START_SECS_LEFT, TURN_WAIT_TIME} from '../../shared/Const';
 
 class CircTimer extends Component 
 {

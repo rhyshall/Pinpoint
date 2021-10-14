@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import './Options.css';
-import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from './Const';
-import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './Const';
-import {CREATE_GAME, FIND_GAME} from './Const';
-import {CANADA_MAP, US_MAP} from './Const';
-import {DFLT_MODE, DFLT_NAME_ONE, DFLT_NAME_TWO} from './Const';
-import {DFLT_CITY_RANGE, DFLT_SPAWN_CNT, DFLT_MAX_SCORE} from './Const';
-import {MIN_SPAWN_CNT, MAX_SPAWN_CNT} from './Const';
-import {MIN_CITY_CNT, MAX_CITY_CNT} from './Const';
-import {MIN_SCORE, MAX_SCORE} from './Const';
+import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from '../../shared/Const';
+import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from '../../shared/Const';
+import {CREATE_GAME, FIND_GAME} from '../../shared/Const';
+import {CANADA_MAP, US_MAP} from '../../shared/Const';
+import {DFLT_MODE, DFLT_NAME_ONE, DFLT_NAME_TWO} from '../../shared/Const';
+import {DFLT_CITY_RANGE, DFLT_SPAWN_CNT, DFLT_MAX_SCORE} from '../../shared/Const';
+import {MIN_SPAWN_CNT, MAX_SPAWN_CNT} from '../../shared/Const';
+import {MIN_CITY_CNT, MAX_CITY_CNT} from '../../shared/Const';
+import {MIN_SCORE, MAX_SCORE} from '../../shared/Const';
 
 class Options extends Component
 {

@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
-import IntelliBase from './IntelliBase';
-import IntelliMap from './IntelliMap';
-import WinAlert from './WinAlert';
-import Options from './Options';
+import IntelliBase from './components/Map/Header/IntelliBase';
+import IntelliMap from './components/Map/Body/IntelliMap';
+import WinAlert from './components/WinAlert/WinAlert';
+import Options from './components/Options/Options';
 import axios from 'axios';
-import {BOT_CHOICE_RATIO_FILE, BOT_CHOICE_RATIO_CNT} from './Const';
-import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from './Const';
-import {CANADA_MAP, US_MAP} from './Const';
-import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './Const';
-import {CREATE_GAME, FIND_GAME} from './Const';
-import {OPTIONS_SCREEN, MAP_SCREEN} from './Const';
-import {PLAYER_ONE_IMG, PLAYER_TWO_IMG} from './Const';
-import {genBotName} from './Common';
+import {BOT_CHOICE_RATIO_FILE, BOT_CHOICE_RATIO_CNT} from './shared/Const';
+import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from './shared/Const';
+import {CANADA_MAP, US_MAP} from './shared/Const';
+import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './shared/Const';
+import {CREATE_GAME, FIND_GAME} from './shared/Const';
+import {OPTIONS_SCREEN, MAP_SCREEN} from './shared/Const';
+import {PLAYER_ONE_IMG, PLAYER_TWO_IMG} from './shared/Const';
+import {genBotName} from './shared/Common';
 
 class PinPoint extends Component
 {
