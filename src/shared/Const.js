@@ -50,6 +50,9 @@ export const ABOUT_PAGE = 2;
 export const PLAY_PAGE = 3;
 export const GLOSSARY_PAGE = 4;
 export const CONTACT_PAGE = 5;
+export const GMAIL_SERVICE_ID = 'service_1y9djas';
+export const MAIL_JS_TEMPLATE_ID = 'template_vs2k7pr';
+export const MAIL_JS_USER_ID = 'user_KHa18J4ifnL9cnLlOJnhZ';
 export const BOT_NAMES = ['Carrot',
                           'Hermione',
                           'Hammer',

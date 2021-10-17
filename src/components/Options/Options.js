@@ -191,6 +191,7 @@ class Options extends Component
                      <input className="--opt-player-textfield --opt-player-two"
                             placeholder="Player 2"
                             maxLength="20"
+                            type="text"
                             onChange={this.setPlayerName}></input>
                    </label>
                  </div>;
@@ -266,58 +267,56 @@ class Options extends Component
                 </div>;
     }
 
-    return(<div className="--opt-options-container">
-             <form className="--opt-options">
-               <div className="--opt-header-content">
-                 <h2>Choose Your Settings</h2>
+    return(<form className="--opt-options">
+             <div className="--opt-header-content">
+               <h2>Choose Your Settings</h2>
+             </div>
+                   
+             <div className="--opt-content --opt-mode-content">
+               <h4>Opponent</h4>
+               <div className="--opt-mode-icon-group">
+                 <img className={`--opt-robot-img${this.state.mode === BOT_MODE ?
+                                                   ' --opt-select-img' : 
+                                                   ''}`}
+                      src="robot.png"
+                      alt="Bot Mode"
+                      title="Bot Mode"
+                      onClick={this.selectImg}></img>
+                 <img className={`--opt-player-img${this.state.mode == LOCAL_MODE ?
+                                                    ' --opt-select-img' : 
+                                                    ''}`}
+                      src="player.png"
+                      alt="Local PvP Mode"
+                      title="Local PvP Mode"
+                      onClick={this.selectImg}></img>
+                 <img className={`--opt-world-img${this.state.mode == NETWORK_MODE ?
+                                                   ' --opt-select-img' : 
+                                                   ''}`}
+                      src="world.png"
+                      alt="Network PvP Mode"
+                      title="Network PvP Mode"
+                      onClick={this.selectImg}></img>
                </div>
-                     
-               <div className="--opt-content --opt-mode-content">
-                 <h4>Opponent</h4>
-                 <div className="--opt-mode-icon-group">
-                   <img className={`--opt-robot-img${this.state.mode === BOT_MODE ?
-                                                     ' --opt-select-img' : 
-                                                     ''}`}
-                        src="robot.png"
-                        alt="Bot Mode"
-                        title="Bot Mode"
-                        onClick={this.selectImg}></img>
-                   <img className={`--opt-player-img${this.state.mode === LOCAL_MODE ?
-                                                      ' --opt-select-img' : 
-                                                      ''}`}
-                        src="player.png"
-                        alt="Local PvP Mode"
-                        title="Local PvP Mode"
-                        onClick={this.selectImg}></img>
-                   <img className={`--opt-world-img${this.state.mode === NETWORK_MODE ?
-                                                     ' --opt-select-img' : 
-                                                     ''}`}
-                        src="world.png"
-                        alt="Network PvP Mode"
-                        title="Network PvP Mode"
-                        onClick={this.selectImg}></img>
-                 </div>
-               </div>
-             
-               <div className="--opt-content --opt-player-one-content">
-                 <h4>Player One</h4>
-                 <label className="--opt-player-label">
-                   <input className="--opt-player-textfield --opt-player-one"
-                          placeholder="Player 1"
-                          maxLength="20"
-                          onChange={this.setPlayerName}></input>
-                 </label>
-               </div>
-                
-               {option3}      
-               {option4} 
-               {option5}
-               {option6}  
-
-                <button className="--opt-submit-btn"
-                        onClick={this.startGame}>Start</button>   
-             </form>
-           </div>);
+             </div>
+           
+             <div className="--opt-content --opt-player-one-content">
+               <h4>Player One</h4>
+               <label className="--opt-player-label">
+                 <input className="--opt-player-textfield --opt-player-one"
+                        placeholder="Player 1"
+                        maxLength="20"
+                        type="text"
+                        onChange={this.setPlayerName}></input>
+               </label>
+             </div>
+              
+             {option3}      
+             {option4} 
+             {option5}
+             {option6}  
+              <button className="--opt-submit-btn"
+                      onClick={this.startGame}>Start</button>   
+           </form>);
   }
 }
 
