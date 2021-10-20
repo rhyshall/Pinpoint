@@ -19,8 +19,6 @@ class Contact extends Component
     this.setSubject = this.setSubject.bind(this);
     this.setMessage = this.setMessage.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.removeFieldWarnings = this.removeFieldWarnings.bind(this);
-    this.mailMsg = this.mailMsg.bind(this);
   }
 
   setName(e) 
@@ -54,12 +52,19 @@ class Contact extends Component
     emailjs.send(GMAIL_SERVICE_ID, 
                  MAIL_JS_TEMPLATE_ID,
                  templateParams).then(res => 
-                                           {
-                                             console.log('Email successfully sent!');
-                                           }).catch(err => 
+                                      {
+                                        console.log('Email successfully sent!');
+                                      }).catch(err => 
                                                     {
                                                       console.error(err);
                                                     });
+  }
+
+  submitConfirm()
+  {
+    let submitConfirmHTML = document.querySelector('.--con-submit-confirm');
+    submitConfirmHTML.setAttribute("style",
+                                   "display: inline;");
   }
 
   disableSubmit(submitHTML)
@@ -117,7 +122,9 @@ class Contact extends Component
     else 
     {
       this.removeFieldWarnings();
-      this.disableSubmit(e.target);    
+      this.disableSubmit(e.target);  
+      this.submitConfirm();
+
       this.mailMsg();
     }
   }
@@ -149,6 +156,7 @@ class Contact extends Component
                  </label>
                </div>
              </div> 
+
              <div className="--con-content --con-subject">
                  <label className="--con-subject-label">
                    <input className="--con-subject-text --con-textfield"
@@ -158,13 +166,19 @@ class Contact extends Component
                           onChange={this.setSubject}></input>
                  </label>
              </div> 
-             <div className="con-content --con-message">
+
+             <div className="--con-content --con-message">
                <textarea className="--con-message-text --con-textarea"
                          maxLength="1500"
                          rows="12"
                          placeholder="Message (max. 1500 chars)"
                          onChange={this.setMessage}></textarea>
              </div>
+             
+             <div className="--con-submit-confirm">
+               <p>Thank you for your message. Expect a response shortly!</p>
+             </div>
+
              <button className="--con-submit-btn"
                      onClick={this.handleSubmit}>Submit</button>   
            </form>);
