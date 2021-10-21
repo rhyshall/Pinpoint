@@ -21,7 +21,7 @@
   height: 50px;
   width: 100%;
   background-color: var(--head-orange);
-  background-image :linear-gradient(315deg, var(--head-orange) 50%, var(--head-orange2) 74%);
+  background-image :linear-gradient(315deg, var(--head-orange) 10%, var(--head-orange2) 34%);
   border: 1px solid var(--head-black);
 }
 
