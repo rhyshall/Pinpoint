@@ -4,10 +4,10 @@ import Header from './components/Header/Header';
 import Backdrop from './components/Backdrop/Backdrop';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Glossary from './components/Glossary/Glossary';
+import Explore from './components/Explore/Explore';
 import Contact from './components/Contact/Contact';
 import PinPoint from './PinPoint';
-import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, GLOSSARY_PAGE, CONTACT_PAGE} from './shared/Const';
+import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, EXPLORE_PAGE, CONTACT_PAGE} from './shared/Const';
 
 class App extends Component
 {
@@ -37,9 +37,9 @@ class App extends Component
     {
       content = <PinPoint />;
     }
-    else if (page === GLOSSARY_PAGE)
+    else if (page === EXPLORE_PAGE)
     {
-      content = <Glossary />
+      content = <Explore />
     }
     else if (page === CONTACT_PAGE)
     {

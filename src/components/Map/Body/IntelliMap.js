@@ -2,7 +2,7 @@ import './IntelliMap.css';
 import React, {Component} from 'react';
 import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
 import {DFLT_LAT, DFLT_LNG, DFLT_BOUNDS} from '../../../shared/Const';
-import {DFLT_ZOOM, DFLT_MAX_ZOOM, DFLT_MIN_ZOOM} from '../../../shared/Const';
+import {DFLT_GAME_ZOOM, DFLT_GAME_MAX_ZOOM, DFLT_GAME_MIN_ZOOM} from '../../../shared/Const';
 import {CANADA_MAP, US_MAP} from '../../../shared/Const';
 import {CANADA_CITY_FILE, US_CITY_FILE} from '../../../shared/Const';
 import {BOT_MODE, LOCAL_MODE, NETWORK_MODE} from '../../../shared/Const';
@@ -24,7 +24,7 @@ class IntelliMap extends Component
                   targetCity: null,
                   spawnCoords: Array.from({length: this.props.spawnCnt}),
                   botMaxWait: 0,
-                  zoom: DFLT_ZOOM,
+                  zoom: DFLT_GAME_ZOOM,
                   latitude: DFLT_LAT,
                   longitude: DFLT_LNG,
                   markers: Array.from({length: this.props.spawnCnt}),
@@ -32,7 +32,6 @@ class IntelliMap extends Component
                   miss: false,
                   popUpVisible: false};
     this.handleMarkerClick = this.handleMarkerClick.bind(this);
-    this.hidePopUp = this.hidePopUp.bind(this);
   }
 
   selectCityFile(mapType)
@@ -134,7 +133,7 @@ class IntelliMap extends Component
 
   returnFocus()
   {
-    this.setState({zoom: DFLT_ZOOM,
+    this.setState({zoom: DFLT_GAME_ZOOM,
                    latitude: DFLT_LAT,
                    longitude: DFLT_LNG});
   }
@@ -332,7 +331,7 @@ class IntelliMap extends Component
                  {    
                    return <Marker id={`${c.City}_${c.Population}_${c.Latitude}_${c.Longitude}`}
                            key={`marker-${c.City}-${c.Population}-${c.Latitude}-${c.Longitude}`} 
-                           className="marker"
+                           className="--im-marker"
                            position={[c.Latitude, 
                                       c.Longitude]}
                            riseOnHover={true}
@@ -443,17 +442,6 @@ class IntelliMap extends Component
     }
   }
 
-  hidePopUp(e)
-  {
-    let popUp = null;
-    
-    if (this.props.endTurn || this.props.disableMap)
-    {
-      popUp = document.querySelector('.pop-up');
-      popUp.remove();
-    }
-  }
-
   render()
   {
     return(<div>
@@ -461,10 +449,9 @@ class IntelliMap extends Component
                   center={[this.state.latitude, 
                            this.state.longitude]}
                   zoom={this.state.zoom}
-                  minZoom={DFLT_MIN_ZOOM}
-                  maxZoom={DFLT_MAX_ZOOM}
+                  minZoom={DFLT_GAME_MIN_ZOOM}
+                  maxZoom={DFLT_GAME_MAX_ZOOM}
                   maxBounds={DFLT_BOUNDS}
-                  onPopUpOpen={this.hidePopUp}
                   style= {this.state.isBotSelect ? {"cursor": "none"} : {"cursor": "default"}}>
                <TileLayer attribution='&copy; <a href="https://www.openstreetmap. orgcopyright">OpenStreetMap</ a> contributors'  
                         url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/> 

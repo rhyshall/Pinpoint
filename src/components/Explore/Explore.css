@@ -1,0 +1,273 @@
+:root 
+{
+  --ex-blue: #5999d8;
+	--ex-blue2: #3473b3; 
+  --ex-blue3: #3f7fc0;
+  --ex-white: #fcfcfcef;
+  --ex-grey: #e2ded4ea;
+  --ex-grey2: #e7e5dde1;
+	--ex-black: #000000; 
+  --ex-black2: #413838a1; 
+	--ex-orange: #e67d2280;
+  --ex-orange2: #e67d22b6;
+  --ex-yellow: #ffe60081; 
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+.--ex-container
+{
+	width: 860px;
+	height: auto; 
+	background-color: var(--ex-white);
+  background-image: linear-gradient(315deg, var(--ex-white) 20%, var(--ex-grey) 74%);
+  background-color: black;
+	border-radius: 4px;
+	border: 1px solid var(--ex-black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-bottom: 30px;
+}
+
+.--ex-header-content
+{
+  width: 100%;
+  text-align: center;
+  background-image :linear-gradient(315deg, var(--ex-blue3) 30%, var(--ex-blue2) 74%);
+  border-bottom: 1px solid var(--ex-black);
+  margin-bottom: 16px;
+}
+
+.--ex-header-content h2 
+{
+  padding: 9px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: var(--ex-white);
+  text-shadow: 1px 1px var(--ex-black);
+}
+
+.--ex-custom-options 
+{
+  display: flex;
+  flex-direction: row;
+	align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 4px;
+}
+
+.--ex-search-content 
+{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  pointer-events: none;
+  height: 32px;
+  width: 41%;
+}
+
+.--ex-search-content input 
+{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  height: 32px;
+  width: 268px;
+  background-color: var(ex-white);
+  color: var(--ex-black);
+  appearance: none;
+  border: 0;
+  border: 1px solid var(--ex-black);
+  outline: none;
+  border-radius: 8px;
+  padding: 0 10px;
+  pointer-events: all;
+  transition: border .25s ease, width .125s ease .125s;
+}
+
+.--ex-search-content input:focus 
+{
+  border: 2px solid var(--ex-orange);
+  width: 269px;
+}
+
+.--ex-filter-sort
+{
+  display: flex;
+  flex-direction: row;
+	align-items: bottom;
+  justify-content: left;
+  width: 35%;
+}
+
+.--ex-filter img 
+{
+  height: 19px;
+  cursor: pointer;
+  margin-top: 1px;
+}
+
+.--ex-filter img:hover
+{
+  opacity: 0.65;
+}
+
+.--ex-sort img 
+{
+  height: 21px;
+  padding-left: 22px;
+  cursor: pointer;
+}
+
+.--ex-sort img:hover
+{
+  opacity: 0.65;
+}
+
+.--ex-page-area
+{
+  display: flex;
+  flex-direction: row;
+	align-items: bottom;
+  justify-content: right;
+  width: 24%;
+  margin-top: 1px;
+}
+
+.--ex-previous img 
+{
+  height: 17px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.--ex-previous img:hover
+{
+  opacity: 0.65;
+}
+
+.--ex-page-dropdown select
+{
+  height: 22px;
+  margin-left: 10px;
+  width: 32px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: '';
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: -1px;
+}
+
+.--ex-next img 
+{
+  height: 17px;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.--ex-next img:hover
+{
+  opacity: 0.65;
+}
+
+.--ex-city-content 
+{
+  width: 84%;
+  margin-left: 8%;
+}
+
+.--ex-city-content table
+{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  box-shadow: 2px 2px 12px var(--ex-white);
+}
+
+th 
+{
+  padding: 5px;
+  text-align: center;
+}
+
+td 
+{
+  padding: 5px;
+  text-align: center;
+}
+
+td:nth-child(1), th:nth-child(1) 
+{
+  min-width: 250px;
+}
+
+td:nth-child(2), th:nth-child(2) 
+{
+  width: 125px;
+}
+
+td:nth-child(3), th:nth-child(3) 
+{
+  width: 100px;
+}
+
+td:nth-child(4), th:nth-child(4) 
+{
+  width: 225px;
+}
+
+thead
+{
+  background-color: var(--head-orange);
+  background-image :linear-gradient(315deg, var(--head-orange) 10%, var(--head-orange2) 24%);
+  color: var(--ex-white);
+}
+
+thead tr 
+{
+  display: block;
+  position: relative;
+}
+
+tbody
+{
+  display: block;
+  overflow: auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+.--ex-highlight-row
+{
+  font-weight: 700;
+  background-color: var(--ex-yellow);
+}
+
+.--ex-map 
+{
+  margin-top: 24px;
+  height: 316px;
+  width: 100%;
+  border: 1px solid var(--ex-black);
+}
+
+.--ex-pop-up 
+{
+  font-weight: 700;
+  position: absolute;
+  display: inline;
+}

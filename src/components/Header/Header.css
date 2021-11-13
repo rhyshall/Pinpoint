@@ -48,18 +48,18 @@
 
 .--head-logo h2 
 {
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: var(--head-white2);
-  text-shadow: 1px 1px var(--head-black);
+  text-shadow: 1.5px 1.5px var(--head-black);
   line-height: 32px;
 }
 
 .--head-logo img 
 {
-  height: 31px;
-  width: 31px;
+  height: 33px;
+  width: 33px;
   padding-left: 6px;
 }
 

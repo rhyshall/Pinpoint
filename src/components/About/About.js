@@ -7,7 +7,7 @@ class About extends Component
   {
     return(<div className="--about-container">
              <div className="--about-header-content">
-               <h2>About Us</h2>
+               <h2>About PinPoint Cities</h2>
              </div>
              
              <div className="about-features">
@@ -15,13 +15,13 @@ class About extends Component
                  <img className="--about-img"
                       src="navigate.png"
                       alt="Navigate"></img>
-                 <p>PinPoint Cities is all about mixing fun with education in this turn-based, two-player
-                    game. One "target" city is drawn and placed on the map with other "decoy" cities. The first player to "pinpoint" the target city wins the round.</p>
+                 <p>PinPoint Cities is all about mixing fun with education in this <b>free</b> turn-based,  
+                    two-player game. One "target" city is drawn and placed on the map with other "decoy" cities. The first player to "pinpoint" the target city wins the round.</p>
                </div>
   
                <div className="--about-feature --about-img-right">
                  <p>Customize your experience by choosing your desired country, city range (eg. 100 most  
-                    populous), spawn count (number of cities that appear on the map, including the target city) and max score (score to win).</p>
+                    populous), spawn count (number of cities that appear on the map) and max score (score to win).</p>
                     <img className="--about-img"
                          src="choose.png"
                          alt="Choice"></img>
@@ -51,7 +51,7 @@ class About extends Component
                </div>  
   
                <div className="--about-feature --about-img-right">
-                 <p>Take a trip to the Glossary page now and then to become more familiar with each 
+                 <p>Take a trip to the "Explore" page now and then to become more familiar with each 
                     city.</p>
                  <img className="--about-img"
                       src="study.png"

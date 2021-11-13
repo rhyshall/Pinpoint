@@ -1,11 +1,15 @@
 export const DFLT_LAT = 38;
 export const DFLT_LNG = -96;
-export const DFLT_ZOOM = 5;
-export const DFLT_MIN_ZOOM = 4;
-export const DFLT_MAX_ZOOM = 6;
+export const DFLT_GAME_ZOOM = 5;
+export const DFLT_EXPLORE_ZOOM = 4;
+export const DFLT_GAME_MIN_ZOOM = 4;
+export const DFLT_GAME_MAX_ZOOM = 6;
+export const DFLT_EXPLORE_MIN_ZOOM = 4;
+export const DFLT_EXPLORE_MAX_ZOOM = 7;
 export const DFLT_BOUNDS = [[14, -64], [65, -164]];
 export const CANADA_CITY_FILE = 'most_populous_canada_cities.json';
 export const US_CITY_FILE = 'most_populous_us_cities.json';
+export const US_MAX_CITY_CNT = 1000;
 export const BOT_CHOICE_RATIO_FILE = 'bot_correct_ratios.json';
 export const BOT_CHOICE_RATIO_CNT = 900;
 export const BOT_MODE = 1;
@@ -48,11 +52,112 @@ export const MAX_SCORE = 20;
 export const HOME_PAGE = 1;
 export const ABOUT_PAGE = 2;
 export const PLAY_PAGE = 3;
-export const GLOSSARY_PAGE = 4;
+export const EXPLORE_PAGE = 4;
 export const CONTACT_PAGE = 5;
 export const GMAIL_SERVICE_ID = 'service_1y9djas';
 export const MAIL_JS_TEMPLATE_ID = 'template_vs2k7pr';
-export const MAIL_JS_USER_ID = 'user_KHa18J4ifnL9cnLlOJnhZ';
+export const MAIL_JS_USER_ID = 'user_KHa18J4ifnL9cnLlOJnhZ'; 
+export const DFLT_EXPLORE_REC_PER_PAGE = 10;
+export const US_STATE_ABBR_LIST = [['AL',
+                                    'Alabama'],
+                                   ['AK',
+                                    'Alaska'],
+                                   ['AZ',
+                                    'Arizona'],
+                                   ['AR',
+                                    'Arkansas'],
+                                   ['CA',
+                                    'California'],
+                                   ['CO',
+                                    'Colorado'],
+                                   ['CT',
+                                    'Connecticut'],
+                                   ['DE',
+                                    'Delaware'],
+                                   ['FL',
+                                    'Florida'],
+                                   ['GA',
+                                    'Georgia'],
+                                   ['HI',
+                                    'Hawaii'],
+                                   ['ID',
+                                    'Idaho'],
+                                   ['IL',
+                                    'Illinois'],
+                                   ['IN',
+                                    'Indiana'],
+                                   ['IA',
+                                    'Iowa'],
+                                   ['KS',
+                                    'Kansas'],
+                                   ['KY',
+                                    'Kentucky'],
+                                   ['Louisiana',
+                                    'LA'],
+                                   ['ME',
+                                    'Maine'],
+                                   ['MD',
+                                    'Maryland'],
+                                   ['MA',
+                                    'Massachusetts'],
+                                   ['MI',
+                                    'Michigan'],
+                                   ['MN',
+                                    'Minnesota'],
+                                   ['MS',
+                                    'Mississippi'],
+                                   ['MO',
+                                    'Missouri'],
+                                   ['MT',
+                                    'Montana'],
+                                   ['NE',
+                                    'Nebraska'],
+                                   ['NV',
+                                    'Nevada'],
+                                   ['NH',
+                                    'New Hampshire'],
+                                   ['NJ',
+                                    'New Jersey'],
+                                   ['NM',
+                                    'New Mexico'],
+                                   ['NY',
+                                    'New York'],
+                                   ['NC',
+                                    'North Carolina'],
+                                   ['ND',
+                                    'North Dakota'],
+                                   ['OH',
+                                    'Ohio'],
+                                   ['OK',
+                                    'Oklahoma'],
+                                   ['OR',
+                                    'Oregon'],
+                                   ['PA',
+                                    'Pennsylvania'],
+                                   ['RI',
+                                    'Rhode Island'],
+                                   ['SC',
+                                    'South Carolina'],
+                                   ['SD',
+                                    'South Dakota'],
+                                   ['TN',
+                                    'Tennessee'],
+                                   ['TX',
+                                    'Texas'],
+                                   ['UT',
+                                    'Utah'],
+                                   ['VT',
+                                    'Vermont'],
+                                   ['VA',
+                                    'Virginia'],
+                                   ['WA',
+                                    'Washington'],
+                                   ['WV',
+                                    'West Virginia'],
+                                   ['WI',
+                                    'Wisconsin'],
+                                   ['WY',
+                                    'Wyoming']];
 export const BOT_NAMES = ['Carrot',
                           'Hermione',
                           'Hammer',
@@ -230,5 +335,3 @@ export const CORRECT_ANSWER_RESPONSES = [`Exactly right 🙂`,
                                          `Great 😄`,
                                          `Great 🙂`,
                                          `Good 😄`];
-
-

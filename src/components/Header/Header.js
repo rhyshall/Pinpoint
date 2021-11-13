@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Header.css'
-import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, GLOSSARY_PAGE, CONTACT_PAGE} from '../../shared/Const';
+import {HOME_PAGE, ABOUT_PAGE, PLAY_PAGE, EXPLORE_PAGE, CONTACT_PAGE} from '../../shared/Const';
 
 class Header extends Component
 {
@@ -16,12 +16,12 @@ class Header extends Component
   {
     let aboutHTML = document.querySelector(".--head-about");
     let playHTML = document.querySelector(".--head-play");
-    let glossaryHTML = document.querySelector(".--head-glossary");
+    let exploreHTML = document.querySelector(".--head-explore");
     let contactHTML = document.querySelector(".--head-contact");
 
     aboutHTML.classList.remove('--head-active-item');
     playHTML.classList.remove('--head-active-item');
-    glossaryHTML.classList.remove('--head-active-item');
+    exploreHTML.classList.remove('--head-active-item');
     contactHTML.classList.remove('--head-active-item');
   }
 
@@ -45,9 +45,9 @@ class Header extends Component
     {
       this.props.switchPage(PLAY_PAGE);
     }
-    else if (e.target.className.includes('glossary'))
+    else if (e.target.className.includes('explore'))
     {
-      this.props.switchPage(GLOSSARY_PAGE);
+      this.props.switchPage(EXPLORE_PAGE);
     }
     else if (e.target.className.includes('contact'))
     {
@@ -65,15 +65,15 @@ class Header extends Component
              <div className="--head-logo"
                   onClick={this.goHome}>
                <h2>PinPoint</h2>
-               <img src="target.png"
-                    alt="Target"></img>
+               <img src="city_block.png"
+                    alt="Cities"></img>
              </div>
 
              <nav className="--head-menu"
                   onClick={this.selectMenuOption}>
 				       <a className="--head-about">About</a>
 				       <a className="--head-play">Play</a>
-				       <a className="--head-glossary">Glossary</a>
+				       <a className="--head-explore">Explore</a>
 				       <a className="--head-contact">Contact</a>
 			       </nav>
            </div>);

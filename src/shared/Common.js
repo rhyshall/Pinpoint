@@ -1,4 +1,5 @@
 import {BOT_NAMES} from './Const';
+import {US_STATE_ABBR_LIST} from './Const';
 
 function random(max) 
 {
@@ -12,7 +13,45 @@ function genBotName()
   return BOT_NAMES[randNbr];
 }
 
+function USStateAbbrToName(abbr)
+{
+  let abbrNameMap = new Map(US_STATE_ABBR_LIST);
 
+  return abbrNameMap.get(abbr);
+}
+
+function getDegreesChar()
+{
+  return '°';
+}
+
+function getCoordFormat(lat,
+                        lng)
+{
+  let latDirection = lat >= 0 ? 'N' : 'S';
+  let lngDirection = lng >= 0 ? 'E' : 'W';
+  let newLat = Math.abs(lat).toFixed(2);
+  let newLng = Math.abs(lng).toFixed(2);
+
+  return newLat + getDegreesChar() + ' ' + latDirection + ', ' + 
+         newLng + getDegreesChar() + ' ' + lngDirection;
+}
+
+function getRowBackground(rowNbr)
+{
+  let colourCode = '#000000';
+
+  if (rowNbr % 2 === 0)
+  {
+    colourCode =  "#e7e5ddef";
+  }
+  else 
+  {
+    colourCode = "#fcfcfcef";
+  }
+
+  return colourCode;
+}
 
 function polarToCartesian(xPoint, 
                           yPoint, 
@@ -69,6 +108,10 @@ function mapNumber(nbr,
 
 export {random, 
         genBotName, 
+        USStateAbbrToName,
+        getDegreesChar,
+        getCoordFormat,
+        getRowBackground,
         polarToCartesian, 
         describeArc, 
         mapNumber};
