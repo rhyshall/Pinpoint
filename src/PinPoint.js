@@ -39,11 +39,13 @@ class PinPoint extends Component
                   playerTwoScore: 0,
                   endTurn: false,
                   turnText: '',
-                  screen: OPTIONS_SCREEN};
+                  screen: OPTIONS_SCREEN,
+                  timeOut: false};
 
     this.stopTimer = this.stopTimer.bind(this);
     this.nextTurn = this.nextTurn.bind(this);
     this.confirmTimerReset = this.confirmTimerReset.bind(this);
+    this.clearTimeout = this.clearTimeout.bind(this);
     this.disableMap = this.disableMap.bind(this);
     this.updateTargetCity = this.updateTargetCity.bind(this);
     this.raiseScore = this.raiseScore.bind(this);
@@ -161,7 +163,13 @@ class PinPoint extends Component
 
   confirmTimerReset()
   {
-    this.setState({resetTimer: false});
+    this.setState({resetTimer: false,
+                   timeOut: true});
+  }
+
+  clearTimeout()
+  {
+    this.setState({timeOut: false})
   }
 
   disableMap()
@@ -337,7 +345,9 @@ class PinPoint extends Component
                                   activePlayer = {this.state.activePlayer}
                                   playerOne = {this.state.playerOne} 
                                   playerTwo = {this.state.playerTwo} 
-                                  getBotChoiceRatio = {this.getBotChoiceRatio}/> 
+                                  getBotChoiceRatio = {this.getBotChoiceRatio}
+                                  timeOut = {this.state.timeOut}
+                                  clearTimeout = {this.clearTimeout}/> 
                     </div>;
         }
       }

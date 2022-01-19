@@ -30,6 +30,8 @@ class Explore extends Component
     this.searchResults = this.searchResults.bind(this);
     this.handlePageDropSelect = this.handlePageDropSelect.bind(this);
     this.handleZoom = this.handleZoom.bind(this);
+    this.previousPage = this.previousPage.bind(this);
+    this.nextPage = this.nextPage.bind(this);
   }
 
   setMarkers(cityDisplay)
@@ -141,6 +143,13 @@ class Explore extends Component
     this.setMarkers(newCityDisplay);
   }
 
+  updatePageDisplay(newPage)
+  {
+    let pageHTML = document.querySelector('.--ex-page-select');
+
+    pageHTML.value = newPage;
+  }
+
   filterResults(e)
   {
     console.log('Filter');
@@ -153,22 +162,33 @@ class Explore extends Component
 
   previousPage(e)
   {
+    let newPage = this.state.page - 1;
+
     if (this.state.page > 1) 
     {
-      this.setState({page: this.state.page-11});
+      //display new page nbr on page dropdown
+      this.updatePageDisplay(newPage);
+
+      this.setState({page: newPage},
+                    this.syncCityDisplay(this.state.citySet,
+                                         newPage));
     }
   }
 
   nextPage(e)
   {
-    this.setState({page: this.state.page+1});
-  }
+    let newPage = this.state.page + 1;
 
-  xPage(targetPage)
-  {
-    this.setState({page: targetPage})
-  }
+    if (this.state.page < this.state.maxPage)
+    {
+      //display new page nbr on page dropdown
+      this.updatePageDisplay(newPage);
 
+      this.setState({page: newPage},
+                    this.syncCityDisplay(this.state.citySet,
+                                         newPage));
+    }
+  }
 
   getPageList(pageCnt)
   {
@@ -239,6 +259,7 @@ class Explore extends Component
                                  {"backgroundColor": getRowBackground(i)} : 
                                  {"backgroundColor": "#ffe60081"}}
                            onClick={this.handleRowClick}>
+                         <td>{((this.state.page-1)*DFLT_EXPLORE_REC_PER_PAGE)+(i+1)}</td>
                          <td>{c.City}</td>
                          <td>{c.Population}</td>
                          <td>{c.State}</td>
@@ -300,7 +321,8 @@ class Explore extends Component
                    </div>
   
                    <div className="--ex-page-dropdown">
-                     <select name="page-dropdown"
+                     <select className="--ex-page-select"
+                             name="page-dropdown"
                              onChange={this.handlePageDropSelect}>
                        {pageOptions}
                      </select>
@@ -310,7 +332,7 @@ class Explore extends Component
                      <img src="next.png"
                           alt="Next Page"
                           title="Next Page"
-                          onClick={this.NextPage}>                          
+                          onClick={this.nextPage}>                          
                      </img>
                    </div>
                  </div>
@@ -319,6 +341,7 @@ class Explore extends Component
                <table id="cityTable">
                  <thead>
                    <tr>
+                     <th>Rank</th>
                      <th>City</th>
                      <th>Population</th>
                      <th>State</th>

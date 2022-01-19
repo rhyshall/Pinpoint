@@ -212,22 +212,27 @@ td
 
 td:nth-child(1), th:nth-child(1) 
 {
-  min-width: 250px;
+  width: 75px;
 }
 
 td:nth-child(2), th:nth-child(2) 
 {
-  width: 125px;
+  min-width: 234px;
 }
 
 td:nth-child(3), th:nth-child(3) 
 {
-  width: 100px;
+  width: 140px;
 }
 
 td:nth-child(4), th:nth-child(4) 
 {
-  width: 225px;
+  width: 120px;
+}
+
+td:nth-child(5), th:nth-child(5) 
+{
+  width: 220px;
 }
 
 thead

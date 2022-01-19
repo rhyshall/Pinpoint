@@ -58,7 +58,7 @@ class CircTimer extends Component
   render() 
   {
     let secs = this.state.secs;
-		let secondsRadius = mapNumber(secs, 60, 0, 0, 360);
+		let secondsRadius = mapNumber(secs, 31, 0, 0, 360);
     
     return (<div className='--circ-countdown-item'>
 						  <SVGCircle radius={secondsRadius} />

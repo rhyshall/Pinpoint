@@ -16,7 +16,7 @@ class About extends Component
                       src="navigate.png"
                       alt="Navigate"></img>
                  <p>PinPoint Cities is all about mixing fun with education in this <b>free</b> turn-based,  
-                    two-player game. One "target" city is drawn and placed on the map with other "decoy" cities. The first player to "pinpoint" the target city wins the round.</p>
+                    two-player game. One "target" city is chosen and placed on the map with other "decoy" cities. The first player to "pinpoint" the target city wins the round.</p>
                </div>
   
                <div className="--about-feature --about-img-right">
@@ -46,7 +46,7 @@ class About extends Component
                  <img className="--about-img"
                       src="brain.png"
                       alt="Brain"></img>
-                 <p>Sharpen your knowledge in cities each time you play. In addition, brain games like 
+                 <p>Sharpen your city knowledge each time you play. In addition,  brain games like 
                     PinPoint Cities generally help improve memory capabilities and spatial awareness.</p>
                </div>  
   

@@ -12,6 +12,8 @@ import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from '../../../shared/Const';
 import {BOT_CORRECT_PRECISION, BOT_FOCUS_ZOOM, BOT_ZOOM_TIME_RANGE} from '../../../shared/Const';
 import {random} from '../../../shared/Common';
 import BotOutcomeText from '../../BotOutcome/BotOutcomeText';
+import TurnText from '../../TurnText/TurnText';
+import {TURN_TEXT_TIME} from '../../../shared/Const';
 import axios from 'axios';
 
 class IntelliMap extends Component
@@ -30,7 +32,8 @@ class IntelliMap extends Component
                   markers: Array.from({length: this.props.spawnCnt}),
                   isBotSelect: false,
                   miss: false,
-                  popUpVisible: false};
+                  botOutcomeVisible: false,
+                  turnTextVisible: false};
     this.handleMarkerClick = this.handleMarkerClick.bind(this);
   }
 
@@ -173,7 +176,7 @@ class IntelliMap extends Component
                      this.props.stopTimer();
 
                      this.clearDecoys();
-                     this.setState({popUpVisible: true},
+                     this.setState({botOutcomeVisible: true},
                                    this.endRound());
                    }, 
                    botZoomTime);
@@ -200,7 +203,7 @@ class IntelliMap extends Component
                      
                      this.setState({spawnCities: spawnCityList,
                                     markers: markersList,
-                                    popUpVisible: true},
+                                    botOutcomeVisible: true},
                                    this.forceUpdate());    
                      this.endTurn();         
                    },
@@ -282,7 +285,7 @@ class IntelliMap extends Component
 
     while (waitTime <= 1)
     {
-      waitTime = random(this.state.botMaxWait * 1000)+500;
+      waitTime = random(this.state.botMaxWait * 1000)+900;
     }
 
     let correctRatio = this.props.getBotChoiceRatio(this.state.spawnCities.length);
@@ -391,9 +394,13 @@ class IntelliMap extends Component
       this.chooseCities();
 
       this.setState({endTurn: false,
-                     popUpVisible: false});
+                     botOutcomeVisible: false,
+                     turnTextVisible: true});
       this.returnFocus();
       this.props.raiseScore();
+
+      setTimeout(() => this.setState({turnTextVisible: false}),
+                 TURN_TEXT_TIME);
     },
     ROUND_WAIT_TIME);
   }
@@ -406,10 +413,25 @@ class IntelliMap extends Component
     {
       this.props.nextTurn();
       this.returnFocus();
-      this.setState({popUpVisible: false});
+      this.setState({botOutcomeVisible: false,
+                     turnTextVisible: true});
       this.setMarkers();
+
+      setTimeout(() => this.setState({turnTextVisible: false}),
+                 TURN_TEXT_TIME);
     },
     TURN_WAIT_TIME);
+  }
+
+  checkTimeout()
+  {
+    if (this.props.timeOut === true)
+    {
+      this.setState({turnTextVisible: true});
+      setTimeout(() => this.setState({turnTextVisible: false}),
+                 TURN_TEXT_TIME);
+      this.props.clearTimeout();
+    }
   }
 
   handleMarkerClick(e)
@@ -435,6 +457,10 @@ class IntelliMap extends Component
       {
         this.setBotConfig();
       }
+
+      this.setState({turnTextVisible: true});
+      setTimeout(() => this.setState({turnTextVisible: false}),
+                 TURN_TEXT_TIME);
     }
     else 
     {
@@ -444,6 +470,9 @@ class IntelliMap extends Component
 
   render()
   {
+    //display turn text if player times out
+    this.checkTimeout();
+
     return(<div>
              <Map className="--im-map"
                   center={[this.state.latitude, 
@@ -459,7 +488,10 @@ class IntelliMap extends Component
              </Map>
              <BotOutcomeText miss={this.state.miss}
                              name={this.props.activePlayer}
-                             visible={this.state.popUpVisible}></BotOutcomeText>
+                             visible={this.state.botOutcomeVisible}></BotOutcomeText>
+             <TurnText name={this.props.activePlayer}
+                       playerNbr={this.props.activePlayer === this.props.playerOne ? 1 : 2}
+                       visible={this.state.turnTextVisible}></TurnText>
            </div>);
 
   }

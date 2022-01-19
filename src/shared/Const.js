@@ -26,11 +26,11 @@ export const OPTIONS_SCREEN = 1;
 export const MAP_SCREEN = 2;
 export const WIN_SCREEN = 2;
 export const START_SECS = 1;
-export const START_SECS_LEFT = 59;
+export const START_SECS_LEFT = 29;
 export const PLAYER_ONE_IMG = 'green_circle.png';
 export const PLAYER_TWO_IMG = 'red_circle.png';
-export const TURN_WAIT_TIME = 1000; //milliseconds
-export const ROUND_WAIT_TIME = 2100;
+export const TURN_WAIT_TIME = 1200; //milliseconds
+export const ROUND_WAIT_TIME = 2500;
 export const DFLT_MODE = LOCAL_MODE;
 export const DFLT_NAME_ONE = 'Player 1';
 export const DFLT_NAME_TWO = 'Player 2';
@@ -58,6 +58,7 @@ export const GMAIL_SERVICE_ID = 'service_1y9djas';
 export const MAIL_JS_TEMPLATE_ID = 'template_vs2k7pr';
 export const MAIL_JS_USER_ID = 'user_KHa18J4ifnL9cnLlOJnhZ'; 
 export const DFLT_EXPLORE_REC_PER_PAGE = 10;
+export const TURN_TEXT_TIME = 1400; //time to display player turn text
 export const US_STATE_ABBR_LIST = [['AL',
                                     'Alabama'],
                                    ['AK',
