@@ -14,7 +14,7 @@ body
   position: absolute;
   top: 38%;
   left: 50%;
-  width: 260px;
+  width: 320px;
   box-sizing: border-box;
   transform: translate(-50%, -50%);
   z-index: 999;
@@ -33,7 +33,7 @@ body
 {
   color: black;
   font-family: 'Roboto', sans-serif;
-  font-size: 14.5px;
+  font-size: 15.5px;
   line-height: 30px;
   font-weight: 100;
   text-align: center;

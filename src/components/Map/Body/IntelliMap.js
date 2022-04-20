@@ -1,7 +1,7 @@
 import './IntelliMap.css';
 import React, {Component} from 'react';
 import {Map, TileLayer, Marker, Popup} from 'react-leaflet';
-import {DFLT_LAT, DFLT_LNG, DFLT_BOUNDS} from '../../../shared/Const';
+import {DFLT_LAT, DFLT_LNG, GAME_DFLT_BOUNDS} from '../../../shared/Const';
 import {DFLT_GAME_ZOOM, DFLT_GAME_MAX_ZOOM, DFLT_GAME_MIN_ZOOM} from '../../../shared/Const';
 import {CANADA_MAP, US_MAP} from '../../../shared/Const';
 import {CANADA_CITY_FILE, US_CITY_FILE} from '../../../shared/Const';
@@ -13,7 +13,7 @@ import {BOT_CORRECT_PRECISION, BOT_FOCUS_ZOOM, BOT_ZOOM_TIME_RANGE} from '../../
 import {random} from '../../../shared/Common';
 import BotOutcomeText from '../../BotOutcome/BotOutcomeText';
 import TurnText from '../../TurnText/TurnText';
-import {TURN_TEXT_TIME} from '../../../shared/Const';
+import {TURN_TEXT_TIME, TURN_TEXT_WAIT_TIME} from '../../../shared/Const';
 import axios from 'axios';
 
 class IntelliMap extends Component
@@ -393,9 +393,10 @@ class IntelliMap extends Component
       this.props.nextTurn();
       this.chooseCities();
 
-      this.setState({endTurn: false,
-                     botOutcomeVisible: false,
-                     turnTextVisible: true});
+      setTimeout(() => this.setState({endTurn: false,
+                                     botOutcomeVisible: false,
+                                    turnTextVisible: true}),
+                 TURN_TEXT_WAIT_TIME);
       this.returnFocus();
       this.props.raiseScore();
 
@@ -480,7 +481,7 @@ class IntelliMap extends Component
                   zoom={this.state.zoom}
                   minZoom={DFLT_GAME_MIN_ZOOM}
                   maxZoom={DFLT_GAME_MAX_ZOOM}
-                  maxBounds={DFLT_BOUNDS}
+                  maxBounds={GAME_DFLT_BOUNDS}
                   style= {this.state.isBotSelect ? {"cursor": "none"} : {"cursor": "default"}}>
                <TileLayer attribution='&copy; <a href="https://www.openstreetmap. orgcopyright">OpenStreetMap</ a> contributors'  
                         url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/> 
@@ -492,8 +493,7 @@ class IntelliMap extends Component
              <TurnText name={this.props.activePlayer}
                        playerNbr={this.props.activePlayer === this.props.playerOne ? 1 : 2}
                        visible={this.state.turnTextVisible}></TurnText>
-           </div>);
-
+           </div>); 
   }
 }
 

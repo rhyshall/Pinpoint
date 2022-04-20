@@ -17,7 +17,7 @@ class BotOutcomeText extends Component
                 style={this.props.visible ? 
                        {"visibility": "visible"} :
                        {"visibility": "hidden"}}>
-             <div className="--bo-popup-content">
+             <div className="--tt-popup-content">
                {this.props.playerNbr === 1 ? turnTextOne : turnTextTwo}
              </div>
            </div>);

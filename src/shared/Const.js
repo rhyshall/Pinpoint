@@ -6,7 +6,8 @@ export const DFLT_GAME_MIN_ZOOM = 4;
 export const DFLT_GAME_MAX_ZOOM = 6;
 export const DFLT_EXPLORE_MIN_ZOOM = 4;
 export const DFLT_EXPLORE_MAX_ZOOM = 7;
-export const DFLT_BOUNDS = [[14, -64], [65, -164]];
+export const GAME_DFLT_BOUNDS = [[14, -64], [65, -164]];
+export const EXPLORE_DFLT_BOUNDS = [[14, -45], [65, -178]];
 export const CANADA_CITY_FILE = 'most_populous_canada_cities.json';
 export const US_CITY_FILE = 'most_populous_us_cities.json';
 export const US_MAX_CITY_CNT = 1000;
@@ -58,7 +59,8 @@ export const GMAIL_SERVICE_ID = 'service_1y9djas';
 export const MAIL_JS_TEMPLATE_ID = 'template_vs2k7pr';
 export const MAIL_JS_USER_ID = 'user_KHa18J4ifnL9cnLlOJnhZ'; 
 export const DFLT_EXPLORE_REC_PER_PAGE = 10;
-export const TURN_TEXT_TIME = 1400; //time to display player turn text
+export const TURN_TEXT_TIME = 1500; //time to display player turn text
+export const TURN_TEXT_WAIT_TIME = 500;
 export const US_STATE_ABBR_LIST = [['AL',
                                     'Alabama'],
                                    ['AK',

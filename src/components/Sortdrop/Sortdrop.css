@@ -1,0 +1,20 @@
+:root 
+{
+  --so-blue: #5999d8;
+	--so-blue2: #3473b3; 
+  --so-blue3: #3f7fc0;
+  --so-white: #fcfcfcef;
+  --so-grey: #e2ded4ea;
+  --so-grey2: #e7e5dde1;
+	--so-black: #000000; 
+  --so-black2: #413838a1; 
+	--so-orange: #e67d2280;
+  --so-orange2: #e67d22b6;
+  --so-yellow: #ffe60081; 
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}

@@ -6,8 +6,11 @@ import {CANADA_CITY_FILE, US_CITY_FILE} from '../../shared/Const';
 import {US_MAX_CITY_CNT} from '../../shared/Const';
 import {DFLT_EXPLORE_REC_PER_PAGE} from '../../shared/Const';
 import {getCoordFormat, USStateAbbrToName, getRowBackground} from '../../shared/Common';
-import {DFLT_EXPLORE_MIN_ZOOM, DFLT_EXPLORE_MAX_ZOOM, DFLT_BOUNDS} from '../../shared/Const';
+import {DFLT_EXPLORE_MIN_ZOOM, DFLT_EXPLORE_MAX_ZOOM, EXPLORE_DFLT_BOUNDS} from '../../shared/Const';
 import {DFLT_EXPLORE_ZOOM, DFLT_LAT, DFLT_LNG} from '../../shared/Const';
+import Filter from '../Filter/Filter';
+import Sortdrop from '../Sortdrop/Sortdrop';
+
 class Explore extends Component
 {
   constructor(props)
@@ -22,7 +25,9 @@ class Explore extends Component
                   longitude: DFLT_LNG,
                   page: 1,
                   maxPage: 1,
-                  activeRow: -1};
+                  activeRow: -1,
+                  filterOpen: false,
+                  sortOpen: false};
 
     this.loadCityData = this.loadCityData.bind(this);  
     this.handleMarkerClick = this.handleMarkerClick.bind(this);     
@@ -32,6 +37,9 @@ class Explore extends Component
     this.handleZoom = this.handleZoom.bind(this);
     this.previousPage = this.previousPage.bind(this);
     this.nextPage = this.nextPage.bind(this);
+    this.filterResults = this.filterResults.bind(this);
+    this.sortResults = this.sortResults.bind(this);
+    this.setSort = this.setSort.bind(this);
   }
 
   setMarkers(cityDisplay)
@@ -152,12 +160,21 @@ class Explore extends Component
 
   filterResults(e)
   {
-    console.log('Filter');
+    this.setState({filterOpen: true});
   }
 
   sortResults(e)
   {
-    console.log('Sort');
+    this.setState({sortOpen: true});
+  }
+
+  setSort(e)
+  {
+    console.log('lol');
+    let sortOption = document.querySelector('.--so-sort-select');
+    console.log(sortOption.value);
+
+    this.setState({sortOpen: false});
   }
 
   previousPage(e)
@@ -302,13 +319,19 @@ class Explore extends Component
                      </img>
                    </div> 
   
-                   <div className="--ex-sort">
+                   <div className="--ex-sort"
+                        style={this.state.sortOpen ? 
+                               {"visibility": "hidden"} :
+                               {"visibility": "visible"}}>
                      <img src="sort.png"
                           alt="Sort"
                           title="Sort"
                           onClick={this.sortResults}>
                      </img>
                    </div> 
+
+                   <Sortdrop visible = {this.state.sortOpen}
+                             setSort = {this.setSort}/>
                  </div>
 
                  <div className="--ex-page-area">
@@ -361,13 +384,15 @@ class Explore extends Component
                     onZoom={this.handleZoom}
                     minZoom={DFLT_EXPLORE_MIN_ZOOM}
                     maxZoom={DFLT_EXPLORE_MAX_ZOOM}
-                    maxBounds={DFLT_BOUNDS}>
+                    maxBounds={EXPLORE_DFLT_BOUNDS}>
                  <TileLayer attribution='&copy; <a href="https://www.openstreetmap. orgcopyright">OpenStreetMap</ a> contributors'  
                         url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/>
                  {this.state.markers}
                </Map>
+
+               <Filter visible = {this.state.filterOpen}/>
              </div>
-           </div>)
+           </div>);
   }
 }
 
