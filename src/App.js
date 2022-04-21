@@ -1,5 +1,9 @@
+/*
+  Author: Rhys Hall 
+*/
+
 import React, {Component} from 'react';
-import './App.css';
+import './App.css'; 
 import Header from './components/Header/Header';
 import Backdrop from './components/Backdrop/Backdrop';
 import Home from './components/Home/Home';
