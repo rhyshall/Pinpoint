@@ -208,6 +208,10 @@ td
   text-align: center;
 }
 
+#cityTable th > span:hover{
+  cursor: pointer;
+}
+
 td:nth-child(1), th:nth-child(1) 
 {
   width: 75px;

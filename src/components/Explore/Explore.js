@@ -364,11 +364,11 @@ class Explore extends Component
                <table id="cityTable">
                  <thead>
                    <tr>
-                     <th>Rank</th>
-                     <th>City</th>
-                     <th>Population</th>
-                     <th>State</th>
-                     <th>Coordinates</th>
+                     <th><span>Rank</span></th>
+                     <th><span>City</span></th>
+                     <th><span>Population</span></th>
+                     <th><span>State</span></th>
+                     <th><span>Coordinates</span></th>
                    </tr>
                  </thead>
 
