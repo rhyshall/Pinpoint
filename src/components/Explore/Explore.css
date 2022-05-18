@@ -208,7 +208,7 @@ td
   text-align: center;
 }
 
-#cityTable th > span:hover{
+#cityTable th > span.sortable:hover{
   cursor: pointer;
 }
 
