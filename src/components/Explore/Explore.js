@@ -35,6 +35,7 @@ class Explore extends Component {
       activeRow: -1,
       filterOpen: false,
       sortOpen: false,
+      sortState: { sortField: null, sortOrder: null }
     };
 
     this.loadCityData = this.loadCityData.bind(this);
@@ -248,19 +249,108 @@ class Explore extends Component {
   }
 
   handleTableHeaderClick(e) {
-    console.log(e.currentTarget.innerText);
+    let newSortOrder = 'ASC';
     switch (e.currentTarget.innerText) {
-      case "Rank":
-        console.log("From: Rank");
-        break;
       case "City":
-        console.log("From: City");
+        // set to sort ascending by default
+        let compareFnCity = (a,b) => {
+          if (a.City < b.City) {
+            return -1;
+          }
+          if (a.City > b.City) {
+            return 1;
+          }
+          return 0;
+        };
+
+        if (this.state.sortState.sortField === 'City') {
+          // Table is already sorted by city
+
+          if (this.state.sortState.sortOrder === 'ASC') {
+            // Table is currently sorted ASC, change to DESC
+            
+            compareFnCity = (a,b) => {
+              if (a.City > b.City) {
+                return -1;
+              }
+              if (a.City < b.City) {
+                return 1;
+              }
+              return 0;
+            }
+            newSortOrder = 'DESC';
+          }
+        }
+        const sortedByCity = [...this.state.cityDisplay].sort(compareFnCity);
+        this.setState({cityDisplay: sortedByCity, sortState: { sortField: 'City', sortOrder: newSortOrder }});
         break;
       case "Population":
-        console.log("From: Population");
+        let compareFnPopulation = (a,b) => {
+          const x = parseInt(a.Population.replace(/,/g, ''));
+          const y = parseInt(b.Population.replace(/,/g, ''));
+          if (x < y) {
+            return -1;
+          }
+          if (x > y) {
+            return 1;
+          }
+          return 0;
+        }
+        
+        if (this.state.sortState.sortField === 'Population') {
+          // Table is already sorted by Population
+
+          if (this.state.sortState.sortOrder === 'ASC') {
+            // currently sorted ASC, change to DESC
+            
+            compareFnPopulation = (a,b) => {
+              const x = parseInt(a.Population.replace(/,/g, ''));
+              const y = parseInt(b.Population.replace(/,/g, ''));
+              if (x > y) {
+                return -1;
+              }
+              if (x < y) {
+                return 1;
+              }
+              return 0;
+            }
+            newSortOrder = 'DESC';
+          }
+        }
+        const sortedByPopulation = [...this.state.cityDisplay].sort(compareFnPopulation);
+        this.setState({cityDisplay: sortedByPopulation, sortState: { sortField: 'Population', sortOrder: newSortOrder }});
         break;
       case "State":
-        console.log("From: State");
+        let compareFnState = (a,b) => {
+          if (a.State < b.State) {
+            return -1;
+          }
+          if (a.State > b.State) {
+            return 1;
+          }
+          return 0;
+        };
+
+        if (this.state.sortState.sortField === 'State') {
+          // Table is already sorted by state
+
+          if (this.state.sortState.sortOrder === 'ASC') {
+            // Table is currently sorted ASC, change to DESC
+            
+            compareFnState = (a,b) => {
+              if (a.State > b.State) {
+                return -1;
+              }
+              if (a.State < b.State) {
+                return 1;
+              }
+              return 0;
+            }
+            newSortOrder = 'DESC';
+          }
+        }
+        const sortedByState = [...this.state.cityDisplay].sort(compareFnState);
+        this.setState({cityDisplay: sortedByState, sortState: { sortField: 'State', sortOrder: newSortOrder }});
         break;
     }
   }
@@ -394,7 +484,7 @@ class Explore extends Component {
             <thead>
               <tr>
                 <th>
-                  <span class='sortable' onClick={this.handleTableHeaderClick}>Rank</span>
+                  <span>Rank</span>
                 </th>
                 <th>
                   <span class='sortable' onClick={this.handleTableHeaderClick}>City</span>
