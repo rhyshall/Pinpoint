@@ -250,6 +250,8 @@ class Explore extends Component {
 
   handleTableHeaderClick(e) {
     let newSortOrder = 'ASC';
+
+    // Sort city set and and set state to the sorted cities
     switch (e.currentTarget.innerText) {
       case "City":
         // set to sort ascending by default
@@ -281,8 +283,15 @@ class Explore extends Component {
             newSortOrder = 'DESC';
           }
         }
-        const sortedByCity = [...this.state.cityDisplay].sort(compareFnCity);
-        this.setState({cityDisplay: sortedByCity, sortState: { sortField: 'City', sortOrder: newSortOrder }});
+        const sortedByCity = [...this.state.citySet].sort(compareFnCity);
+        this.setState({
+          citySet: sortedByCity, 
+          sortState: { sortField: 'City', sortOrder: newSortOrder },
+          page: 1
+        }, () => {
+          this.updatePageDisplay(1);
+          this.syncCityDisplay(this.state.citySet, this.state.page);
+        });
         break;
       case "Population":
         let compareFnPopulation = (a,b) => {
@@ -317,8 +326,15 @@ class Explore extends Component {
             newSortOrder = 'DESC';
           }
         }
-        const sortedByPopulation = [...this.state.cityDisplay].sort(compareFnPopulation);
-        this.setState({cityDisplay: sortedByPopulation, sortState: { sortField: 'Population', sortOrder: newSortOrder }});
+        const sortedByPopulation = [...this.state.citySet].sort(compareFnPopulation);
+        this.setState({
+          citySet: sortedByPopulation, 
+          sortState: { sortField: 'Population', sortOrder: newSortOrder },
+          page: 1
+        }, () => {
+          this.updatePageDisplay(1);
+          this.syncCityDisplay(this.state.citySet, this.state.page);
+        });
         break;
       case "State":
         let compareFnState = (a,b) => {
@@ -349,8 +365,15 @@ class Explore extends Component {
             newSortOrder = 'DESC';
           }
         }
-        const sortedByState = [...this.state.cityDisplay].sort(compareFnState);
-        this.setState({cityDisplay: sortedByState, sortState: { sortField: 'State', sortOrder: newSortOrder }});
+        const sortedByState = [...this.state.citySet].sort(compareFnState);
+        this.setState({
+          citySet: sortedByState, 
+          sortState: { sortField: 'State', sortOrder: newSortOrder },
+          page: 1
+        }, () => {
+          this.updatePageDisplay(1);
+          this.syncCityDisplay(this.state.citySet, this.state.page);
+        });
         break;
     }
   }
