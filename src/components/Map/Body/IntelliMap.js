@@ -10,7 +10,7 @@ import {TURN_WAIT_TIME, ROUND_WAIT_TIME, CORRECT_ANSWER_RESPONSES} from '../../.
 import {EASY_BOT_WAIT_MAX, MEDIUM_BOT_WAIT_MAX, HARD_BOT_WAIT_MAX} from '../../../shared/Const';
 import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from '../../../shared/Const';
 import {BOT_CORRECT_PRECISION, BOT_FOCUS_ZOOM, BOT_ZOOM_TIME_RANGE} from '../../../shared/Const';
-import {random} from '../../../shared/Common';
+import {random, playSound} from '../../../shared/Common';
 import BotOutcomeText from '../../BotOutcome/BotOutcomeText';
 import TurnText from '../../TurnText/TurnText';
 import {TURN_TEXT_TIME, TURN_TEXT_WAIT_TIME} from '../../../shared/Const';
@@ -168,6 +168,7 @@ class IntelliMap extends Component
         && Number(latitudeChoice) === this.state.targetCity.Latitude 
         && Number(longitudeChoice) === this.state.targetCity.Longitude) 
     {
+      playSound('correct-answer');
       if (isBotTurn)
       {
         setTimeout(() => 
@@ -189,6 +190,7 @@ class IntelliMap extends Component
     }
     else 
     {
+      playSound('wrong-answer');
       if (isBotTurn)
       {
         setTimeout(() => 
@@ -412,6 +414,7 @@ class IntelliMap extends Component
 
     setTimeout(() => 
     {
+      playSound('new-turn');
       this.props.nextTurn();
       this.returnFocus();
       this.setState({botOutcomeVisible: false,
@@ -437,6 +440,8 @@ class IntelliMap extends Component
 
   handleMarkerClick(e)
   {
+    playSound('marker-clicked');
+
     let [cityChoice, 
          populationChoice, 
          latitudeChoice, 

@@ -106,6 +106,12 @@ function mapNumber(nbr,
   return (nbr - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
+function playSound(name) {
+  const path = require(`../sounds/${name}.mp3`).default;
+  const audio = new Audio(path);
+  audio.play().then(() => console.log('audio playing')).catch(err => console.log(err));
+}
+
 export {random, 
         genBotName, 
         USStateAbbrToName,
@@ -114,4 +120,5 @@ export {random,
         getRowBackground,
         polarToCartesian, 
         describeArc, 
-        mapNumber};
+        mapNumber,
+        playSound};
