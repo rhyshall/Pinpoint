@@ -278,3 +278,7 @@ tbody
   position: absolute;
   display: inline;
 }
+
+.explore-search {
+  margin-top: -10px;
+}

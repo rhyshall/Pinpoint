@@ -13,12 +13,12 @@ class IntelliBase extends Component
                </div>
                <div className="--ib-header-section-content">
                  {this.props.runTimer ? 
-                   <span className="--ib-current-player">
+                   <div className="--ib-current-player d-flex align-items-center">
                      <img className="--ib-arrow-img"
                           src={this.props.activePlayerImg}
                           alt="Circle indicating player turn"/>
                      <p className="--ib-player-text">{this.props.activePlayer}</p>
-                   </span> : 
+                   </div> : 
                    <p className="--ib-player-text">{this.props.turnText}</p>}
                  <span className="--ib-time-left">
                    <CircTimer runTimer={this.props.runTimer}

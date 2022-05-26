@@ -17,7 +17,6 @@ import {
 } from "../../shared/Const";
 import { DFLT_EXPLORE_ZOOM, DFLT_LAT, DFLT_LNG } from "../../shared/Const";
 import Filter from "../Filter/Filter";
-import Sortdrop from "../Sortdrop/Sortdrop";
 
 class Explore extends Component {
   constructor(props) {
@@ -34,8 +33,7 @@ class Explore extends Component {
       maxPage: 1,
       activeRow: -1,
       filterOpen: false,
-      sortOpen: false,
-      sortState: { sortField: null, sortOrder: null }
+      sortState: { sortField: null, sortOrder: null },
     };
 
     this.loadCityData = this.loadCityData.bind(this);
@@ -48,9 +46,10 @@ class Explore extends Component {
     this.previousPage = this.previousPage.bind(this);
     this.nextPage = this.nextPage.bind(this);
     this.filterResults = this.filterResults.bind(this);
-    this.sortResults = this.sortResults.bind(this);
-    this.setSort = this.setSort.bind(this);
+    this.handleClosePage = this.handleClosePage.bind(this);
   }
+
+  statesNotSelected = [];
 
   setMarkers(cityDisplay) {
     let markerList = [];
@@ -164,19 +163,26 @@ class Explore extends Component {
   }
 
   filterResults(e) {
+    this.setStatesNotSelected();
     this.setState({ filterOpen: true });
   }
 
-  sortResults(e) {
-    this.setState({ sortOpen: true });
-  }
+  setStatesNotSelected(statesSelected) {
+    if (this.state.cityObjs[0] === undefined) return;
 
-  setSort(e) {
-    console.log("lol");
-    let sortOption = document.querySelector(".--so-sort-select");
-    console.log(sortOption.value);
+    let listOfStates = this.state.cityObjs
+      ? this.state.cityObjs
+          .map(c => c.State)
+          .filter((item, index, array) => array.indexOf(item) === index)
+          .sort()
+      : [];
 
-    this.setState({ sortOpen: false });
+    listOfStates = statesSelected
+      ? listOfStates.filter(s => !statesSelected.includes(s))
+      : listOfStates;
+
+    console.log('listOfStates: ', listOfStates);
+    this.statesNotSelected = listOfStates;
   }
 
   previousPage(e) {
@@ -249,13 +255,13 @@ class Explore extends Component {
   }
 
   handleTableHeaderClick(e) {
-    let newSortOrder = 'ASC';
+    let newSortOrder = "ASC";
 
     // Sort city set and and set state to the sorted cities
     switch (e.currentTarget.innerText) {
       case "City":
         // set to sort ascending by default
-        let compareFnCity = (a,b) => {
+        let compareFnCity = (a, b) => {
           if (a.City < b.City) {
             return -1;
           }
@@ -265,13 +271,13 @@ class Explore extends Component {
           return 0;
         };
 
-        if (this.state.sortState.sortField === 'City') {
+        if (this.state.sortState.sortField === "City") {
           // Table is already sorted by city
 
-          if (this.state.sortState.sortOrder === 'ASC') {
+          if (this.state.sortState.sortOrder === "ASC") {
             // Table is currently sorted ASC, change to DESC
-            
-            compareFnCity = (a,b) => {
+
+            compareFnCity = (a, b) => {
               if (a.City > b.City) {
                 return -1;
               }
@@ -279,24 +285,27 @@ class Explore extends Component {
                 return 1;
               }
               return 0;
-            }
-            newSortOrder = 'DESC';
+            };
+            newSortOrder = "DESC";
           }
         }
         const sortedByCity = [...this.state.citySet].sort(compareFnCity);
-        this.setState({
-          citySet: sortedByCity, 
-          sortState: { sortField: 'City', sortOrder: newSortOrder },
-          page: 1
-        }, () => {
-          this.updatePageDisplay(1);
-          this.syncCityDisplay(this.state.citySet, this.state.page);
-        });
+        this.setState(
+          {
+            citySet: sortedByCity,
+            sortState: { sortField: "City", sortOrder: newSortOrder },
+            page: 1,
+          },
+          () => {
+            this.updatePageDisplay(1);
+            this.syncCityDisplay(this.state.citySet, this.state.page);
+          }
+        );
         break;
       case "Population":
-        let compareFnPopulation = (a,b) => {
-          const x = parseInt(a.Population.replace(/,/g, ''));
-          const y = parseInt(b.Population.replace(/,/g, ''));
+        let compareFnPopulation = (a, b) => {
+          const x = parseInt(a.Population.replace(/,/g, ""));
+          const y = parseInt(b.Population.replace(/,/g, ""));
           if (x < y) {
             return -1;
           }
@@ -304,17 +313,17 @@ class Explore extends Component {
             return 1;
           }
           return 0;
-        }
-        
-        if (this.state.sortState.sortField === 'Population') {
+        };
+
+        if (this.state.sortState.sortField === "Population") {
           // Table is already sorted by Population
 
-          if (this.state.sortState.sortOrder === 'ASC') {
+          if (this.state.sortState.sortOrder === "ASC") {
             // currently sorted ASC, change to DESC
-            
-            compareFnPopulation = (a,b) => {
-              const x = parseInt(a.Population.replace(/,/g, ''));
-              const y = parseInt(b.Population.replace(/,/g, ''));
+
+            compareFnPopulation = (a, b) => {
+              const x = parseInt(a.Population.replace(/,/g, ""));
+              const y = parseInt(b.Population.replace(/,/g, ""));
               if (x > y) {
                 return -1;
               }
@@ -322,22 +331,27 @@ class Explore extends Component {
                 return 1;
               }
               return 0;
-            }
-            newSortOrder = 'DESC';
+            };
+            newSortOrder = "DESC";
           }
         }
-        const sortedByPopulation = [...this.state.citySet].sort(compareFnPopulation);
-        this.setState({
-          citySet: sortedByPopulation, 
-          sortState: { sortField: 'Population', sortOrder: newSortOrder },
-          page: 1
-        }, () => {
-          this.updatePageDisplay(1);
-          this.syncCityDisplay(this.state.citySet, this.state.page);
-        });
+        const sortedByPopulation = [...this.state.citySet].sort(
+          compareFnPopulation
+        );
+        this.setState(
+          {
+            citySet: sortedByPopulation,
+            sortState: { sortField: "Population", sortOrder: newSortOrder },
+            page: 1,
+          },
+          () => {
+            this.updatePageDisplay(1);
+            this.syncCityDisplay(this.state.citySet, this.state.page);
+          }
+        );
         break;
       case "State":
-        let compareFnState = (a,b) => {
+        let compareFnState = (a, b) => {
           if (a.State < b.State) {
             return -1;
           }
@@ -347,13 +361,13 @@ class Explore extends Component {
           return 0;
         };
 
-        if (this.state.sortState.sortField === 'State') {
+        if (this.state.sortState.sortField === "State") {
           // Table is already sorted by state
 
-          if (this.state.sortState.sortOrder === 'ASC') {
+          if (this.state.sortState.sortOrder === "ASC") {
             // Table is currently sorted ASC, change to DESC
-            
-            compareFnState = (a,b) => {
+
+            compareFnState = (a, b) => {
               if (a.State > b.State) {
                 return -1;
               }
@@ -361,25 +375,109 @@ class Explore extends Component {
                 return 1;
               }
               return 0;
-            }
-            newSortOrder = 'DESC';
+            };
+            newSortOrder = "DESC";
           }
         }
         const sortedByState = [...this.state.citySet].sort(compareFnState);
-        this.setState({
-          citySet: sortedByState, 
-          sortState: { sortField: 'State', sortOrder: newSortOrder },
-          page: 1
-        }, () => {
-          this.updatePageDisplay(1);
-          this.syncCityDisplay(this.state.citySet, this.state.page);
-        });
+        this.setState(
+          {
+            citySet: sortedByState,
+            sortState: { sortField: "State", sortOrder: newSortOrder },
+            page: 1,
+          },
+          () => {
+            this.updatePageDisplay(1);
+            this.syncCityDisplay(this.state.citySet, this.state.page);
+          }
+        );
         break;
     }
   }
 
+  handleFilterSet = (populationFilter, statesToInclude) => {
+    const { cityObjs, citySet } = this.state;
+    const { comparisonType, val1, val2 } = populationFilter;
+
+    let populationPredicate = null;
+    if (val1) {
+      switch (comparisonType) {
+        case "less than":
+          populationPredicate = (c) => {
+            const pop = parseInt(c.Population.replaceAll(",", ""));
+            return pop < parseInt(val1);
+          };
+          break;
+        case "greater than":
+          populationPredicate = (c) => {
+            const pop = parseInt(c.Population.replaceAll(",", ""));
+            return pop > parseInt(val1);
+          };
+          break;
+        case "between":
+          populationPredicate = (c) => {
+            const pop = parseInt(c.Population.replaceAll(",", ""));
+            return pop === parseInt(val1);
+          };
+          break;
+        default:
+          break;
+      }
+    }
+    const statePredicate = (c) => statesToInclude.includes(c.State);
+
+    let filteredCities;
+    if (populationPredicate) {
+      const filteredByPopulation = cityObjs.filter(populationPredicate);
+
+      if (statesToInclude?.length > 0) {
+        const filteredByPopAndState =
+          filteredByPopulation.filter(statePredicate);
+
+          console.log(
+            "Filtered by population and state: ",
+            filteredByPopAndState
+          );
+        
+        filteredCities = filteredByPopAndState;
+      } 
+      else {
+        filteredCities = filteredByPopulation;
+        console.log("Filtered by population: ", filteredByPopulation);
+      }
+    } 
+    else {
+      if (statesToInclude?.length > 0) {
+        const filteredByState = cityObjs.filter(statePredicate);
+        console.log("Filtered by state: ", filteredByState);
+        filteredCities = filteredByState;
+      } 
+      else {
+        console.log("No filter: ", [...citySet]);
+        filteredCities = [...citySet];
+      }
+    }
+
+    this.setState(
+      {
+        ...this.state,
+        citySet: filteredCities,
+        filterOpen: false,
+        sortState: { sortField: null, sortOrder: null },
+      },
+      () => {
+        this.updatePageDisplay(1);
+        this.syncCityDisplay(this.state.citySet, this.state.page);
+      }
+    );
+  }
+
   handleZoom(e) {
     this.setState({ zoom: e.target._zoom });
+  }
+
+  handleClosePage() {
+    this.props.onClose();
   }
 
   componentDidMount() {
@@ -429,8 +527,10 @@ class Explore extends Component {
 
     return (
       <div className="--ex-container">
-        <div className="--ex-header-content">
+        <div className="--ex-header-content d-flex justify-content-between align-items-center">
+          <span></span>
           <h2>Explore Cities</h2>
+          <span onClick={this.handleClosePage} className="close-page mb-2">x</span>
         </div>
 
         <div className="--ex-city-content">
@@ -438,6 +538,7 @@ class Explore extends Component {
             <div className="--ex-search-content">
               <input
                 type="search"
+                className="explore-search"
                 placeholder="Search"
                 onChange={this.searchResults}
               />
@@ -452,24 +553,6 @@ class Explore extends Component {
                   onClick={this.filterResults}
                 ></img>
               </div>
-
-              <div
-                className="--ex-sort"
-                style={
-                  this.state.sortOpen
-                    ? { visibility: "hidden" }
-                    : { visibility: "visible" }
-                }
-              >
-                <img
-                  src="sort.png"
-                  alt="Sort"
-                  title="Sort"
-                  onClick={this.sortResults}
-                ></img>
-              </div>
-
-              <Sortdrop visible={this.state.sortOpen} setSort={this.setSort} />
             </div>
 
             <div className="--ex-page-area">
@@ -510,13 +593,19 @@ class Explore extends Component {
                   <span>Rank</span>
                 </th>
                 <th>
-                  <span class='sortable' onClick={this.handleTableHeaderClick}>City</span>
+                  <span class="sortable" onClick={this.handleTableHeaderClick}>
+                    City
+                  </span>
                 </th>
                 <th>
-                  <span class='sortable' onClick={this.handleTableHeaderClick}>Population</span>
+                  <span class="sortable" onClick={this.handleTableHeaderClick}>
+                    Population
+                  </span>
                 </th>
                 <th>
-                  <span class='sortable' onClick={this.handleTableHeaderClick}>State</span>
+                  <span class="sortable" onClick={this.handleTableHeaderClick}>
+                    State
+                  </span>
                 </th>
                 <th>
                   <span>Coordinates</span>
@@ -543,7 +632,11 @@ class Explore extends Component {
             {this.state.markers}
           </Map>
 
-          <Filter visible={this.state.filterOpen} />
+          <Filter
+            onFilterApplied={this.handleFilterSet}
+            states={this.statesNotSelected}
+            visible={this.state.filterOpen}
+          />
         </div>
       </div>
     );

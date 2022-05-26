@@ -43,7 +43,7 @@
 
 .--about-header-content h2 
 {
-  padding: 9px;
+  margin-top: 15px;
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -109,3 +109,4 @@
 {
   color: white;
 }
+

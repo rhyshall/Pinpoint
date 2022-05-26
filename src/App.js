@@ -35,7 +35,7 @@ class App extends Component
 
     if (page === ABOUT_PAGE)
     {
-      content = <About />;
+      content = <About onClose={() => this.switchPage(HOME_PAGE)} />;
     }
     else if (page === PLAY_PAGE)
     {
@@ -43,11 +43,11 @@ class App extends Component
     }
     else if (page === EXPLORE_PAGE)
     {
-      content = <Explore />
+      content = <Explore onClose={() => this.switchPage(HOME_PAGE)} />
     }
     else if (page === CONTACT_PAGE)
     {
-      content = <Contact />
+      content = <Contact onClose={() => this.switchPage(HOME_PAGE)} />
     }
     else 
     {

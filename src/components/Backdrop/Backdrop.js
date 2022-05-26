@@ -19,6 +19,10 @@ import WILLIS_TOWER from '../..//images/willis_tower.jpg';
 
 class Backdrop extends Component
 {
+  constructor(props) {
+    super(props);
+  }
+
   render()
   {
     return(<div className="--back-container">
