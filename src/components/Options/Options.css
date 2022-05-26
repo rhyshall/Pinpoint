@@ -68,9 +68,10 @@
 
 .--opt-content 
 {
-  padding-left: 28%;
+  /* padding-left: 28%; */
   padding-top: 3px;
-  width: 100%;
+  width: 85%;
+  margin-left: auto;
 }
 
 .--opt-empty-content 
@@ -86,7 +87,6 @@
 .--opt-mode-content 
 {
   height: 40px;
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -131,7 +131,6 @@
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  width: 100%;
 }
 
 .--opt-player-textfield 
@@ -148,7 +147,6 @@
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  width: 100%;
 }
 
 .--opt-difficulty-content
@@ -158,7 +156,6 @@
   justify-content: left;
   align-items: center;
   height: 40px;
-  width: 100%;
 }
 
 .--opt-hosting-content
@@ -168,7 +165,6 @@
   justify-content: left;
   align-items: center;
   height: 40px;
-  width: 100%;
 }
 
 .--opt-diff-radio-label
@@ -230,7 +226,6 @@
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  width: 100%;
 }
 
 .--opt-spawn-count-content
@@ -240,7 +235,6 @@
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  width: 100%;
 }
 
 .--opt-max-score-content
@@ -250,7 +244,6 @@
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  width: 100%;
 }
 
 .--opt-submit-btn

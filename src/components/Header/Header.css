@@ -54,6 +54,7 @@
   color: var(--head-white2);
   text-shadow: 1.5px 1.5px var(--head-black);
   line-height: 32px;
+  margin-top: 8px;
 }
 
 .--head-logo img 
