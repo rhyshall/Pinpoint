@@ -1,6 +1,6 @@
 New players turn,
 Turn timer running low,
-Turn timer expired
+Turn timer expired,
 Clicking a marker,
 Correct guess,
 Wrong guess, 
