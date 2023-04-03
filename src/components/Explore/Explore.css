@@ -47,7 +47,8 @@
 
 .--ex-header-content h2 
 {
-  padding: 9px;
+  padding-top: 9px;
+  padding-bottom: 2px;
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
@@ -62,13 +63,13 @@
 	align-items: center;
   justify-content: center;
   width: 100%;
-  padding-bottom: 4px;
+  padding-top: 2px;
+  padding-bottom: 6px;
 }
 
 .--ex-search-content 
 {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 4px;
   pointer-events: none;
   height: 32px;
   width: 41%;
@@ -88,7 +89,7 @@
   border: 1px solid var(--ex-black);
   outline: none;
   border-radius: 8px;
-  padding: 0 10px;
+  padding: 10px;
   pointer-events: all;
   transition: border .25s ease, width .125s ease .125s;
 }
@@ -138,6 +139,7 @@
 	align-items: bottom;
   justify-content: right;
   width: 24%;
+  padding-top: 3px;
 }
 
 .--ex-previous img 
@@ -188,6 +190,7 @@
 
 .--ex-city-content table
 {
+  margin-top: 18px;
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
@@ -208,7 +211,8 @@ td
   text-align: center;
 }
 
-#cityTable th > span.sortable:hover{
+#cityTable th > span.sortable:hover
+{
   cursor: pointer;
 }
 
@@ -270,6 +274,7 @@ tbody
   height: 316px;
   width: 100%;
   border: 1px solid var(--ex-black);
+  z-index: 2;
 }
 
 .--ex-pop-up 

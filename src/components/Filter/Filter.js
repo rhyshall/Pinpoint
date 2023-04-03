@@ -1,4 +1,4 @@
-import React, { Component, Fragment, createRef } from 'react';
+import React, { Component, Fragment } from 'react';
 import MultiSelect from '../MultiSelect/MultiSelect.js';
 import './Filter.css'
 
@@ -11,21 +11,24 @@ class Filter extends Component
     this.popBetweenRef = React.createRef();
     this.statesRef = React.createRef();
 
-    this.state = {
+    this.state = 
+    {
       populationFilter: 'less than'
     };
 
     this.setFilter = this.setFilter.bind(this);
     this.handlePopulationFilterChange = this.handlePopulationFilterChange.bind(this);
+    this.handleClosePage = this.handleClosePage.bind(this);
   }
 
   setFilter = () =>
   {
-    const populationFilter = {
+    const populationFilter = 
+    {
       comparisonType: this.state.populationFilter,
       val1: this.popRef.current.value,
       val2: this.popBetweenRef.current?.value
-    }
+    };
 
     const itemsChosen = [...this.statesRef.current.state.itemsChosen];
     const statesFilter = [...itemsChosen];
@@ -38,8 +41,10 @@ class Filter extends Component
     this.setState({ populationFilter: e.target.value });
   }
 
-  renderBetweenFilter() {
-    if (this.state.populationFilter !== 'between') {
+  renderBetweenFilter() 
+  {
+    if (this.state.populationFilter !== 'between') 
+    {
       return null;
     }
     return (
@@ -50,6 +55,11 @@ class Filter extends Component
     );
   }
 
+  handleClosePage()
+  {
+    this.props.closeFilter();
+  }
+
   render()
   {
     return(<div className="--fi-container"
@@ -57,12 +67,14 @@ class Filter extends Component
                        {"visibility": "visible"} :
                        {"visibility": "hidden"}}>
              <div className="--fi-header">
-               <h2>Filter</h2>
+               <span className='--fi-empty-space'>x</span>
+               <span className='--fi-header-text'><h2>Refine Your Search</h2></span>
+               <span onClick={this.handleClosePage} className='close-page'>x</span>
              </div>
 
              <div className="--fi-content d-flex flex-column px-4">
                <div className='filter-population-container'>
-                 <h3 className='mb-1'>I want the population to be: </h3>
+                 <h6 className='label-text'>Show population: </h6>
                  <select onChange={this.handlePopulationFilterChange} className='me-2'>
                    <option>less than</option>
                    <option>greater than</option>
@@ -72,7 +84,7 @@ class Filter extends Component
                  { this.renderBetweenFilter() }
                </div>
                <div className='filter-state-container'>
-                  <h3 className='mb-1 mt-3'>I would like the cities to be in the following states:</h3>
+                  <h6 className='label-text'>Show cities in these states:</h6>
                   <MultiSelect ref={this.statesRef} items={this.props.states} />
                </div>
                <button className='set-filter align-self-center' onClick={this.setFilter}>Apply</button>

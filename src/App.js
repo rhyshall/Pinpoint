@@ -35,7 +35,7 @@ class App extends Component
 
     if (page === ABOUT_PAGE)
     {
-      content = <About onClose={() => this.switchPage(HOME_PAGE)} />;
+      content = <About />;
     }
     else if (page === PLAY_PAGE)
     {
@@ -43,11 +43,11 @@ class App extends Component
     }
     else if (page === EXPLORE_PAGE)
     {
-      content = <Explore onClose={() => this.switchPage(HOME_PAGE)} />
+      content = <Explore />
     }
     else if (page === CONTACT_PAGE)
     {
-      content = <Contact onClose={() => this.switchPage(HOME_PAGE)} />
+      content = <Contact />
     }
     else 
     {
@@ -55,9 +55,9 @@ class App extends Component
     }
 
     return(<div>
-            <Header switchPage={this.switchPage}/>
-            <Backdrop />
-            {content}
+             <Header switchPage={this.switchPage}/>
+             <Backdrop />
+             {content}
            </div>);
   }
 }

@@ -282,14 +282,14 @@ class Options extends Component
                       alt="Bot Mode"
                       title="Bot Mode"
                       onClick={this.selectImg}></img>
-                 <img className={`--opt-player-img${this.state.mode == LOCAL_MODE ?
+                 <img className={`--opt-player-img${this.state.mode === LOCAL_MODE ?
                                                     ' --opt-select-img' : 
                                                     ''}`}
                       src="player.png"
                       alt="Local PvP Mode"
                       title="Local PvP Mode"
                       onClick={this.selectImg}></img>
-                 <img className={`--opt-world-img${this.state.mode == NETWORK_MODE ?
+                 <img className={`--opt-world-img${this.state.mode === NETWORK_MODE ?
                                                    ' --opt-select-img' : 
                                                    ''}`}
                       src="world.png"

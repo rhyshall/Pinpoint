@@ -74,20 +74,20 @@
 
 .--con-textfield 
 {
-  height: 20px;
-  width: 100%;
+  height: 22px;
+  width: 134%;
   padding: 5px 5px 5px 5px;
   font-size: 14px;
 }
 
 .--con-name
 {
-  width: 40%;
+  width: 42%;
 }
 
 .--con-email
 {
-  width: 40%;
+  width: 38%;
   margin-left: 6%;
 }
 

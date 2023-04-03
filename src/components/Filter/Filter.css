@@ -21,51 +21,115 @@
 
 .--fi-container
 {
-	width: 480px;
-	height: 500px;
-  overflow: scroll;
+	width: 460px;
+	height: 512px;
 	background-color: var(--fi-white);
   background-image: linear-gradient(315deg, var(--fi-white) 20%, var(--fi-grey) 74%);
   background-color: black;
 	border-radius: 4px;
 	border: 1px solid var(--fi-black);
   position: absolute;
-  top: 22%;
+  top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .--fi-header
 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 36px;
   width: 100%;
-  text-align: center;
   background-image :linear-gradient(315deg, var(--fi-blue3) 30%, var(--fi-blue2) 74%);
   border-bottom: 1px solid var(--fi-black);
-  margin-top: 140px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .--fi-header h2 
 {
-  padding: 7px;
-  font-size: 16px;
+  padding-top: 8px;
+  font-size: 15px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: var(--fi-white);
   text-shadow: 1px 1px var(--fi-black);
 }
 
---fi-content {
-  
+.--fi-empty-space
+{
+  font-size: 30px;
+  padding: 0;
+  visibility: hidden;
 }
 
-.population-input{
+.--fi-header-text
+{
+  padding: 0 31%;
+}
+
+.close-page 
+{
+  font-size: 28px;
+  padding: 0;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.--fi-content 
+{
+  padding-top: 10px;
+}
+
+.filter-population-container
+{
+  padding-bottom: 28px;
+}
+
+.filter-state-container
+{
+  padding-bottom: 18px;
+}
+
+.--fi-content h6
+{
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.population-input
+{
   width: 100px;
   padding: 1px;
 }
 
-.set-filter {
-  padding: 5px 50px;
-  width: 150px;
+.set-filter 
+{
+  margin-top: 24px;
+  padding: 2px 2px;
+  width: 112px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: var(--fi-blue2);
+  border: 0;
+  color: #FFFFFF;
+  font-size: 15px;
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid var(--fi-black);
+  text-shadow: 1px 1px var(--fi-black);
+}
+
+.set-filter:hover
+{
+  background-color: var(--fi-blue3);
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
 }

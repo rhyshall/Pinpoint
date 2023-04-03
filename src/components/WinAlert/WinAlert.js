@@ -17,10 +17,10 @@ class WinAlert extends Component
   		        	<p className="--win-share-text">Share it?</p>
   		        	<div className="--win-social">
   		        		<a className="--win-share-facebook"
-									   href="#"><img src="facebook_icon.svg"
+									   href="/"><img src="facebook_icon.svg"
 										               alt="Facebook Icon"/></a>
 									<a className="--win-share-twitter"
-									   href="#"><img src="twitter_icon.svg"
+									   href="/"><img src="twitter_icon.svg"
 										               alt="Twitter Icon"/></a>
 								</div>
   		        </div>

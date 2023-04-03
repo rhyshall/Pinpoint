@@ -15,14 +15,12 @@ import MUSIC_ROW from '../..//images/music_row.jpg';
 import SPACE_NEEDLE from '../..//images/space_needle.jpg';
 import STATUE_OF_LIBERTY from '../..//images/statue_of_liberty.jpg';
 import VIRGINIA_BEACH from '../..//images/virginia_beach.jpg';
-import WILLIS_TOWER from '../..//images/willis_tower.jpg';
+//do not show willis tower in background...keep commented
+//until it's wanted in background image
+/*import WILLIS_TOWER from '../..//images/willis_tower.jpg';*/
 
 class Backdrop extends Component
 {
-  constructor(props) {
-    super(props);
-  }
-
   render()
   {
     return(<div className="--back-container">
@@ -57,7 +55,7 @@ class Backdrop extends Component
          
                <li>
                  <figure className="--back-city-photo">
-                   <img src={WILLIS_TOWER}
+                   <img src={BELLAGIO}
                         alt="Willis Tower (Chicago)"/>
                  </figure>
                </li>

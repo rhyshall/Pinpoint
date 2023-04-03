@@ -1,37 +1,41 @@
-.multiselect-container {
-
+.items-to-choose 
+{ 
+  width: 370px;
+  height: 100px;
 }
 
-.list-box-container { 
-  display: flex;
+.items-chosen 
+{ 
+  width: 370px;
+  height: 66px;
 }
 
-.items-to-choose { 
-  width: 300px;
-  height: 125px;
-}
-
-.items-chosen { 
-  padding-left: 15px;
-  width: 145px;
-  height: auto;
-}
-
-.item-to-choose, .item-chosen {
-  width: 40px;
-  height: 40px;
+.item-to-choose, .item-chosen 
+{
+  width: 36px;
+  height: 36px;
   margin-right: 20px;
 }
 
-.search-item {
-  width: 287px;
+.d-flex
+{
+  padding-bottom: 8px;
 }
 
-.add-item {
-  
+.search-item 
+{
+  width: 200px;
+  height: 30px;
 }
 
-.add-item, .remove-item {
+.add-item, .remove-item 
+{
   cursor: pointer;
   height: 23px;
+  width: 14px;
+}
+
+.mt-3
+{
+  padding-top: 6px;
 }

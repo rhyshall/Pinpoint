@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './CircTimer.css';
-import {describeArc, mapNumber} from '../../shared/Common';
+import {describeArc, mapNumber, playSound} from '../../shared/Common';
 import {START_SECS, START_SECS_LEFT, TURN_WAIT_TIME} from '../../shared/Const';
 
 class CircTimer extends Component 
@@ -34,6 +34,7 @@ class CircTimer extends Component
 
                                     if (secsLeft <= 0)
                                     {
+                                      playSound('time-expired');
                                       this.props.disableMap();
                                       this.props.stopTimer();  
                                                                           
@@ -42,6 +43,9 @@ class CircTimer extends Component
                                         this.props.nextTurn();
                                       },
                                       this.props.turnWaitTime);
+                                    }
+                                    else if (secsLeft === 5) {
+                                      playSound('time-low');
                                     }
                                   }
                                 }, 1000);

@@ -5,36 +5,29 @@ import axios from "axios";
 import { CANADA_CITY_FILE, US_CITY_FILE } from "../../shared/Const";
 import { US_MAX_CITY_CNT } from "../../shared/Const";
 import { DFLT_EXPLORE_REC_PER_PAGE } from "../../shared/Const";
-import {
-  getCoordFormat,
-  USStateAbbrToName,
-  getRowBackground,
-} from "../../shared/Common";
-import {
-  DFLT_EXPLORE_MIN_ZOOM,
-  DFLT_EXPLORE_MAX_ZOOM,
-  EXPLORE_DFLT_BOUNDS,
-} from "../../shared/Const";
+import {getCoordFormat, USStateAbbrToName, getRowBackground} from "../../shared/Common";
+import {DFLT_EXPLORE_MIN_ZOOM, DFLT_EXPLORE_MAX_ZOOM, EXPLORE_DFLT_BOUNDS} from "../../shared/Const";
 import { DFLT_EXPLORE_ZOOM, DFLT_LAT, DFLT_LNG } from "../../shared/Const";
 import Filter from "../Filter/Filter";
 
-class Explore extends Component {
-  constructor(props) {
+class Explore extends Component 
+{
+  constructor(props) 
+  {
     super(props);
-    this.state = {
-      cityObjs: Array.from({ length: US_MAX_CITY_CNT }),
-      citySet: Array.from({ length: US_MAX_CITY_CNT }),
-      cityDisplay: Array.from({ length: DFLT_EXPLORE_REC_PER_PAGE }),
-      markers: Array.from({ length: DFLT_EXPLORE_REC_PER_PAGE }),
-      zoom: DFLT_EXPLORE_ZOOM,
-      latitude: DFLT_LAT,
-      longitude: DFLT_LNG,
-      page: 1,
-      maxPage: 1,
-      activeRow: -1,
-      filterOpen: false,
-      sortState: { sortField: null, sortOrder: null },
-    };
+    this.state = 
+    {cityObjs: Array.from({ length: US_MAX_CITY_CNT }),
+     citySet: Array.from({ length: US_MAX_CITY_CNT }),
+     cityDisplay: Array.from({ length: DFLT_EXPLORE_REC_PER_PAGE }),
+     markers: Array.from({ length: DFLT_EXPLORE_REC_PER_PAGE }),
+     zoom: DFLT_EXPLORE_ZOOM,
+     latitude: DFLT_LAT,
+     longitude: DFLT_LNG,
+     page: 1,
+     maxPage: 1,
+     activeRow: -1,
+     filterOpen: false,
+     sortState: { sortField: null, sortOrder: null }};
 
     this.loadCityData = this.loadCityData.bind(this);
     this.handleMarkerClick = this.handleMarkerClick.bind(this);
@@ -46,17 +39,18 @@ class Explore extends Component {
     this.previousPage = this.previousPage.bind(this);
     this.nextPage = this.nextPage.bind(this);
     this.filterResults = this.filterResults.bind(this);
-    this.handleClosePage = this.handleClosePage.bind(this);
+    this.closeFilter = this.closeFilter.bind(this);
   }
 
   statesNotSelected = [];
 
-  setMarkers(cityDisplay) {
+  setMarkers(cityDisplay) 
+  {
     let markerList = [];
 
-    markerList = cityDisplay?.some((c) => c)
-      ? cityDisplay.map((c, i) => {
-          return (
+    markerList = cityDisplay?.some((c) => c)? cityDisplay.map((c, i) => 
+          {
+            return (
             <Marker
               id={`${i}_${c.City}_${c.Population}_${c.Latitude}_${c.Longitude}`}
               key={`marker-${c.City}-${c.Population}-${c.Latitude}-${c.Longitude}`}
@@ -69,15 +63,14 @@ class Explore extends Component {
               <Popup className="--ex-pop-up" closeButton={false}>
                 {c.City + ", " + USStateAbbrToName(c.State)}
               </Popup>
-            </Marker>
-          );
-        })
-      : null;
+            </Marker>);
+        }) : null;
 
     this.setState({ markers: markerList });
   }
 
-  async loadCityData() {
+  async loadCityData() 
+  {
     let res = null;
     let i = 0;
     let cityObj = {};
@@ -85,22 +78,25 @@ class Explore extends Component {
     let citySetList = [];
     let cityDisplayList = [];
 
-    try {
+    try 
+    {
       res = await axios.get(US_CITY_FILE);
-    } catch (err) {
-      alert(
-        `We are currently experiencing an issue 😭😭😭 ${"\n\n"}` +
-          "Please try again later"
-      );
+    } 
+    catch(err) 
+    {
+      alert(`We are currently experiencing an issue 😭😭😭 ${"\n\n"}` +
+            "Please try again later");
     }
 
-    for (i = 0; i < US_MAX_CITY_CNT; i++) {
+    for (i = 0; i < US_MAX_CITY_CNT; i++) 
+    {
       cityObj = res.data[i];
 
       cityObjList.push(cityObj);
       citySetList.push(cityObj);
 
-      if (i < DFLT_EXPLORE_REC_PER_PAGE) {
+      if (i < DFLT_EXPLORE_REC_PER_PAGE) 
+      {
         cityDisplayList.push(cityObj);
       }
     }
@@ -117,7 +113,8 @@ class Explore extends Component {
     );
   }
 
-  searchResults(e) {
+  searchResults(e) 
+  {
     let searchKey = e.target.value;
     let newCitySet = [];
 
@@ -135,7 +132,8 @@ class Explore extends Component {
     this.syncCityDisplay(newCitySet, 1);
   }
 
-  syncCityDisplay(citySet, currPage) {
+  syncCityDisplay(citySet, currPage) 
+  {
     let newCityDisplay = [];
     let i = 0;
     let cityObj = {};
@@ -156,18 +154,21 @@ class Explore extends Component {
     this.setMarkers(newCityDisplay);
   }
 
-  updatePageDisplay(newPage) {
+  updatePageDisplay(newPage) 
+  {
     let pageHTML = document.querySelector(".--ex-page-select");
 
     pageHTML.value = newPage;
   }
 
-  filterResults(e) {
+  filterResults(e) 
+  {
     this.setStatesNotSelected();
     this.setState({ filterOpen: true });
   }
 
-  setStatesNotSelected(statesSelected) {
+  setStatesNotSelected(statesSelected) 
+  {
     if (this.state.cityObjs[0] === undefined) return;
 
     let listOfStates = this.state.cityObjs
@@ -185,7 +186,8 @@ class Explore extends Component {
     this.statesNotSelected = listOfStates;
   }
 
-  previousPage(e) {
+  previousPage(e) 
+  {
     let newPage = this.state.page - 1;
 
     if (this.state.page > 1) {
@@ -199,7 +201,8 @@ class Explore extends Component {
     }
   }
 
-  nextPage(e) {
+  nextPage(e) 
+  {
     let newPage = this.state.page + 1;
 
     if (this.state.page < this.state.maxPage) {
@@ -213,7 +216,8 @@ class Explore extends Component {
     }
   }
 
-  getPageList(pageCnt) {
+  getPageList(pageCnt) 
+  {
     let pageList = [];
 
     for (let i = 1; i <= pageCnt; i++) {
@@ -223,7 +227,8 @@ class Explore extends Component {
     return pageList;
   }
 
-  handlePageDropSelect(e) {
+  handlePageDropSelect(e) 
+  {
     let newPage = e.target.options.selectedIndex + 1;
 
     this.setState(
@@ -232,7 +237,8 @@ class Explore extends Component {
     );
   }
 
-  handleMarkerClick(e) {
+  handleMarkerClick(e) 
+  {
     let index = e.target.options.id.charAt(0);
 
     this.setState({
@@ -242,7 +248,8 @@ class Explore extends Component {
     });
   }
 
-  handleRowClick(e) {
+  handleRowClick(e) 
+  {
     const rowID = e.currentTarget.className.charAt(8);
     let targetMarker = this.state.markers[rowID];
     let index = targetMarker.props.id[0];
@@ -254,7 +261,8 @@ class Explore extends Component {
     });
   }
 
-  handleTableHeaderClick(e) {
+  handleTableHeaderClick(e) 
+  {
     let newSortOrder = "ASC";
 
     // Sort city set and and set state to the sorted cities
@@ -395,27 +403,38 @@ class Explore extends Component {
     }
   }
 
-  handleFilterSet = (populationFilter, statesToInclude) => {
+  closeFilter()
+  {
+    this.setState({filterOpen: false});
+  }
+
+  handleFilterSet = (populationFilter, statesToInclude) => 
+  {
     const { cityObjs, citySet } = this.state;
-    const { comparisonType, val1, val2 } = populationFilter;
+    const { comparisonType, val1 } = populationFilter;
 
     let populationPredicate = null;
-    if (val1) {
-      switch (comparisonType) {
+    if (val1) 
+    {
+      switch (comparisonType) 
+      {
         case "less than":
-          populationPredicate = (c) => {
+          populationPredicate = (c) =>
+          {
             const pop = parseInt(c.Population.replaceAll(",", ""));
             return pop < parseInt(val1);
           };
           break;
         case "greater than":
-          populationPredicate = (c) => {
+          populationPredicate = (c) => 
+          {
             const pop = parseInt(c.Population.replaceAll(",", ""));
             return pop > parseInt(val1);
           };
           break;
         case "between":
-          populationPredicate = (c) => {
+          populationPredicate = (c) => 
+          {
             const pop = parseInt(c.Population.replaceAll(",", ""));
             return pop === parseInt(val1);
           };
@@ -424,13 +443,16 @@ class Explore extends Component {
           break;
       }
     }
-    const statePredicate = (c) => statesToInclude.includes(c.State);
 
+    const statePredicate = (c) => statesToInclude.includes(c.State);
     let filteredCities;
-    if (populationPredicate) {
+
+    if (populationPredicate) 
+    {
       const filteredByPopulation = cityObjs.filter(populationPredicate);
 
-      if (statesToInclude?.length > 0) {
+      if (statesToInclude?.length > 0) 
+      {
         const filteredByPopAndState =
           filteredByPopulation.filter(statePredicate);
 
@@ -441,18 +463,21 @@ class Explore extends Component {
         
         filteredCities = filteredByPopAndState;
       } 
-      else {
+      else 
+      {
         filteredCities = filteredByPopulation;
         console.log("Filtered by population: ", filteredByPopulation);
       }
     } 
     else {
-      if (statesToInclude?.length > 0) {
+      if (statesToInclude?.length > 0) 
+      {
         const filteredByState = cityObjs.filter(statePredicate);
         console.log("Filtered by state: ", filteredByState);
         filteredCities = filteredByState;
       } 
-      else {
+      else 
+      {
         console.log("No filter: ", [...citySet]);
         filteredCities = [...citySet];
       }
@@ -465,28 +490,28 @@ class Explore extends Component {
         filterOpen: false,
         sortState: { sortField: null, sortOrder: null },
       },
-      () => {
+      () => 
+      {
         this.updatePageDisplay(1);
         this.syncCityDisplay(this.state.citySet, this.state.page);
       }
     );
   }
 
-  handleZoom(e) {
+  handleZoom(e) 
+  {
     this.setState({ zoom: e.target._zoom });
   }
 
-  handleClosePage() {
-    this.props.onClose();
-  }
-
-  componentDidMount() {
+  componentDidMount() 
+  {
     if (this.state.cityObjs.some((c) => !c)) {
       this.loadCityData();
     }
   }
 
-  render() {
+  render() 
+  {
     let cityHTML = null;
     let pageOptions = null;
 
@@ -497,7 +522,7 @@ class Explore extends Component {
             className={`--ex-tr-${i}_${c.City}_${c.Population}_${c.Latitude}_${c.Longitude}`}
             key={`row-${c.City}-${c.Population}-${c.Latitude}-${c.Longitude}`}
             style={
-              i != this.state.activeRow
+              i !== this.state.activeRow
                 ? { backgroundColor: getRowBackground(i) }
                 : { backgroundColor: "#ffe60081" }
             }
@@ -527,10 +552,8 @@ class Explore extends Component {
 
     return (
       <div className="--ex-container">
-        <div className="--ex-header-content d-flex justify-content-between align-items-center">
-          <span></span>
+        <div className="--ex-header-content">
           <h2>Explore Cities</h2>
-          <span onClick={this.handleClosePage} className="close-page mb-2">x</span>
         </div>
 
         <div className="--ex-city-content">
@@ -634,6 +657,7 @@ class Explore extends Component {
 
           <Filter
             onFilterApplied={this.handleFilterSet}
+            closeFilter={this.closeFilter}
             states={this.statesNotSelected}
             visible={this.state.filterOpen}
           />

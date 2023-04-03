@@ -11,7 +11,7 @@ import {EASY_MODE, MEDIUM_MODE, HARD_MODE} from './shared/Const';
 import {CREATE_GAME, FIND_GAME} from './shared/Const';
 import {OPTIONS_SCREEN, MAP_SCREEN} from './shared/Const';
 import {PLAYER_ONE_IMG, PLAYER_TWO_IMG} from './shared/Const';
-import {genBotName} from './shared/Common';
+import {genBotName, playSound} from './shared/Common';
 
 class PinPoint extends Component
 {
@@ -308,6 +308,7 @@ class PinPoint extends Component
 
         if (gameOver)
         {
+          playSound('game-over');
           content = <WinAlert winner = {leadPlayer} 
                               score = {score}
                               restart = {this.restart} />
