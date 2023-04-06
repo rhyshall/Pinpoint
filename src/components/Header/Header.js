@@ -61,6 +61,11 @@ class Header extends Component
 
   render()
   {
+    if (this.props.deselectMenu) 
+    {
+      this.deselectMenuOptions();
+    }
+
     return(<div className="--head-header-container">
              <div className="--head-logo"
                   onClick={this.goHome}>
@@ -71,10 +76,10 @@ class Header extends Component
 
              <nav className="--head-menu"
                   onClick={this.selectMenuOption}>
-				       <a className="--head-about" href="/">About</a>
-				       <a className="--head-play" href="/">Play</a>
-				       <a className="--head-explore" href="/">Explore</a>
-				       <a className="--head-contact" href="/">Contact</a>
+				       <a className="--head-about">About</a>
+				       <a className="--head-play">Play</a>
+				       <a className="--head-explore">Explore</a>
+				       <a className="--head-contact">Contact</a>
 			       </nav>
            </div>);
   }

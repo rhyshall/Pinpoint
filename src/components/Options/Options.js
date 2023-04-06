@@ -25,6 +25,7 @@ class Options extends Component
                   spawnCnt: DFLT_SPAWN_CNT,
                   maxScore: DFLT_MAX_SCORE};
 
+    this.handleClosePage = this.handleClosePage.bind(this);
     this.selectImg = this.selectImg.bind(this);
     this.difficultyChange = this.difficultyChange.bind(this);
     this.hostChange = this.hostChange.bind(this);
@@ -35,17 +36,22 @@ class Options extends Component
     this.startGame = this.startGame.bind(this);
   }
 
+  handleClosePage()
+  {
+    this.props.closeFilter();
+  }
+
   selectImg(e)
   {
     let className = e.target.className;
     
-    if (className === '--opt-robot-img')
+    if (className.includes('--opt-robot-img'))
     {
       this.setState({mode: BOT_MODE,
                      hosting: FIND_GAME,
                      botDifficulty: null});
     }
-    else if (className === '--opt-player-img')
+    else if (className.includes('--opt-player-img'))
     {
       this.setState({mode: LOCAL_MODE,
                      hosting: FIND_GAME,
@@ -269,7 +275,9 @@ class Options extends Component
 
     return(<form className="--opt-options">
              <div className="--opt-header-content">
-               <h2>Choose Your Settings</h2>
+               <span className='--opt-empty-space'>x</span>
+               <h2 className="--opt-header-text">Choose Your Settings</h2>
+               <span onClick={this.handleClosePage} className='close-page'>x</span>
              </div>
                    
              <div className="--opt-content --opt-mode-content">
@@ -277,21 +285,21 @@ class Options extends Component
                <div className="--opt-mode-icon-group">
                  <img className={`--opt-robot-img${this.state.mode === BOT_MODE ?
                                                    ' --opt-select-img' : 
-                                                   ''}`}
+                                                   ' --opt-outcast-img'}`}
                       src="robot.png"
                       alt="Bot Mode"
                       title="Bot Mode"
                       onClick={this.selectImg}></img>
                  <img className={`--opt-player-img${this.state.mode === LOCAL_MODE ?
                                                     ' --opt-select-img' : 
-                                                    ''}`}
+                                                    ' --opt-outcast-img'}`}
                       src="player.png"
                       alt="Local PvP Mode"
                       title="Local PvP Mode"
                       onClick={this.selectImg}></img>
                  <img className={`--opt-world-img${this.state.mode === NETWORK_MODE ?
                                                    ' --opt-select-img' : 
-                                                   ''}`}
+                                                   ' --opt-outcast-img'}`}
                       src="world.png"
                       alt="Network PvP Mode"
                       title="Network PvP Mode"

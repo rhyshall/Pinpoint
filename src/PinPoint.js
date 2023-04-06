@@ -293,7 +293,8 @@ class PinPoint extends Component
     if (this.state.screen === OPTIONS_SCREEN)
     {
       content = <Options startBotGame={this.startBotGame}
-                         startLocalGame={this.startLocalGame}/>;
+                         startLocalGame={this.startLocalGame}
+                         closeFilter={this.props.closeFilter}/>;
     }
 
     else 

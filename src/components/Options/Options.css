@@ -41,23 +41,44 @@
 
 .--opt-header-content
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   background-image :linear-gradient(315deg, var(--opt-blue6) 30%, var(--opt-blue3) 74%);
   width: 100%;
   border-bottom: 1px solid var(--opt-black);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.--opt-empty-space
+{
+  font-size: 30px;
+  padding: 0;
+  visibility: hidden;
+}
+
+.--opt-header-text
+{
+  padding: 0 27%;
 }
 
 .--opt-header-content h2 
 {
-  margin: 9px;
+  padding-top: 12px;
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: var(--opt-white);
   text-shadow: 1px 1px var(--opt-black);
+}
+
+.close-page 
+{
+  font-size: 28px;
+  padding: 0;
+  cursor: pointer;
+  padding-top: -10px;
 }
 
 .--opt-header-content img 
@@ -68,7 +89,6 @@
 
 .--opt-content 
 {
-  /* padding-left: 28%; */
   padding-top: 3px;
   width: 82%;
   margin-left: auto;
@@ -112,16 +132,22 @@
 
 .--opt-mode-content img 
 {
-  height: 30px;
-  width: 30px;
   margin-right: 57px;
   cursor: pointer;
+}
+
+.--opt-outcast-img
+{
+  height: 30px;
+  width: 30px;
 }
 
 .--opt-select-img
 {
   border-bottom: 2px solid var(--opt-blue5);
   padding-bottom: 5px;
+  height: 35px;
+  width: 30px;
 }
 
 .--opt-player-one-content

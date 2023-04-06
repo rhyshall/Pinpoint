@@ -3,11 +3,25 @@ import './About.css';
 
 class About extends Component
 {
+  constructor(props)
+  {
+    super(props);
+
+    this.handleClosePage = this.handleClosePage.bind(this);
+  }
+
+  handleClosePage()
+  {
+    this.props.closeFilter();
+  }
+
   render()
   {
     return(<div className="--about-container">
              <div className="--about-header-content">
-               <h2>About PinPoint Cities</h2>
+               <span className='--about-empty-space'>x</span>
+               <h2 className="--about-header-text">About PinPoint Cities</h2>
+               <span onClick={this.handleClosePage} className='close-page'>x</span>
              </div>
              
              <div className="about-features">

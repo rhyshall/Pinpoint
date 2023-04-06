@@ -18,14 +18,23 @@ class App extends Component
   constructor(props)
   {
     super(props);
-    this.state = {page: HOME_PAGE};
+    this.state = {page: HOME_PAGE,
+                  deselectMenu: false};
 
     this.switchPage = this.switchPage.bind(this);
+    this.closeFilter = this.closeFilter.bind(this);
   }
 
   switchPage(newPage)
   {
-    this.setState({page: newPage});
+    this.setState({page: newPage,
+                   deselectMenu: false});
+  }
+
+  closeFilter()
+  {
+    this.setState({page: HOME_PAGE,
+                   deselectMenu: true});
   }
 
   render()
@@ -35,19 +44,19 @@ class App extends Component
 
     if (page === ABOUT_PAGE)
     {
-      content = <About />;
+      content = <About closeFilter={this.closeFilter}/>;
     }
     else if (page === PLAY_PAGE)
     {
-      content = <PinPoint />;
+      content = <PinPoint closeFilter={this.closeFilter}/>;
     }
     else if (page === EXPLORE_PAGE)
     {
-      content = <Explore />
+      content = <Explore closeFilter={this.closeFilter}/>
     }
     else if (page === CONTACT_PAGE)
     {
-      content = <Contact />
+      content = <Contact closeFilter={this.closeFilter}/>
     }
     else 
     {
@@ -55,7 +64,8 @@ class App extends Component
     }
 
     return(<div>
-             <Header switchPage={this.switchPage}/>
+             <Header switchPage={this.switchPage}
+                     deselectMenu={this.state.deselectMenu}/>
              <Backdrop />
              {content}
            </div>);

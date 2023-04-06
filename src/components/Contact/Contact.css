@@ -41,20 +41,44 @@
 
 .--con-header-content
 {
-  text-align: center;
   width: 100%;
   background-image :linear-gradient(315deg, var(--con-blue4) 30%, var(--con-blue3) 74%);
   border-bottom: 1px solid var(--con-black);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.--con-empty-space
+{
+  font-size: 30px;
+  padding: 0;
+  visibility: hidden;
+}
+
+.--con-header-text
+{
+  padding: 0 29%;
 }
 
 .--con-header-content h2 
 {
-  margin: 9px;
+  padding-top: 12px;
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: var(--con-white);
   text-shadow: 1px 1px var(--con-black);
+}
+
+.close-page 
+{
+  font-size: 28px;
+  padding: 0;
+  cursor: pointer;
+  padding-top: -10px;
 }
 
 .--con-content 

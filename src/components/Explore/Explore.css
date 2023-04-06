@@ -39,21 +39,45 @@
 .--ex-header-content
 {
   width: 100%;
-  text-align: center;
   background-image :linear-gradient(315deg, var(--ex-blue3) 30%, var(--ex-blue2) 74%);
   border-bottom: 1px solid var(--ex-black);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.--ex-empty-space
+{
+  font-size: 30px;
+  padding: 0;
+  visibility: hidden;
+}
+
+.--ex-header-text
+{
+  padding: 0 40%;
 }
 
 .--ex-header-content h2 
 {
-  padding-top: 9px;
+  padding-top: 13px;
   padding-bottom: 2px;
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: var(--ex-white);
   text-shadow: 1px 1px var(--ex-black);
+}
+
+.close-page 
+{
+  font-size: 30px;
+  padding: 0;
+  cursor: pointer;
+  padding-top: -10px;
 }
 
 .--ex-custom-options 

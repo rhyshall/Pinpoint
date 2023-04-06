@@ -29,6 +29,7 @@ class Explore extends Component
      filterOpen: false,
      sortState: { sortField: null, sortOrder: null }};
 
+    this.handleClosePage = this.handleClosePage.bind(this);
     this.loadCityData = this.loadCityData.bind(this);
     this.handleMarkerClick = this.handleMarkerClick.bind(this);
     this.handleRowClick = this.handleRowClick.bind(this);
@@ -67,6 +68,11 @@ class Explore extends Component
         }) : null;
 
     this.setState({ markers: markerList });
+  }
+
+  handleClosePage()
+  {
+    this.props.closeFilter();
   }
 
   async loadCityData() 
@@ -553,7 +559,9 @@ class Explore extends Component
     return (
       <div className="--ex-container">
         <div className="--ex-header-content">
-          <h2>Explore Cities</h2>
+          <span className='--ex-empty-space'>x</span>
+          <h2 className="--ex-header-text">Explore Cities</h2>
+          <span onClick={this.handleClosePage} className='close-page'>x</span>
         </div>
 
         <div className="--ex-city-content">

@@ -14,11 +14,17 @@ class Contact extends Component
                   subject: '',
                   message: ''};
 
+    this.handleClosePage = this.handleClosePage.bind(this);
     this.setName = this.setName.bind(this);              
     this.setEmail = this.setEmail.bind(this);
     this.setSubject = this.setSubject.bind(this);
     this.setMessage = this.setMessage.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleClosePage()
+  {
+    this.props.closeFilter();
   }
 
   setName(e) 
@@ -133,7 +139,9 @@ class Contact extends Component
   {
     return(<form className="--con-form">
              <div className="--con-header-content">
-               <h2>Questions & Suggestions</h2>
+               <span className='--con-empty-space'>x</span>
+               <h2 className="--con-header-text">Questions & Suggestions</h2>
+               <span onClick={this.handleClosePage} className='close-page'>x</span>
              </div>
            
              <div className="--con-content --con-user-info">
