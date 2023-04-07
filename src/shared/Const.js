@@ -1,3 +1,42 @@
+import BELLAGIO from '../images/bellagio.jpg';
+import BIG_TEX from '../images/big_tex.jpg';
+import BOSTON_SKYLINE from '../images/boston_skyline.jpg';
+import COLORADO_MOUNTAINS from '../images/colorado_mountains.jpg';
+import GATEWAY_ARCH from '../images/gateway_arch.jpg';
+import GOLDEN_GATE_BRIDGE from '../images/golden_gate_bridge.jpg';
+import GRAND_CANYON from '../images/grand_canyon.jpg';
+import HOLLYWOOD_HILLS from '../images/hollywood_hills.jpg';
+import LIBERTY_BELL from '../images/liberty_bell.jpg'
+import LINCOLN_MEMORIAL from '../images/lincoln_memorial.jpg';
+import MIAMI_BEACH from '../images/miami_beach.jpg';
+import MUSIC_ROW from '../images/music_row.jpg';
+import SPACE_NEEDLE from '../images/space_needle.jpg';
+import STATUE_OF_LIBERTY from '../images/statue_of_liberty.jpg';
+import VIRGINIA_BEACH from '../images/virginia_beach.jpg';
+import FRENCH_QUARTER from '../images/the_french_quarter.jpg';
+import NIAGRA_FALLS from '../images/niagra_falls.jpg';
+import NATIONAL_MALL from '../images/national_mall.jpg';
+
+export const BACK_DROP_IMAGES = [
+    { src: BELLAGIO, alt: 'Willis Tower (Chicago)' },
+    { src: BIG_TEX, alt: 'Big Tex (Dallas)' },
+    { src: BOSTON_SKYLINE, alt: 'Boston Skyline' },
+    { src: COLORADO_MOUNTAINS, alt: 'Colorado Mountains' },
+    { src: GATEWAY_ARCH, alt: 'Gateway Arch (St. Louis)' },
+    { src: GOLDEN_GATE_BRIDGE, alt: 'Golden Gate Bridge (San Francisco)' },
+    { src: GRAND_CANYON, alt: 'Grand Canyon (Flagstaff)' },
+    { src: HOLLYWOOD_HILLS, alt: 'Hollywood Hills (Los Angeles)' },
+    { src: LIBERTY_BELL, alt: 'Liberty Bell (Philadelphia)' },
+    { src: LINCOLN_MEMORIAL, alt: 'Lincoln Memorial (Washington D.C.)' },
+    { src: MIAMI_BEACH, alt: 'Miami Beach' },
+    { src: MUSIC_ROW, alt: 'Music Row (Nashville)' },
+    { src: SPACE_NEEDLE, alt: 'Space Needle (Seattle)' },
+    { src: STATUE_OF_LIBERTY, alt: 'Statue of Liberty (New York)' },
+    { src: VIRGINIA_BEACH, alt: 'Virginia Beach' },
+    { src: FRENCH_QUARTER, alt: 'The French Quarter (Washington DC)' },
+    { src: NIAGRA_FALLS, alt: 'Niagra Falls (New York State)' },
+    { src: NATIONAL_MALL, alt: 'The French Quarter (New Orleans)' }
+];
 export const DFLT_LAT = 38;
 export const DFLT_LNG = -96;
 export const DFLT_GAME_ZOOM = 5;

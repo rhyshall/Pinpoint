@@ -66,20 +66,20 @@ class Header extends Component
       this.deselectMenuOptions();
     }
 
-    return(<div className="--head-header-container">
-             <div className="--head-logo"
+    return(<div className="--head-header-container mr-auto mr-md-0">
+             <div className="--head-logo mr-auto"
                   onClick={this.goHome}>
                <h2>PinPoint</h2>
                <img src="city_block.png"
                     alt="Cities"></img>
              </div>
 
-             <nav className="--head-menu"
+             <nav className="--head-menu justify-content-md-center justify-content-end"
                   onClick={this.selectMenuOption}>
-				       <a className="--head-about">About</a>
-				       <a className="--head-play">Play</a>
-				       <a className="--head-explore">Explore</a>
-				       <a className="--head-contact">Contact</a>
+                <a className="--head-about mx-1 mx-sm-2 mx-md-3 mx-lg-4">About</a>
+                <a className="--head-play mx-1 mx-sm-2 mx-md-3 mx-lg-4">Play</a>
+                <a className="--head-explore mx-1 mx-sm-2 mx-md-3 mx-lg-4">Explore</a>
+                <a className="--head-contact mx-1 mx-sm-2 mx-md-3 mx-lg-4">Contact</a>
 			       </nav>
            </div>);
   }
