@@ -18,25 +18,25 @@ import NIAGRA_FALLS from '../images/niagra_falls.jpg';
 import NATIONAL_MALL from '../images/national_mall.jpg';
 
 export const BACK_DROP_IMAGES = [
-    { src: BELLAGIO, alt: 'Willis Tower (Chicago)' },
+    { src: HOLLYWOOD_HILLS, alt: 'Hollywood Hills (Los Angeles)' },
     { src: BIG_TEX, alt: 'Big Tex (Dallas)' },
     { src: BOSTON_SKYLINE, alt: 'Boston Skyline' },
     { src: COLORADO_MOUNTAINS, alt: 'Colorado Mountains' },
     { src: GATEWAY_ARCH, alt: 'Gateway Arch (St. Louis)' },
     { src: GOLDEN_GATE_BRIDGE, alt: 'Golden Gate Bridge (San Francisco)' },
-    { src: GRAND_CANYON, alt: 'Grand Canyon (Flagstaff)' },
-    { src: HOLLYWOOD_HILLS, alt: 'Hollywood Hills (Los Angeles)' },
+    { src: BELLAGIO, alt: 'Bellagio (Las Vegas)' },
+    { src: MUSIC_ROW, alt: 'Music Row (Nashville)' },
     { src: LIBERTY_BELL, alt: 'Liberty Bell (Philadelphia)' },
     { src: LINCOLN_MEMORIAL, alt: 'Lincoln Memorial (Washington D.C.)' },
     { src: MIAMI_BEACH, alt: 'Miami Beach' },
-    { src: MUSIC_ROW, alt: 'Music Row (Nashville)' },
-    { src: SPACE_NEEDLE, alt: 'Space Needle (Seattle)' },
+    { src: GRAND_CANYON, alt: 'Grand Canyon (Flagstaff)' },
     { src: STATUE_OF_LIBERTY, alt: 'Statue of Liberty (New York)' },
+    { src: SPACE_NEEDLE, alt: 'Space Needle (Seattle)' },
     { src: VIRGINIA_BEACH, alt: 'Virginia Beach' },
     { src: FRENCH_QUARTER, alt: 'The French Quarter (Washington DC)' },
     { src: NIAGRA_FALLS, alt: 'Niagra Falls (New York State)' },
-    { src: NATIONAL_MALL, alt: 'The French Quarter (New Orleans)' }
-];
+    { src: NATIONAL_MALL, alt: 'The French Quarter (New Orleans)' }];   
+    
 export const DFLT_LAT = 38;
 export const DFLT_LNG = -96;
 export const DFLT_GAME_ZOOM = 5;
