@@ -1,0 +1,9 @@
+.--pin-game-container{
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 98vw;
+  height: 75%;
+}

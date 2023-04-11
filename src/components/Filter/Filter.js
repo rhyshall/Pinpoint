@@ -11,14 +11,7 @@ class Filter extends Component
     this.popBetweenRef = React.createRef();
     this.statesRef = React.createRef();
 
-    this.state = 
-    {
-      populationFilter: 'less than'
-    };
-
-    this.setFilter = this.setFilter.bind(this);
-    this.handlePopulationFilterChange = this.handlePopulationFilterChange.bind(this);
-    this.handleClosePage = this.handleClosePage.bind(this);
+    this.state = { populationFilter: 'less than' };
   }
 
   setFilter = () =>
@@ -55,10 +48,7 @@ class Filter extends Component
     );
   }
 
-  handleClosePage()
-  {
-    this.props.closeFilter();
-  }
+  handleClosePage = () => this.props.closeFilter();
 
   render()
   {

@@ -1,3 +1,13 @@
+:root 
+{
+  --head-white: #f5f1eeef;
+  --head-white2: #ffffff;
+	--head-black: #000000; 
+	--head-orange: #e67d2280;
+  --head-orange2: #e67d22b6;
+  --head-orange3: #cf711f9f;
+}
+
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -6,4 +16,8 @@
 .no-gutters > .col, .no-gutters > [class*="col-"]{
       padding-right: 0;
       padding-left: 0;
+}
+
+html {
+    background-image :linear-gradient(315deg, var(--head-orange) 10%, var(--head-orange2) 34%);
 }

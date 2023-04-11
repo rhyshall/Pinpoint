@@ -24,24 +24,9 @@ class Options extends Component
                   cityRange: DFLT_CITY_RANGE,
                   spawnCnt: DFLT_SPAWN_CNT,
                   maxScore: DFLT_MAX_SCORE};
-
-    this.handleClosePage = this.handleClosePage.bind(this);
-    this.selectImg = this.selectImg.bind(this);
-    this.difficultyChange = this.difficultyChange.bind(this);
-    this.hostChange = this.hostChange.bind(this);
-    this.slideCityRange = this.slideCityRange.bind(this);
-    this.slideSpawnCnt = this.slideSpawnCnt.bind(this);
-    this.slideMaxScore = this.slideMaxScore.bind(this);
-    this.setPlayerName = this.setPlayerName.bind(this);
-    this.startGame = this.startGame.bind(this);
   }
 
-  handleClosePage()
-  {
-    this.props.closeFilter();
-  }
-
-  selectImg(e)
+  selectImg = (e) =>
   {
     let className = e.target.className;
     
@@ -65,7 +50,7 @@ class Options extends Component
     }
   }
 
-  difficultyChange(e)
+  difficultyChange = (e) =>
   {
     let className = e.target.className;
     
@@ -83,7 +68,7 @@ class Options extends Component
     }
   }
 
-  hostChange(e)
+  hostChange = (e) =>
   {
     let className = e.target.className;
 
@@ -97,7 +82,7 @@ class Options extends Component
     }
   }
 
-  setPlayerName(e)
+  setPlayerName = (e) =>
   {
     let className = e.target.className;
 
@@ -111,22 +96,7 @@ class Options extends Component
     }
   }
 
-  slideCityRange(e)
-  {
-    this.setState({cityRange: e.target.value});
-  }
-
-  slideSpawnCnt(e)
-  {
-    this.setState({spawnCnt: e.target.value});
-  }
-
-  slideMaxScore(e)
-  {
-    this.setState({maxScore: e.target.value});
-  }
-
-  startGame(e)
+  startGame = (e) =>
   {
     e.preventDefault();
 
@@ -239,7 +209,7 @@ class Options extends Component
                            min={MIN_CITY_CNT}
                            max={MAX_CITY_CNT}
                            step="100"
-                           onChange={this.slideCityRange}></input>
+                           onChange={e => this.setState({cityRange: e.target.value})}></input>
                     <span className="--opt-slider-value">{this.state.cityRange}</span> 
                   </label>
                 </div>;
@@ -253,7 +223,7 @@ class Options extends Component
                            min={MIN_SPAWN_CNT} 
                            max={MAX_SPAWN_CNT}
                            step="2"
-                           onChange={this.slideSpawnCnt}></input>
+                           onChange={e => this.setState({spawnCnt: e.target.value})}></input>
                     <span className="--opt-slider-value">{this.state.spawnCnt}</span> 
                   </label>
                 </div>;
@@ -267,7 +237,7 @@ class Options extends Component
                            min={MIN_SCORE}
                            max={MAX_SCORE}
                            step="1"
-                           onChange={this.slideMaxScore}></input>
+                           onChange={e => this.setState({maxScore: e.target.value})}></input>
                     <span className="--opt-slider-value">{this.state.maxScore}</span> 
                   </label>
                 </div>;
@@ -277,7 +247,7 @@ class Options extends Component
              <div className="--opt-header-content">
                <span className='--opt-empty-space'>x</span>
                <h2 className="--opt-header-text">Choose Your Settings</h2>
-               <span onClick={this.handleClosePage} className='close-page'>x</span>
+               <span onClick={() => this.props.closeFilter()} className='close-page'>x</span>
              </div>
                    
              <div className="--opt-content --opt-mode-content">

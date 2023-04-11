@@ -34,7 +34,6 @@ class IntelliMap extends Component
                   miss: false,
                   botOutcomeVisible: false,
                   turnTextVisible: false};
-    this.handleMarkerClick = this.handleMarkerClick.bind(this);
   }
 
   selectCityFile(mapType)
@@ -168,12 +167,13 @@ class IntelliMap extends Component
         && Number(latitudeChoice) === this.state.targetCity.Latitude 
         && Number(longitudeChoice) === this.state.targetCity.Longitude) 
     {
-      playSound('correct-answer');
+      
       if (isBotTurn)
       {
         setTimeout(() => 
                    {
                      //stop turn timer
+                     playSound('correct-answer');
                      this.props.stopTimer();
 
                      this.clearDecoys();
@@ -184,18 +184,19 @@ class IntelliMap extends Component
       }
       else 
       {
+        playSound('correct-answer');
         this.clearDecoys();
         this.endRound();
       }
     }
     else 
     {
-      playSound('wrong-answer');
       if (isBotTurn)
       {
         setTimeout(() => 
                    {
                      //stop turn timer
+                     playSound('wrong-answer');
                      this.props.stopTimer();
 
                      spawnCityList.splice(spawnCityList.map(c => c.City).indexOf(cityChoice), 
@@ -213,6 +214,7 @@ class IntelliMap extends Component
       }
       else 
       {
+        playSound('wrong-answer');
         spawnCityList.splice(spawnCityList.map(c => c.City).indexOf(cityChoice), 
                              1);
         this.setState({spawnCities: spawnCityList},
@@ -442,7 +444,7 @@ class IntelliMap extends Component
     }
   }
 
-  handleMarkerClick(e)
+  handleMarkerClick = (e) =>
   {
     playSound('marker-clicked');
 

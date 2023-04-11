@@ -29,11 +29,18 @@
 	border-radius: 4px;
 	border: 1px solid var(--ex-black);
   position: absolute;
-  top: 50%;
+  top: 74%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding-bottom: 30px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 865px) {
+  .--ex-container {
+    width: 96vw;
+  }
 }
 
 .--ex-header-content
@@ -58,7 +65,7 @@
 
 .--ex-header-text
 {
-  padding: 0 40%;
+  margin: 0 auto;
 }
 
 .--ex-header-content h2 
@@ -211,6 +218,15 @@
   width: 84%;
   margin-left: 8%;
 }
+@media only screen and (max-width: 865px) {
+  .--ex-city-content {
+    width: 100%;
+    margin: 0 2px;
+  }
+  .--ex-page-area {
+    transform: translateX(-100px);
+  }
+}
 
 .--ex-city-content table
 {
@@ -242,27 +258,27 @@ td
 
 td:nth-child(1), th:nth-child(1) 
 {
-  width: 75px;
+  width: 70px;
 }
 
 td:nth-child(2), th:nth-child(2) 
 {
-  min-width: 234px;
+  min-width: 155px;
 }
 
 td:nth-child(3), th:nth-child(3) 
 {
-  width: 140px;
+  width: 155px;
 }
 
 td:nth-child(4), th:nth-child(4) 
 {
-  width: 120px;
+  width: 135px;
 }
 
 td:nth-child(5), th:nth-child(5) 
 {
-  width: 220px;
+  width: 295px;
 }
 
 thead
@@ -310,4 +326,13 @@ tbody
 
 .explore-search {
   margin-top: -10px;
+}
+
+@media only screen and (max-width: 665px) {
+  .--ex-filter {
+    transform: translateX(75px);
+  }
+  .--ex-page-area {
+    transform: translateX(-40px);
+  }
 }

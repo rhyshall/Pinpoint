@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import './PinPoint.css';
+import { withRouter } from 'react-router-dom'
 import IntelliBase from './components/Map/Header/IntelliBase';
 import IntelliMap from './components/Map/Body/IntelliMap';
 import WinAlert from './components/WinAlert/WinAlert';
@@ -294,7 +296,7 @@ class PinPoint extends Component
     {
       content = <Options startBotGame={this.startBotGame}
                          startLocalGame={this.startLocalGame}
-                         closeFilter={this.props.closeFilter}/>;
+                         closeFilter={() => this.props.history.push('/')}/>;
     }
 
     else 
@@ -361,4 +363,4 @@ class PinPoint extends Component
   }
 }
 
-export default PinPoint;
+export default withRouter(PinPoint);

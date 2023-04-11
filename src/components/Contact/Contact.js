@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { withRouter } from 'react-router-dom';
 import './Contact.css';
 import {init} from 'emailjs-com';
 import emailjs from 'emailjs-com';
@@ -13,36 +14,29 @@ class Contact extends Component
                   email: '',
                   subject: '',
                   message: ''};
-
-    this.handleClosePage = this.handleClosePage.bind(this);
-    this.setName = this.setName.bind(this);              
-    this.setEmail = this.setEmail.bind(this);
-    this.setSubject = this.setSubject.bind(this);
-    this.setMessage = this.setMessage.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleClosePage()
+  handleClosePage = () =>
   {
-    this.props.closeFilter();
+    this.props.history.push('/');
   }
 
-  setName(e) 
+  setName = (e) =>
   {
     this.setState({name: e.target.value});
   }
 
-  setEmail(e) 
+  setEmail = (e) =>
   {
     this.setState({email: e.target.value});
   }
 
-  setSubject(e) 
+  setSubject = (e) =>
   {
     this.setState({subject: e.target.value});
   }
 
-  setMessage(e) 
+  setMessage = (e) =>
   {
     this.setState({message: e.target.value});
   }
@@ -140,7 +134,7 @@ class Contact extends Component
     return(<form className="--con-form">
              <div className="--con-header-content">
                <span className='--con-empty-space'>x</span>
-               <h2 className="--con-header-text">Questions & Suggestions</h2>
+               <h2 className="--con-header-text mx-auto">Questions & Suggestions</h2>
                <span onClick={this.handleClosePage} className='close-page'>x</span>
              </div>
            
@@ -193,4 +187,4 @@ class Contact extends Component
   }
 }
 
-export default Contact;
+export default withRouter(Contact);

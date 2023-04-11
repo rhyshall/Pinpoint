@@ -9,6 +9,7 @@ import {getCoordFormat, USStateAbbrToName, getRowBackground} from "../../shared/
 import {DFLT_EXPLORE_MIN_ZOOM, DFLT_EXPLORE_MAX_ZOOM, EXPLORE_DFLT_BOUNDS} from "../../shared/Const";
 import { DFLT_EXPLORE_ZOOM, DFLT_LAT, DFLT_LNG } from "../../shared/Const";
 import Filter from "../Filter/Filter";
+import { withRouter } from 'react-router-dom'
 
 class Explore extends Component 
 {
@@ -28,19 +29,6 @@ class Explore extends Component
      activeRow: -1,
      filterOpen: false,
      sortState: { sortField: null, sortOrder: null }};
-
-    this.handleClosePage = this.handleClosePage.bind(this);
-    this.loadCityData = this.loadCityData.bind(this);
-    this.handleMarkerClick = this.handleMarkerClick.bind(this);
-    this.handleRowClick = this.handleRowClick.bind(this);
-    this.handleTableHeaderClick = this.handleTableHeaderClick.bind(this);
-    this.searchResults = this.searchResults.bind(this);
-    this.handlePageDropSelect = this.handlePageDropSelect.bind(this);
-    this.handleZoom = this.handleZoom.bind(this);
-    this.previousPage = this.previousPage.bind(this);
-    this.nextPage = this.nextPage.bind(this);
-    this.filterResults = this.filterResults.bind(this);
-    this.closeFilter = this.closeFilter.bind(this);
   }
 
   statesNotSelected = [];
@@ -70,12 +58,12 @@ class Explore extends Component
     this.setState({ markers: markerList });
   }
 
-  handleClosePage()
+  handleClosePage = () =>
   {
-    this.props.closeFilter();
+    this.props.history.push('/');
   }
 
-  async loadCityData() 
+  loadCityData = async() =>
   {
     let res = null;
     let i = 0;
@@ -119,7 +107,7 @@ class Explore extends Component
     );
   }
 
-  searchResults(e) 
+  searchResults = (e) =>
   {
     let searchKey = e.target.value;
     let newCitySet = [];
@@ -167,7 +155,7 @@ class Explore extends Component
     pageHTML.value = newPage;
   }
 
-  filterResults(e) 
+  filterResults = (e) => 
   {
     this.setStatesNotSelected();
     this.setState({ filterOpen: true });
@@ -192,7 +180,7 @@ class Explore extends Component
     this.statesNotSelected = listOfStates;
   }
 
-  previousPage(e) 
+  previousPage = (e) =>
   {
     let newPage = this.state.page - 1;
 
@@ -207,7 +195,7 @@ class Explore extends Component
     }
   }
 
-  nextPage(e) 
+  nextPage = (e) =>
   {
     let newPage = this.state.page + 1;
 
@@ -233,7 +221,7 @@ class Explore extends Component
     return pageList;
   }
 
-  handlePageDropSelect(e) 
+  handlePageDropSelect = (e) => 
   {
     let newPage = e.target.options.selectedIndex + 1;
 
@@ -243,7 +231,7 @@ class Explore extends Component
     );
   }
 
-  handleMarkerClick(e) 
+  handleMarkerClick = (e) => 
   {
     let index = e.target.options.id.charAt(0);
 
@@ -254,7 +242,7 @@ class Explore extends Component
     });
   }
 
-  handleRowClick(e) 
+  handleRowClick = (e) => 
   {
     const rowID = e.currentTarget.className.charAt(8);
     let targetMarker = this.state.markers[rowID];
@@ -267,7 +255,7 @@ class Explore extends Component
     });
   }
 
-  handleTableHeaderClick(e) 
+  handleTableHeaderClick = (e) => 
   {
     let newSortOrder = "ASC";
 
@@ -409,7 +397,7 @@ class Explore extends Component
     }
   }
 
-  closeFilter()
+  closeFilter = () =>
   {
     this.setState({filterOpen: false});
   }
@@ -504,7 +492,7 @@ class Explore extends Component
     );
   }
 
-  handleZoom(e) 
+  handleZoom = (e) =>
   {
     this.setState({ zoom: e.target._zoom });
   }
@@ -675,4 +663,4 @@ class Explore extends Component
   }
 }
 
-export default Explore;
+export default withRouter(Explore);

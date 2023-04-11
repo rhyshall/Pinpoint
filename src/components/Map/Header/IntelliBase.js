@@ -13,7 +13,7 @@ class IntelliBase extends Component
                </div>
                <div className="--ib-header-section-content">
                  {this.props.runTimer ? 
-                   <div className="--ib-current-player d-flex align-items-center">
+                   <div className="--ib-current-player">
                      <img className="--ib-arrow-img"
                           src={this.props.activePlayerImg}
                           alt="Circle indicating player turn"/>
@@ -36,12 +36,12 @@ class IntelliBase extends Component
                  <h3>Navigate</h3>
                </div>
                <div className="--ib-header-section-content">
-                 <span className="--ib-target-city">
-                   <img className="--ib-city-img"
+                 <div className="--ib-target-city">
+                   <img className="--ib-city-img mr-2"
                         src="target.png"
                         alt="Target indicating which city to locate" />
                    <p className="--ib-city-text">{this.props.targetCity}</p>
-                 </span>
+                 </div>
                  <span className="--ib-target-population">
                    <img className="--ib-population-img"
                         src="population.png"
